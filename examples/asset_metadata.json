@@ -1,0 +1,7 @@
+{
+  "asset_id": "my-visible-panel-001",
+  "input_units": "mm",
+  "T_workpiece_input": [[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],
+  "T_robot_base_workpiece": [[0,0,-1,1200],[-1,0,0,0],[0,1,0,0],[0,0,0,1]],
+  "grid_mm": 15
+}

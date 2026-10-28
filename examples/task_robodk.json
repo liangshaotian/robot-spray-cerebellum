@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "task_id": "brain-e12-001",
+  "skill_id": "spray_surface.v1",
+  "target": {"asset_id": "demo_car_4500", "units": "mm"},
+  "robot": {"model_id": "huayan_e12", "tool_id": "spray_tcp_200"},
+  "process": {"standoff_mm": 200, "speed_mm_s": 400, "spray_width_mm": 240, "overlap_ratio": 0.5833333333333333, "passes": 1},
+  "planning": {"method": "sac", "policy_id": "sac_car_side_v1", "sample_step_mm": 40},
+  "execution": {"backend": "robodk", "mode": "simulate", "show_window": false, "simulation_speed": 5, "timeout_s": 300},
+  "context": {"brain_skill_id": "sprayer_skill_v0.1", "correlation_id": "first-e12-integration"}
+}

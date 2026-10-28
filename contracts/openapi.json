@@ -1,0 +1,1332 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Spray Cerebellum API",
+    "description": "Versioned brain -> cerebellum tasks. Mock protocol integration or validated RoboDK simulation. No hardware execution.",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/healthz": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/capabilities": {
+      "get": {
+        "summary": "Capabilities",
+        "operationId": "capabilities_v1_capabilities_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/assets": {
+      "get": {
+        "summary": "Assets",
+        "operationId": "assets_v1_assets_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/schemas/asset-import": {
+      "get": {
+        "summary": "Asset Schema",
+        "operationId": "asset_schema_v1_schemas_asset_import_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/assets/upload": {
+      "post": {
+        "summary": "Upload",
+        "operationId": "upload_v1_assets_upload_post",
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/components/schemas/Body_upload_v1_assets_upload_post"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/tasks": {
+      "post": {
+        "summary": "Submit",
+        "operationId": "submit_v1_tasks_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaskRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskAccepted"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ]
+      }
+    },
+    "/v1/tasks/{task_id}": {
+      "get": {
+        "summary": "Task",
+        "operationId": "task_v1_tasks__task_id__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Task Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskStatus"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/tasks/{task_id}/events": {
+      "get": {
+        "summary": "Events",
+        "operationId": "events_v1_tasks__task_id__events_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Task Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/tasks/{task_id}/cancel": {
+      "post": {
+        "summary": "Cancel",
+        "operationId": "cancel_v1_tasks__task_id__cancel_post",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Task Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaskStatus"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/tasks/{task_id}/trajectory": {
+      "get": {
+        "summary": "Trajectory",
+        "operationId": "trajectory_v1_tasks__task_id__trajectory_get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Task Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/tasks/{task_id}/artifacts/{name}": {
+      "get": {
+        "summary": "Artifact",
+        "operationId": "artifact_v1_tasks__task_id__artifacts__name__get",
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "task_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Task Id"
+            }
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Body_upload_v1_assets_upload_post": {
+        "properties": {
+          "metadata": {
+            "type": "string",
+            "title": "Metadata"
+          },
+          "point_cloud": {
+            "type": "string",
+            "format": "binary",
+            "title": "Point Cloud"
+          }
+        },
+        "type": "object",
+        "required": [
+          "metadata",
+          "point_cloud"
+        ],
+        "title": "Body_upload_v1_assets_upload_post"
+      },
+      "ErrorInfo": {
+        "properties": {
+          "code": {
+            "type": "string",
+            "title": "Code"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "details": {
+            "anyOf": [
+              {
+                "type": "object"
+              },
+              {
+                "items": {},
+                "type": "array"
+              }
+            ],
+            "title": "Details"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "code",
+          "message"
+        ],
+        "title": "ErrorInfo"
+      },
+      "Execution": {
+        "properties": {
+          "backend": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "robodk"
+            ],
+            "title": "Backend",
+            "default": "mock"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan_only",
+              "simulate"
+            ],
+            "title": "Mode",
+            "default": "plan_only"
+          },
+          "show_window": {
+            "type": "boolean",
+            "title": "Show Window",
+            "default": false
+          },
+          "simulation_speed": {
+            "type": "number",
+            "maximum": 20.0,
+            "minimum": 0.1,
+            "title": "Simulation Speed",
+            "default": 5
+          },
+          "timeout_s": {
+            "type": "number",
+            "maximum": 900.0,
+            "minimum": 5.0,
+            "title": "Timeout S",
+            "default": 300
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Execution"
+      },
+      "ExecutionResult": {
+        "properties": {
+          "requested": {
+            "type": "boolean",
+            "title": "Requested"
+          },
+          "completed": {
+            "type": "boolean",
+            "title": "Completed"
+          },
+          "executed_in_simulator": {
+            "type": "boolean",
+            "title": "Executed In Simulator"
+          },
+          "waypoints_executed": {
+            "type": "integer",
+            "title": "Waypoints Executed"
+          },
+          "maximum_tcp_position_error_mm": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Maximum Tcp Position Error Mm"
+          },
+          "paint_layers": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Paint Layers"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "requested",
+          "completed",
+          "executed_in_simulator",
+          "waypoints_executed"
+        ],
+        "title": "ExecutionResult"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "Planning": {
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": [
+              "sac",
+              "raster"
+            ],
+            "title": "Method",
+            "default": "sac"
+          },
+          "policy_id": {
+            "type": "string",
+            "const": "sac_car_side_v1",
+            "title": "Policy Id",
+            "default": "sac_car_side_v1"
+          },
+          "sample_step_mm": {
+            "type": "number",
+            "maximum": 80.0,
+            "minimum": 10.0,
+            "title": "Sample Step Mm",
+            "default": 40
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Planning"
+      },
+      "Process": {
+        "properties": {
+          "standoff_mm": {
+            "type": "number",
+            "maximum": 350.0,
+            "minimum": 100.0,
+            "title": "Standoff Mm",
+            "default": 200
+          },
+          "speed_mm_s": {
+            "type": "number",
+            "maximum": 700.0,
+            "minimum": 50.0,
+            "title": "Speed Mm S",
+            "default": 400
+          },
+          "spray_width_mm": {
+            "type": "number",
+            "maximum": 400.0,
+            "minimum": 60.0,
+            "title": "Spray Width Mm",
+            "default": 240
+          },
+          "overlap_ratio": {
+            "type": "number",
+            "maximum": 0.9,
+            "minimum": 0.0,
+            "title": "Overlap Ratio",
+            "default": 0.5833333333333333
+          },
+          "passes": {
+            "type": "integer",
+            "maximum": 3.0,
+            "minimum": 1.0,
+            "title": "Passes",
+            "default": 1
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Process"
+      },
+      "QualityMetrics": {
+        "properties": {
+          "coverage_fraction": {
+            "type": "number",
+            "title": "Coverage Fraction"
+          },
+          "relative_dose_mean": {
+            "type": "number",
+            "title": "Relative Dose Mean"
+          },
+          "relative_dose_cv": {
+            "type": "number",
+            "title": "Relative Dose Cv"
+          },
+          "estimated_spray_seconds": {
+            "type": "number",
+            "title": "Estimated Spray Seconds"
+          },
+          "evaluated_area_mm2": {
+            "type": "number",
+            "title": "Evaluated Area Mm2"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "physical_thickness_um": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Physical Thickness Um"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "coverage_fraction",
+          "relative_dose_mean",
+          "relative_dose_cv",
+          "estimated_spray_seconds",
+          "evaluated_area_mm2",
+          "model",
+          "physical_thickness_um",
+          "scope"
+        ],
+        "title": "QualityMetrics"
+      },
+      "Robot": {
+        "properties": {
+          "model_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+            "title": "Model Id",
+            "default": "huayan_e12"
+          },
+          "tool_id": {
+            "type": "string",
+            "const": "spray_tcp_200",
+            "title": "Tool Id",
+            "default": "spray_tcp_200"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Robot"
+      },
+      "Target": {
+        "properties": {
+          "asset_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+            "title": "Asset Id",
+            "default": "demo_car_4500"
+          },
+          "units": {
+            "type": "string",
+            "const": "mm",
+            "title": "Units",
+            "default": "mm"
+          },
+          "region_uv_mm": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/UVBounds"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "T_robot_base_workpiece": {
+            "anyOf": [
+              {
+                "items": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "T Robot Base Workpiece"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Target"
+      },
+      "TaskAccepted": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version"
+          },
+          "task_id": {
+            "type": "string",
+            "title": "Task Id"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "planning",
+              "validating",
+              "simulating",
+              "succeeded",
+              "failed",
+              "cancelled"
+            ],
+            "title": "State"
+          },
+          "progress": {
+            "type": "number",
+            "title": "Progress"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "title": "Updated At"
+          },
+          "request_sha256": {
+            "type": "string",
+            "title": "Request Sha256"
+          },
+          "context": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Context"
+          },
+          "result": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskResult"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ErrorInfo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "events": {
+            "items": {
+              "$ref": "#/components/schemas/TaskEvent"
+            },
+            "type": "array",
+            "title": "Events"
+          },
+          "status_url": {
+            "type": "string",
+            "title": "Status Url"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "schema_version",
+          "task_id",
+          "state",
+          "progress",
+          "message",
+          "created_at",
+          "updated_at",
+          "request_sha256",
+          "context",
+          "result",
+          "error",
+          "events",
+          "status_url"
+        ],
+        "title": "TaskAccepted"
+      },
+      "TaskEvent": {
+        "properties": {
+          "sequence": {
+            "type": "integer",
+            "title": "Sequence"
+          },
+          "at": {
+            "type": "string",
+            "title": "At"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "planning",
+              "validating",
+              "simulating",
+              "succeeded",
+              "failed",
+              "cancelled"
+            ],
+            "title": "State"
+          },
+          "progress": {
+            "type": "number",
+            "title": "Progress"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "sequence",
+          "at",
+          "state",
+          "progress",
+          "message"
+        ],
+        "title": "TaskEvent"
+      },
+      "TaskRequest": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "task_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+            "title": "Task Id"
+          },
+          "skill_id": {
+            "type": "string",
+            "const": "spray_surface.v1",
+            "title": "Skill Id",
+            "default": "spray_surface.v1"
+          },
+          "target": {
+            "$ref": "#/components/schemas/Target"
+          },
+          "robot": {
+            "$ref": "#/components/schemas/Robot"
+          },
+          "process": {
+            "$ref": "#/components/schemas/Process"
+          },
+          "planning": {
+            "$ref": "#/components/schemas/Planning"
+          },
+          "execution": {
+            "$ref": "#/components/schemas/Execution"
+          },
+          "context": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "maxProperties": 16,
+            "title": "Context"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "task_id"
+        ],
+        "title": "TaskRequest"
+      },
+      "TaskResult": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version"
+          },
+          "task_id": {
+            "type": "string",
+            "title": "Task Id"
+          },
+          "backend": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "robodk"
+            ],
+            "title": "Backend"
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "plan_only",
+              "simulate"
+            ],
+            "title": "Mode"
+          },
+          "simulation_only": {
+            "type": "boolean",
+            "const": true,
+            "title": "Simulation Only"
+          },
+          "robot_id": {
+            "type": "string",
+            "title": "Robot Id"
+          },
+          "asset_id": {
+            "type": "string",
+            "title": "Asset Id"
+          },
+          "planner": {
+            "type": "string",
+            "title": "Planner"
+          },
+          "region_uv_mm": {
+            "$ref": "#/components/schemas/UVBounds"
+          },
+          "waypoint_count": {
+            "type": "integer",
+            "title": "Waypoint Count"
+          },
+          "trajectory_url": {
+            "type": "string",
+            "title": "Trajectory Url"
+          },
+          "runtime_s": {
+            "type": "number",
+            "title": "Runtime S"
+          },
+          "validation": {
+            "$ref": "#/components/schemas/ValidationResult"
+          },
+          "quality": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/QualityMetrics"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "execution": {
+            "$ref": "#/components/schemas/ExecutionResult"
+          },
+          "warnings": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Warnings"
+          },
+          "units": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Units"
+          },
+          "simulator_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Simulator Version"
+          },
+          "T_robot_base_workpiece": {
+            "anyOf": [
+              {
+                "items": {
+                  "items": {
+                    "type": "number"
+                  },
+                  "type": "array"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "T Robot Base Workpiece"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "schema_version",
+          "task_id",
+          "backend",
+          "mode",
+          "simulation_only",
+          "robot_id",
+          "asset_id",
+          "planner",
+          "region_uv_mm",
+          "waypoint_count",
+          "trajectory_url",
+          "runtime_s",
+          "validation",
+          "quality",
+          "execution",
+          "warnings",
+          "units"
+        ],
+        "title": "TaskResult"
+      },
+      "TaskStatus": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version"
+          },
+          "task_id": {
+            "type": "string",
+            "title": "Task Id"
+          },
+          "state": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "planning",
+              "validating",
+              "simulating",
+              "succeeded",
+              "failed",
+              "cancelled"
+            ],
+            "title": "State"
+          },
+          "progress": {
+            "type": "number",
+            "title": "Progress"
+          },
+          "message": {
+            "type": "string",
+            "title": "Message"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          },
+          "updated_at": {
+            "type": "string",
+            "title": "Updated At"
+          },
+          "request_sha256": {
+            "type": "string",
+            "title": "Request Sha256"
+          },
+          "context": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "title": "Context"
+          },
+          "result": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TaskResult"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ErrorInfo"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "events": {
+            "items": {
+              "$ref": "#/components/schemas/TaskEvent"
+            },
+            "type": "array",
+            "title": "Events"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "schema_version",
+          "task_id",
+          "state",
+          "progress",
+          "message",
+          "created_at",
+          "updated_at",
+          "request_sha256",
+          "context",
+          "result",
+          "error",
+          "events"
+        ],
+        "title": "TaskStatus"
+      },
+      "UVBounds": {
+        "properties": {
+          "u_min_mm": {
+            "type": "number",
+            "title": "U Min Mm"
+          },
+          "u_max_mm": {
+            "type": "number",
+            "title": "U Max Mm"
+          },
+          "v_min_mm": {
+            "type": "number",
+            "title": "V Min Mm"
+          },
+          "v_max_mm": {
+            "type": "number",
+            "title": "V Max Mm"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "u_min_mm",
+          "u_max_mm",
+          "v_min_mm",
+          "v_max_mm"
+        ],
+        "title": "UVBounds"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "ValidationResult": {
+        "properties": {
+          "passed": {
+            "type": "boolean",
+            "title": "Passed"
+          },
+          "reachable": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reachable"
+          },
+          "collision_free": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Collision Free"
+          },
+          "executable": {
+            "type": "boolean",
+            "title": "Executable"
+          },
+          "scope": {
+            "type": "string",
+            "title": "Scope"
+          },
+          "sampling_mm": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sampling Mm"
+          },
+          "sampling_deg": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sampling Deg"
+          },
+          "method": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Method"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "passed",
+          "reachable",
+          "collision_free",
+          "executable",
+          "scope"
+        ],
+        "title": "ValidationResult"
+      }
+    },
+    "securitySchemes": {
+      "HTTPBearer": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    }
+  }
+}

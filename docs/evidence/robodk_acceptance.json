@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "result": {
+    "schema_version": "1.0",
+    "task_id": "brain-e12-001",
+    "backend": "robodk",
+    "mode": "simulate",
+    "simulation_only": true,
+    "robot_id": "huayan_e12",
+    "asset_id": "demo_car_4500",
+    "planner": "sac",
+    "region_uv_mm": {
+      "u_min_mm": -500.0,
+      "u_max_mm": 500.0,
+      "v_min_mm": 500.0,
+      "v_max_mm": 1000.0
+    },
+    "waypoint_count": 135,
+    "trajectory_url": "/v1/tasks/brain-e12-001/trajectory",
+    "runtime_s": 57.89,
+    "validation": {
+      "passed": true,
+      "reachable": true,
+      "collision_free": true,
+      "executable": true,
+      "scope": "Observed front and back scan envelope plus floor, robot self-collision and nozzle",
+      "sampling_mm": 5.0,
+      "sampling_deg": 1.0,
+      "method": "Complete sampled MoveJ_Test/MoveL_Test validation"
+    },
+    "quality": {
+      "coverage_fraction": 1.0,
+      "relative_dose_mean": 2.5744140835322766,
+      "relative_dose_cv": 0.22150161026100826,
+      "estimated_spray_seconds": 10.875609194946614,
+      "evaluated_area_mm2": 496233.50430942,
+      "model": "geometric_relative_gaussian",
+      "physical_thickness_um": null,
+      "scope": "Requested reliable observed heightfield cells only"
+    },
+    "execution": {
+      "requested": true,
+      "completed": true,
+      "executed_in_simulator": true,
+      "waypoints_executed": 135,
+      "maximum_tcp_position_error_mm": 8.2643560261338e-12,
+      "paint_layers": 119
+    },
+    "warnings": [
+      "Relative coating model is uncalibrated; pressure and true film thickness are not simulated"
+    ],
+    "units": {
+      "position": "mm",
+      "speed": "mm/s",
+      "joints": "deg",
+      "rotation": "dimensionless 3x3"
+    },
+    "simulator_version": "5.9.0.25042",
+    "T_robot_base_workpiece": [
+      [
+        0.0,
+        0.0,
+        -1.0,
+        2000.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "task_id": "brain-e12-001"
+}

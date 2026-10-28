@@ -1,0 +1,11 @@
+{
+  "dataset": "Real3D-AD",
+  "category": "car",
+  "member": "Real3D-AD-PCD/car/train/153_template.pcd",
+  "url": "https://drive.usercontent.google.com/download?id=1oM4qjhlIMsQc_wiFIFIVBvuuR8nyk2k0&export=download&confirm=t",
+  "author_repository": "https://github.com/M-3LAB/Real3D-AD",
+  "bytes": 15555596,
+  "sha256": "242207171941cd8d16f08a67fc972d41905d4c7f3ea697c15de8ed2066011301",
+  "acquisition": "Real optical scanner sample; small car-shaped physical object, not a full-size vehicle panel",
+  "use": "Single-object pipeline demonstration; no claim of held-out generalization"
+}

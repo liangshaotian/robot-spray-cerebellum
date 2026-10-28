@@ -1,0 +1,539 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "ErrorInfo": {
+      "additionalProperties": false,
+      "properties": {
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "details": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "items": {},
+              "type": "array"
+            }
+          ],
+          "title": "Details"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "title": "ErrorInfo",
+      "type": "object"
+    },
+    "ExecutionResult": {
+      "additionalProperties": false,
+      "properties": {
+        "requested": {
+          "title": "Requested",
+          "type": "boolean"
+        },
+        "completed": {
+          "title": "Completed",
+          "type": "boolean"
+        },
+        "executed_in_simulator": {
+          "title": "Executed In Simulator",
+          "type": "boolean"
+        },
+        "waypoints_executed": {
+          "title": "Waypoints Executed",
+          "type": "integer"
+        },
+        "maximum_tcp_position_error_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Maximum Tcp Position Error Mm"
+        },
+        "paint_layers": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Paint Layers"
+        }
+      },
+      "required": [
+        "requested",
+        "completed",
+        "executed_in_simulator",
+        "waypoints_executed"
+      ],
+      "title": "ExecutionResult",
+      "type": "object"
+    },
+    "QualityMetrics": {
+      "additionalProperties": false,
+      "properties": {
+        "coverage_fraction": {
+          "title": "Coverage Fraction",
+          "type": "number"
+        },
+        "relative_dose_mean": {
+          "title": "Relative Dose Mean",
+          "type": "number"
+        },
+        "relative_dose_cv": {
+          "title": "Relative Dose Cv",
+          "type": "number"
+        },
+        "estimated_spray_seconds": {
+          "title": "Estimated Spray Seconds",
+          "type": "number"
+        },
+        "evaluated_area_mm2": {
+          "title": "Evaluated Area Mm2",
+          "type": "number"
+        },
+        "model": {
+          "title": "Model",
+          "type": "string"
+        },
+        "physical_thickness_um": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Physical Thickness Um"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        }
+      },
+      "required": [
+        "coverage_fraction",
+        "relative_dose_mean",
+        "relative_dose_cv",
+        "estimated_spray_seconds",
+        "evaluated_area_mm2",
+        "model",
+        "physical_thickness_um",
+        "scope"
+      ],
+      "title": "QualityMetrics",
+      "type": "object"
+    },
+    "TaskEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "integer"
+        },
+        "at": {
+          "title": "At",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "queued",
+            "planning",
+            "validating",
+            "simulating",
+            "succeeded",
+            "failed",
+            "cancelled"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "progress": {
+          "title": "Progress",
+          "type": "number"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "at",
+        "state",
+        "progress",
+        "message"
+      ],
+      "title": "TaskEvent",
+      "type": "object"
+    },
+    "TaskResult": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "task_id": {
+          "title": "Task Id",
+          "type": "string"
+        },
+        "backend": {
+          "enum": [
+            "mock",
+            "robodk"
+          ],
+          "title": "Backend",
+          "type": "string"
+        },
+        "mode": {
+          "enum": [
+            "plan_only",
+            "simulate"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "simulation_only": {
+          "const": true,
+          "title": "Simulation Only",
+          "type": "boolean"
+        },
+        "robot_id": {
+          "title": "Robot Id",
+          "type": "string"
+        },
+        "asset_id": {
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "planner": {
+          "title": "Planner",
+          "type": "string"
+        },
+        "region_uv_mm": {
+          "$ref": "#/$defs/UVBounds"
+        },
+        "waypoint_count": {
+          "title": "Waypoint Count",
+          "type": "integer"
+        },
+        "trajectory_url": {
+          "title": "Trajectory Url",
+          "type": "string"
+        },
+        "runtime_s": {
+          "title": "Runtime S",
+          "type": "number"
+        },
+        "validation": {
+          "$ref": "#/$defs/ValidationResult"
+        },
+        "quality": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/QualityMetrics"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "execution": {
+          "$ref": "#/$defs/ExecutionResult"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "units": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "title": "Units",
+          "type": "object"
+        },
+        "simulator_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Simulator Version"
+        },
+        "T_robot_base_workpiece": {
+          "anyOf": [
+            {
+              "items": {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "T Robot Base Workpiece"
+        }
+      },
+      "required": [
+        "schema_version",
+        "task_id",
+        "backend",
+        "mode",
+        "simulation_only",
+        "robot_id",
+        "asset_id",
+        "planner",
+        "region_uv_mm",
+        "waypoint_count",
+        "trajectory_url",
+        "runtime_s",
+        "validation",
+        "quality",
+        "execution",
+        "warnings",
+        "units"
+      ],
+      "title": "TaskResult",
+      "type": "object"
+    },
+    "UVBounds": {
+      "additionalProperties": false,
+      "properties": {
+        "u_min_mm": {
+          "title": "U Min Mm",
+          "type": "number"
+        },
+        "u_max_mm": {
+          "title": "U Max Mm",
+          "type": "number"
+        },
+        "v_min_mm": {
+          "title": "V Min Mm",
+          "type": "number"
+        },
+        "v_max_mm": {
+          "title": "V Max Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "u_min_mm",
+        "u_max_mm",
+        "v_min_mm",
+        "v_max_mm"
+      ],
+      "title": "UVBounds",
+      "type": "object"
+    },
+    "ValidationResult": {
+      "additionalProperties": false,
+      "properties": {
+        "passed": {
+          "title": "Passed",
+          "type": "boolean"
+        },
+        "reachable": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Reachable"
+        },
+        "collision_free": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Collision Free"
+        },
+        "executable": {
+          "title": "Executable",
+          "type": "boolean"
+        },
+        "scope": {
+          "title": "Scope",
+          "type": "string"
+        },
+        "sampling_mm": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sampling Mm"
+        },
+        "sampling_deg": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Sampling Deg"
+        },
+        "method": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Method"
+        }
+      },
+      "required": [
+        "passed",
+        "reachable",
+        "collision_free",
+        "executable",
+        "scope"
+      ],
+      "title": "ValidationResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_id": {
+      "title": "Task Id",
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "queued",
+        "planning",
+        "validating",
+        "simulating",
+        "succeeded",
+        "failed",
+        "cancelled"
+      ],
+      "title": "State",
+      "type": "string"
+    },
+    "progress": {
+      "title": "Progress",
+      "type": "number"
+    },
+    "message": {
+      "title": "Message",
+      "type": "string"
+    },
+    "created_at": {
+      "title": "Created At",
+      "type": "string"
+    },
+    "updated_at": {
+      "title": "Updated At",
+      "type": "string"
+    },
+    "request_sha256": {
+      "title": "Request Sha256",
+      "type": "string"
+    },
+    "context": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "title": "Context",
+      "type": "object"
+    },
+    "result": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/TaskResult"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/ErrorInfo"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "events": {
+      "items": {
+        "$ref": "#/$defs/TaskEvent"
+      },
+      "title": "Events",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "state",
+    "progress",
+    "message",
+    "created_at",
+    "updated_at",
+    "request_sha256",
+    "context",
+    "result",
+    "error",
+    "events"
+  ],
+  "title": "TaskStatus",
+  "type": "object"
+}

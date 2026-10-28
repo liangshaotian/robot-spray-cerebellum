@@ -1,0 +1,63 @@
+{
+  "asset_id": "generated-panel-v1",
+  "input_units": "mm",
+  "T_workpiece_input": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "T_robot_base_workpiece": [
+    [
+      0,
+      0,
+      -1,
+      1200
+    ],
+    [
+      -1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "grid_mm": 15,
+  "region_uv_mm": {
+    "u_min_mm": -270,
+    "u_max_mm": 270,
+    "v_min_mm": 480,
+    "v_max_mm": 870
+  }
+}

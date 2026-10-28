@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "task_id": "uploaded-panel-plan-001",
+  "target": {
+    "asset_id": "generated-panel-v1"
+  },
+  "planning": {
+    "method": "raster"
+  },
+  "execution": {
+    "backend": "robodk",
+    "mode": "plan_only"
+  },
+  "context": {
+    "source": "generated analytic panel import acceptance; not a real scan"
+  }
+}

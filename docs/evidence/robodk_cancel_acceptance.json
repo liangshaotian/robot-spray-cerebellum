@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "state": "cancelled",
+  "error": {
+    "code": "CANCELLED",
+    "message": "Task was cancelled",
+    "details": {}
+  },
+  "cancellation_to_terminal_s": 0.156,
+  "simulated_robot_busy_after_cancel": false
+}

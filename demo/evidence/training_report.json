@@ -1,0 +1,39 @@
+{
+  "algorithm": "Soft Actor-Critic (Stable-Baselines3 2.4.1)",
+  "trained_timesteps": 4000,
+  "gradient_updates": 3744,
+  "training_seconds": 20.75,
+  "actor_parameter_l2_change": 7.2353034019470215,
+  "deterministic_policy_action_range": [
+    [
+      -0.9641515016555786,
+      -0.98939049243927
+    ],
+    [
+      0.9472010135650635,
+      0.9912962913513184
+    ]
+  ],
+  "baseline": {
+    "coverage_fraction": 1.0,
+    "relative_dose_mean": 2.8587755061047018,
+    "relative_dose_cv": 0.2182840317589547,
+    "relative_dose_target": 2.2,
+    "estimated_spray_seconds": 12.003400020605387,
+    "scope": "Explicit measured side ROI; relative dose, not micrometres",
+    "episode_reward": 124.33759900785832
+  },
+  "trained_policy": {
+    "coverage_fraction": 1.0,
+    "relative_dose_mean": 2.5744140835322766,
+    "relative_dose_cv": 0.22150161026100826,
+    "relative_dose_target": 2.2,
+    "estimated_spray_seconds": 10.875609194946614,
+    "scope": "Explicit measured side ROI; relative dose, not micrometres",
+    "episode_reward": 135.36506450926103
+  },
+  "training_object": "Real3D-AD car 153_template.pcd",
+  "scope": "Real scan mapped to illustrative full-size vehicle dimensions; fixed E12 sprays a local door-side patch; short training, no generalization claim",
+  "control": "Continuous local lateral path residual and speed multiplier, following a geometric sweep",
+  "model_sha256": "77b63fd355520907a430c22ae2500c9b949bc415e237f8a062f5bdd0b0228156"
+}

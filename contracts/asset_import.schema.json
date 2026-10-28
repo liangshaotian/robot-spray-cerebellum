@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "UVBounds": {
+      "additionalProperties": false,
+      "properties": {
+        "u_min_mm": {
+          "title": "U Min Mm",
+          "type": "number"
+        },
+        "u_max_mm": {
+          "title": "U Max Mm",
+          "type": "number"
+        },
+        "v_min_mm": {
+          "title": "V Min Mm",
+          "type": "number"
+        },
+        "v_max_mm": {
+          "title": "V Max Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "u_min_mm",
+        "u_max_mm",
+        "v_min_mm",
+        "v_max_mm"
+      ],
+      "title": "UVBounds",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "asset_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+      "title": "Asset Id",
+      "type": "string"
+    },
+    "input_units": {
+      "enum": [
+        "mm",
+        "m"
+      ],
+      "title": "Input Units",
+      "type": "string"
+    },
+    "T_workpiece_input": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "type": "array"
+      },
+      "title": "T Workpiece Input",
+      "type": "array"
+    },
+    "T_robot_base_workpiece": {
+      "items": {
+        "items": {
+          "type": "number"
+        },
+        "type": "array"
+      },
+      "title": "T Robot Base Workpiece",
+      "type": "array"
+    },
+    "region_uv_mm": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/UVBounds"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "grid_mm": {
+      "default": 15,
+      "maximum": 50.0,
+      "minimum": 2.0,
+      "title": "Grid Mm",
+      "type": "number"
+    }
+  },
+  "required": [
+    "asset_id",
+    "input_units",
+    "T_workpiece_input",
+    "T_robot_base_workpiece"
+  ],
+  "title": "AssetImport",
+  "type": "object"
+}

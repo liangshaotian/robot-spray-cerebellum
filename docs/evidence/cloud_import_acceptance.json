@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "source": "Generated analytic curved panel fixture (not a real scan)",
+  "point_count": 1271,
+  "result": {
+    "schema_version": "1.0",
+    "task_id": "uploaded-panel-plan-001",
+    "backend": "robodk",
+    "mode": "plan_only",
+    "simulation_only": true,
+    "robot_id": "huayan_e12",
+    "asset_id": "generated-panel-v1",
+    "planner": "raster",
+    "region_uv_mm": {
+      "u_min_mm": -270.0,
+      "u_max_mm": 270.0,
+      "v_min_mm": 480.0,
+      "v_max_mm": 870.0
+    },
+    "waypoint_count": 60,
+    "trajectory_url": "/v1/tasks/uploaded-panel-plan-001/trajectory",
+    "runtime_s": 4.046,
+    "validation": {
+      "passed": true,
+      "reachable": true,
+      "collision_free": true,
+      "executable": true,
+      "scope": "Observed visible surface mesh only, plus robot self-collision and floor; unobserved volume is unknown",
+      "sampling_mm": 5.0,
+      "sampling_deg": 1.0,
+      "method": "Complete sampled MoveJ_Test/MoveL_Test validation"
+    },
+    "quality": {
+      "coverage_fraction": 0.9939603835873736,
+      "relative_dose_mean": 2.492987380487784,
+      "relative_dose_cv": 0.34337562191088217,
+      "estimated_spray_seconds": 4.807356370247456,
+      "evaluated_area_mm2": 225489.05272146294,
+      "model": "geometric_relative_gaussian",
+      "physical_thickness_um": null,
+      "scope": "Requested reliable observed heightfield cells only"
+    },
+    "execution": {
+      "requested": false,
+      "completed": false,
+      "executed_in_simulator": false,
+      "waypoints_executed": 0,
+      "maximum_tcp_position_error_mm": null,
+      "paint_layers": null
+    },
+    "warnings": [
+      "Relative coating model is uncalibrated; pressure and true film thickness are not simulated"
+    ],
+    "units": {
+      "position": "mm",
+      "speed": "mm/s",
+      "joints": "deg",
+      "rotation": "dimensionless 3x3"
+    },
+    "simulator_version": "5.9.0.25042",
+    "T_robot_base_workpiece": [
+      [
+        0.0,
+        0.0,
+        -1.0,
+        1200.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "raw_point_count": 1296285,
+  "retained_points": 1292391,
+  "source_sha256": "242207171941cd8d16f08a67fc972d41905d4c7f3ea697c15de8ed2066011301",
+  "source_center": [
+    100.10544060070445,
+    -18.379527339933023,
+    280.1946670348302
+  ],
+  "source_to_local_axes": [
+    [
+      0.9597015199392508,
+      0.08315677828236648,
+      0.26843610571603194
+    ],
+    [
+      -0.18327351492418242,
+      -0.5389178346453263,
+      0.8221790475489682
+    ],
+    [
+      0.21303476559854456,
+      -0.8382437102220872,
+      -0.5019598299859092
+    ]
+  ],
+  "source_robust_bounds": [
+    [
+      -17.050990849860185,
+      -5.84629802113822,
+      -8.735433905605975
+    ],
+    [
+      18.210387603546092,
+      7.106542678338009,
+      8.570705354595308
+    ]
+  ],
+  "axis_gains_from_scan_mm": [
+    127.61838014773629,
+    115.80471302026088,
+    104.00933292727153
+  ],
+  "local_offset_mm": [
+    -2250.0,
+    0.0,
+    -900.0
+  ],
+  "target_dimensions_length_height_width_mm": [
+    4500.0,
+    1500.0,
+    1800.0
+  ],
+  "measured_mesh_extent_length_height_width_mm": [
+    4500.0,
+    1500.0,
+    1798.0558487706755
+  ],
+  "mesh_bounds_mm": [
+    [
+      -2250.0,
+      0.0,
+      -898.8350394255312
+    ],
+    [
+      2250.0,
+      1500.0,
+      899.2208093451443
+    ]
+  ],
+  "mesh_triangles": 78824,
+  "grid_mm": 15.0,
+  "safe_roi_cells": 2179,
+  "anchors": 125,
+  "segments": 5,
+  "spray_roi_mm": {
+    "u_min": -500,
+    "u_max": 500,
+    "v_min": 500,
+    "v_max": 1000
+  },
+  "scope": "Affine-scaled public toy-car optical scan at illustrative full-size vehicle dimensions; not a measured production vehicle. Fixed E12 sprays a local side patch.",
+  "scale_is_assumed_not_factory_metrology": true
+}

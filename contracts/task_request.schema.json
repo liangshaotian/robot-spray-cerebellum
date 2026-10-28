@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "Execution": {
+      "additionalProperties": false,
+      "properties": {
+        "backend": {
+          "default": "mock",
+          "enum": [
+            "mock",
+            "robodk"
+          ],
+          "title": "Backend",
+          "type": "string"
+        },
+        "mode": {
+          "default": "plan_only",
+          "enum": [
+            "plan_only",
+            "simulate"
+          ],
+          "title": "Mode",
+          "type": "string"
+        },
+        "show_window": {
+          "default": false,
+          "title": "Show Window",
+          "type": "boolean"
+        },
+        "simulation_speed": {
+          "default": 5,
+          "maximum": 20.0,
+          "minimum": 0.1,
+          "title": "Simulation Speed",
+          "type": "number"
+        },
+        "timeout_s": {
+          "default": 300,
+          "maximum": 900.0,
+          "minimum": 5.0,
+          "title": "Timeout S",
+          "type": "number"
+        }
+      },
+      "title": "Execution",
+      "type": "object"
+    },
+    "Planning": {
+      "additionalProperties": false,
+      "properties": {
+        "method": {
+          "default": "sac",
+          "enum": [
+            "sac",
+            "raster"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "policy_id": {
+          "const": "sac_car_side_v1",
+          "default": "sac_car_side_v1",
+          "title": "Policy Id",
+          "type": "string"
+        },
+        "sample_step_mm": {
+          "default": 40,
+          "maximum": 80.0,
+          "minimum": 10.0,
+          "title": "Sample Step Mm",
+          "type": "number"
+        }
+      },
+      "title": "Planning",
+      "type": "object"
+    },
+    "Process": {
+      "additionalProperties": false,
+      "properties": {
+        "standoff_mm": {
+          "default": 200,
+          "maximum": 350.0,
+          "minimum": 100.0,
+          "title": "Standoff Mm",
+          "type": "number"
+        },
+        "speed_mm_s": {
+          "default": 400,
+          "maximum": 700.0,
+          "minimum": 50.0,
+          "title": "Speed Mm S",
+          "type": "number"
+        },
+        "spray_width_mm": {
+          "default": 240,
+          "maximum": 400.0,
+          "minimum": 60.0,
+          "title": "Spray Width Mm",
+          "type": "number"
+        },
+        "overlap_ratio": {
+          "default": 0.5833333333333333,
+          "maximum": 0.9,
+          "minimum": 0.0,
+          "title": "Overlap Ratio",
+          "type": "number"
+        },
+        "passes": {
+          "default": 1,
+          "maximum": 3,
+          "minimum": 1,
+          "title": "Passes",
+          "type": "integer"
+        }
+      },
+      "title": "Process",
+      "type": "object"
+    },
+    "Robot": {
+      "additionalProperties": false,
+      "properties": {
+        "model_id": {
+          "default": "huayan_e12",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+          "title": "Model Id",
+          "type": "string"
+        },
+        "tool_id": {
+          "const": "spray_tcp_200",
+          "default": "spray_tcp_200",
+          "title": "Tool Id",
+          "type": "string"
+        }
+      },
+      "title": "Robot",
+      "type": "object"
+    },
+    "Target": {
+      "additionalProperties": false,
+      "properties": {
+        "asset_id": {
+          "default": "demo_car_4500",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+          "title": "Asset Id",
+          "type": "string"
+        },
+        "units": {
+          "const": "mm",
+          "default": "mm",
+          "title": "Units",
+          "type": "string"
+        },
+        "region_uv_mm": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/UVBounds"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "T_robot_base_workpiece": {
+          "anyOf": [
+            {
+              "items": {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "T Robot Base Workpiece"
+        }
+      },
+      "title": "Target",
+      "type": "object"
+    },
+    "UVBounds": {
+      "additionalProperties": false,
+      "properties": {
+        "u_min_mm": {
+          "title": "U Min Mm",
+          "type": "number"
+        },
+        "u_max_mm": {
+          "title": "U Max Mm",
+          "type": "number"
+        },
+        "v_min_mm": {
+          "title": "V Min Mm",
+          "type": "number"
+        },
+        "v_max_mm": {
+          "title": "V Max Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "u_min_mm",
+        "u_max_mm",
+        "v_min_mm",
+        "v_max_mm"
+      ],
+      "title": "UVBounds",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "task_id": {
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
+      "title": "Task Id",
+      "type": "string"
+    },
+    "skill_id": {
+      "const": "spray_surface.v1",
+      "default": "spray_surface.v1",
+      "title": "Skill Id",
+      "type": "string"
+    },
+    "target": {
+      "$ref": "#/$defs/Target"
+    },
+    "robot": {
+      "$ref": "#/$defs/Robot"
+    },
+    "process": {
+      "$ref": "#/$defs/Process"
+    },
+    "planning": {
+      "$ref": "#/$defs/Planning"
+    },
+    "execution": {
+      "$ref": "#/$defs/Execution"
+    },
+    "context": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "maxProperties": 16,
+      "title": "Context",
+      "type": "object"
+    }
+  },
+  "required": [
+    "task_id"
+  ],
+  "title": "TaskRequest",
+  "type": "object"
+}

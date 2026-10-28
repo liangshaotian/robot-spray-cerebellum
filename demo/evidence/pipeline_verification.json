@@ -1,0 +1,32 @@
+{
+  "all_passed": true,
+  "checks": {
+    "original_real_scan_unchanged": true,
+    "vehicle_has_real_world_scale": true,
+    "official_E12_not_rescaled": true,
+    "actual_SAC_training": true,
+    "model_checkpoint_hash_matches": true,
+    "saved_policy_reproduces_actions": true,
+    "policy_drives_physical_mm_path_and_speed": true,
+    "all_collision_and_reachability_checks_passed": true,
+    "native_program_complete": true,
+    "complete_live_playback": true,
+    "live_TCP_matches_policy": true,
+    "simulation_only": true,
+    "station_saved": true
+  },
+  "vehicle_dimensions_length_width_height_mm": [
+    4500.0,
+    1798.0558487706755,
+    1500.0
+  ],
+  "robot": "Huayan / Hans E12, original unchanged asset",
+  "spray_scope": "Fixed-base local door-side patch, nominal 1000 x 500 mm",
+  "waypoints": 135,
+  "trained_timesteps": 4000,
+  "maximum_action_replay_error": 0.0,
+  "maximum_policy_path_error_mm": 0.0,
+  "maximum_live_tcp_error_mm": 1.52519248405748e-08,
+  "runtime_seconds": 43.656,
+  "source_is_small_object_scan_affine_scaled": true
+}

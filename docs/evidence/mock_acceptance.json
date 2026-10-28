@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "request": {
+    "schema_version": "1.0",
+    "task_id": "acceptance-mock-ed9bca42b2",
+    "skill_id": "spray_surface.v1",
+    "target": {
+      "asset_id": "demo_car_4500",
+      "units": "mm"
+    },
+    "robot": {
+      "model_id": "huayan_e12",
+      "tool_id": "spray_tcp_200"
+    },
+    "process": {
+      "standoff_mm": 200,
+      "speed_mm_s": 400,
+      "spray_width_mm": 240,
+      "overlap_ratio": 0.5833333333333333,
+      "passes": 1
+    },
+    "planning": {
+      "method": "sac",
+      "policy_id": "sac_car_side_v1",
+      "sample_step_mm": 40
+    },
+    "execution": {
+      "backend": "mock",
+      "mode": "simulate",
+      "show_window": false,
+      "simulation_speed": 5,
+      "timeout_s": 300
+    },
+    "context": {
+      "brain_skill_id": "sprayer_skill_v0.1",
+      "correlation_id": "first-integration"
+    }
+  },
+  "result": {
+    "schema_version": "1.0",
+    "task_id": "acceptance-mock-ed9bca42b2",
+    "backend": "mock",
+    "mode": "simulate",
+    "simulation_only": true,
+    "robot_id": "huayan_e12",
+    "asset_id": "demo_car_4500",
+    "planner": "mock_fixture",
+    "region_uv_mm": {
+      "u_min_mm": -500.0,
+      "u_max_mm": 500.0,
+      "v_min_mm": 500.0,
+      "v_max_mm": 1000.0
+    },
+    "waypoint_count": 21,
+    "trajectory_url": "/v1/tasks/acceptance-mock-ed9bca42b2/trajectory",
+    "runtime_s": 0.36,
+    "validation": {
+      "passed": false,
+      "reachable": null,
+      "collision_free": null,
+      "executable": false,
+      "scope": "Not checked in mock mode",
+      "sampling_mm": null,
+      "sampling_deg": null,
+      "method": null
+    },
+    "quality": null,
+    "execution": {
+      "requested": true,
+      "completed": true,
+      "executed_in_simulator": false,
+      "waypoints_executed": 0,
+      "maximum_tcp_position_error_mm": null,
+      "paint_layers": null
+    },
+    "warnings": [
+      "MOCK: fixture path, no RL inference, robot motion, collision or coating validation"
+    ],
+    "units": {
+      "position": "mm",
+      "speed": "mm/s",
+      "joints": "deg",
+      "rotation": "dimensionless 3x3"
+    },
+    "simulator_version": null,
+    "T_robot_base_workpiece": null
+  }
+}
