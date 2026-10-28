@@ -63,7 +63,7 @@ class Process(StrictModel):
 
 class Planning(StrictModel):
     method: Literal["sac","raster"] = "sac"
-    policy_id: Literal["sac_car_side_v1"] = "sac_car_side_v1"
+    policy_id: Identifier = "sac_car_side_v1"
     sample_step_mm: float = Field(default=40,ge=10,le=80)
 
 class Execution(StrictModel):

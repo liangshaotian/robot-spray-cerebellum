@@ -58,8 +58,8 @@
           "type": "string"
         },
         "policy_id": {
-          "const": "sac_car_side_v1",
           "default": "sac_car_side_v1",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$",
           "title": "Policy Id",
           "type": "string"
         },

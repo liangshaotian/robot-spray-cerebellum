@@ -1,0 +1,12 @@
+{
+  "algorithm": "SAC (Stable-Baselines3 2.4.1)",
+  "asset_id": "artec_e350_door_v2",
+  "policy_id": "sac_e350_door_v2",
+  "timesteps": 4000,
+  "gradient_updates": 3744,
+  "training_seconds": 24.17,
+  "actor_parameter_l2_change": 6.198277950286865,
+  "model_sha256": "0dd9f80353ef4dd8a3b12b4470f2457136e208c0e2fb3ea581d721234328b5ee",
+  "anchors": 147,
+  "scope": "Single-asset short training; no held-out generalization or production coating quality claim"
+}

@@ -58,9 +58,10 @@ def run_robodk(request,manifest,directory,region,context):
     r=None;robot=None
     try:
         r=_connect();context.check();r.Render(False)
-        name='Cerebellum | '+request.task_id
-        for old in r.getOpenStations():
-            if old.Name()==name:old.Delete()
+        presentation=manifest.get('presentation',{})
+        name=manifest.get('station_title','Cerebellum')+' | '+request.task_id
+        # Task IDs are unique. Do not enumerate or close unrelated stations:
+        # querying inactive station items in RoboDK 5.9 can change the context.
         station=r.AddStation(name);r.setActiveStation(station)
         robot=r.AddFile(str(robot_file),station)
         if not robot.Valid():raise TaskError('ROBOT_LOAD_FAILED','Official E12 model did not load')
@@ -83,6 +84,13 @@ def run_robodk(request,manifest,directory,region,context):
             vertices.extend([[22*math.cos(a),22*math.sin(a),40],[22*math.cos(b),22*math.sin(b),40],[4*math.cos(b),4*math.sin(b),200],
                              [22*math.cos(a),22*math.sin(a),40],[4*math.cos(b),4*math.sin(b),200],[4*math.cos(a),4*math.sin(a),200]])
         r.AddShape(Mat(vertices).tr(),tool);tool.Recolor([.05,.42,.7,1]);robot.setPoseTool(tool);robot.setPoseFrame(frame);robot.setRounding(0)
+        # Establish the view before preflight so a rejected path also leaves a
+        # usable scene, rather than the auto-zoom from loading robot geometry.
+        eye=np.array(presentation.get('camera_eye_mm',[-4500.,-2100.,1900.]),dtype=float)
+        target=np.array(presentation.get('camera_target_mm',[1600.,0.,700.]),dtype=float);z=eye-target;z/=np.linalg.norm(z)
+        x=np.cross([0.,0.,1.],z);x/=np.linalg.norm(x);y=np.cross(z,x);R=np.array([x,y,z]);camera=np.eye(4);camera[:3,:3]=R;camera[:3,3]=-R@eye
+        r.setViewPose(Mat(camera.tolist()))
+        frame.setVisible(False);tool.setVisible(True,False);robot.setVisible(True,False);robot.Parent().setVisible(False)
         r.Command('CollisionMap','None')
         for obstacle in (part,floor):
             for link in range(7):r.setCollisionActivePair(COLLISION_ON,robot,obstacle,link,0)
@@ -121,32 +129,53 @@ def run_robodk(request,manifest,directory,region,context):
             m['nozzle_xyz_robot_base_mm']=a[:3].tolist()
             m['rotation_matrix_robot_base']=(np.array(transform)[:3,:3]@np.array(m['rotation_matrix'])).tolist()
         context.trajectory(moves);context.artifact('validation.json',{'passed':True,'checks':checks,'sampling_mm':5,'sampling_deg':1})
+        # The complete static path is already checked. Coverage geometry is
+        # presentation data and must not trigger repeated live collision work.
+        r.setCollisionActive(COLLISION_OFF)
         paint_by_step={}
         if request.execution.mode=='simulate':
-            surface=np.load(directory/manifest['surface_file'],allow_pickle=False)
+            # NpzFile decompresses an array on every __getitem__. Load once,
+            # rather than decompressing full maps for every painted vertex.
+            with np.load(directory/manifest['surface_file'],allow_pickle=False) as stored:
+                surface={key:stored[key] for key in stored.files}
+            U,V=np.meshgrid(surface['u'],surface['v'])
+            normals=np.stack([-surface['du'],-surface['dv'],np.ones_like(U)],axis=-1)
+            normals/=np.linalg.norm(normals,axis=-1,keepdims=True)
+            points=np.stack([U,V,surface['h']],axis=-1)+float(presentation.get('paint_offset_mm',5.))*normals
+            coating_mask=surface.get('coverage_mask',surface['observed']).astype(bool)
+            drawable=surface['observed'].astype(bool)&coating_mask
             for layer in plan['paint_layers']:
-                vertices=[]
-                for iy,ix in layer['cells']:
-                    if iy+1>=len(surface['v']) or ix+1>=len(surface['u']) or not surface['observed'][iy:iy+2,ix:ix+2].all():continue
-                    corners=[]
-                    for dy,dx in ((0,0),(0,1),(1,1),(1,0)):
-                        i=iy+dy;j=ix+dx;n=np.array([-surface['du'][i,j],-surface['dv'][i,j],1.]);n/=np.linalg.norm(n)
-                        p=np.array([surface['u'][j],surface['v'][i],surface['h'][i,j]])+5*n
-                        corners.append(p.tolist())
-                    vertices.extend(corners[k] for k in (0,1,2,0,2,3))
-                if vertices:
-                    obj=r.AddShape(Mat(vertices).tr());obj.setParent(frame);obj.setName('Relative coverage '+str(layer['step']))
-                    obj.Recolor([.06,.52,.92,1]);obj.setVisible(False);paint_by_step[layer['step']]=obj
+                context.check()
+                cells=np.asarray(layer['cells'],dtype=int);iy,ix=cells.T
+                valid=(iy+1<len(surface['v']))&(ix+1<len(surface['u']));iy=iy[valid];ix=ix[valid]
+                valid=drawable[iy,ix]&drawable[iy,ix+1]&drawable[iy+1,ix]&drawable[iy+1,ix+1]
+                iy=iy[valid];ix=ix[valid]
+                if len(iy):
+                    yy=iy[:,None]+np.array([0,0,1,0,1,1]);xx=ix[:,None]+np.array([0,1,1,0,1,0])
+                    vertices=np.concatenate([points[yy,xx],normals[yy,xx]],axis=-1).reshape(-1,6)
+                    obj=r.AddShape(Mat(vertices.tolist()).tr());obj.setParent(frame);obj.setName('Relative coverage '+str(layer['step']))
+                    obj.Recolor([.035,.39,.80,1]);obj.setVisible(False);paint_by_step[layer['step']]=obj
+            np.savez_compressed(context.directory/'coating_samples.npz',u=surface['u'],v=surface['v'],
+                relative_dose=plan['relative_dose'],mask=plan['coating_mask'])
         groups={}
         for m in moves:
             if m['kind']=='entry' or m['spray_on']:groups.setdefault(m['segment'],[]).append(m['nozzle_xyz_mm'])
         curves=r.AddCurve([Mat(g).tr() for g in groups.values() if len(g)>1],0,False,PROJECTION_NONE)
         curves.setParent(frame);curves.setName('Task spray TCP path');curves.setColor([1,.83,.08,1])
-        robot.setJoints(moves[0]['joints_deg']);r.setSelection([]);frame.setVisible(False);tool.setVisible(True,False)
-        # View pose is a world->camera transform; no geometry is scaled.
-        eye=np.array([-4500.,-2100.,1900.]);target=np.array([1600.,0.,700.]);z=eye-target;z/=np.linalg.norm(z)
-        x=np.cross([0.,0.,1.],z);x/=np.linalg.norm(x);y=np.cross(z,x);R=np.array([x,y,z]);camera=np.eye(4);camera[:3,:3]=R;camera[:3,3]=-R@eye
-        r.setViewPose(Mat(camera.tolist()));r.Render(True)
+        fan=None
+        if presentation:
+            # Display-only spray envelope; it is neither collision geometry nor CFD.
+            vertices=[];distance=request.process.standoff_mm
+            for j in range(24):
+                a=2*math.pi*j/24;b=2*math.pi*(j+1)/24
+                vertices.extend([[0,0,200],[35*math.cos(a),request.process.spray_width_mm/2*math.sin(a),200+distance],
+                                 [35*math.cos(b),request.process.spray_width_mm/2*math.sin(b),200+distance]])
+            fan=r.AddShape(Mat(vertices).tr());fan.setParent(tool);fan.setName('Spray envelope - display only')
+            fan.Recolor([.1,.65,1.,.16]);fan.setVisible(False)
+        robot.setJoints(moves[0]['joints_deg']);r.setSelection([]);frame.setVisible(False);tool.setVisible(True,False);robot.setVisible(True,False)
+        robot.Parent().setVisible(False)
+        robot.Parent().setParam('Tree','Collapse');frame.setParam('Tree','Collapse')
+        r.setActiveStation(station);r.setViewPose(Mat(camera.tolist()));r.Render(True)
         if request.execution.show_window:r.setWindowState(WINDOWSTATE_MAXIMIZED)
         execution={'requested':request.execution.mode=='simulate','completed':False,'executed_in_simulator':False,'waypoints_executed':0}
         if request.execution.mode=='simulate':
@@ -154,6 +183,7 @@ def run_robodk(request,manifest,directory,region,context):
             max_error=0.
             for i,m in enumerate(moves):
                 context.check();robot.setSpeed(m['speed_mm_s'],60,600,120)
+                if fan is not None:fan.setVisible(m['spray_on'])
                 if m['motion']=='MoveJ':robot.MoveJ(m['joints_deg'],blocking=False)
                 else:robot.MoveL(pose(m),blocking=False)
                 while robot.Busy():context.check();time.sleep(.04)
@@ -163,12 +193,14 @@ def run_robodk(request,manifest,directory,region,context):
                 execution['waypoints_executed']=i+1
                 context.update('simulating',.5+.48*(i+1)/len(moves),'Simulating E12 motion')
             execution.update(completed=True,executed_in_simulator=True,maximum_tcp_position_error_mm=max_error,paint_layers=len(paint_by_step))
+            if fan is not None:fan.setVisible(False)
         result={'planner':plan['planner'],'validation':{'passed':True,'reachable':True,'collision_free':True,'executable':True,
             'sampling_mm':5,'sampling_deg':1,'scope':manifest['collision_scope'],'method':'Complete sampled MoveJ_Test/MoveL_Test validation'},
             'quality':plan['quality'],'execution':execution,'warnings':plan['warnings'],
             'waypoint_count':len(moves),'simulator_version':r.Version(),'T_robot_base_workpiece':transform}
         try:r.Command('Snapshot',str(context.directory/'preview.png'))
         except Exception:pass
+        r.setActiveStation(station)
         return result
     finally:
         if r:

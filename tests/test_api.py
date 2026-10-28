@@ -48,6 +48,10 @@ class APITests(unittest.TestCase):
             with self.subTest(code=code):
                 result=self.client.post('/v1/tasks',json={'task_id':'rejected',**change})
                 self.assertIn(result.status_code,(404,422));self.assertEqual(result.json()['error']['code'],code)
+    def test_sac_policy_must_match_the_registered_asset(self):
+        result=self.client.post('/v1/tasks',json={'task_id':'wrong-policy','planning':{'method':'sac','policy_id':'sac_other_asset_v1'},'execution':{'backend':'robodk'}})
+        self.assertEqual(result.status_code,422)
+        self.assertEqual(result.json()['error']['code'],'POLICY_ASSET_MISMATCH')
     def test_cancel_interrupts_mock_and_terminal_task_is_stable(self):
         body={'task_id':'cancel-me','process':{'passes':3},'execution':{'backend':'mock','mode':'simulate'}}
         self.client.post('/v1/tasks',json=body)

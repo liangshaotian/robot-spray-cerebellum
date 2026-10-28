@@ -64,4 +64,31 @@ class GeometryTests(unittest.TestCase):
             for a,b in zip(result['history'],result['history'][1:]):
                 if not b['start']:self.assertFalse(a['u']<0<b['u'] or b['u']<0<a['u'])
 
+    def test_smoothed_support_keeps_raw_scan_and_excludes_masked_coating(self):
+        import numpy as np
+        from spray_cerebellum.models import TaskRequest
+        from spray_cerebellum.planning import plan_surface
+        class Context:
+            def check(self):pass
+        u=np.arange(-200.,201.,10.);v=np.arange(500.,901.,10.);U,V=np.meshgrid(u,v)
+        raw=np.zeros_like(U);raw[:,20]=40.;support=np.zeros_like(U)
+        mask=np.ones_like(U,dtype=bool);coat=~((abs(U)<40)&(abs(V-700)<40))
+        region={'u_min_mm':-200.,'u_max_mm':200.,'v_min_mm':500.,'v_max_mm':900.}
+        with tempfile.TemporaryDirectory() as directory:
+            path=pathlib.Path(directory)/'surface.npz'
+            np.savez(path,u=u,v=v,h=raw,path_h=support,du=support,dv=support,
+                area=np.ones_like(U)*100,observed=mask,safe=mask,coverage_mask=coat)
+            task=TaskRequest.model_validate({'task_id':'smooth-mask','planning':{'method':'raster'}})
+            result=plan_surface(task,{'surface_file':'surface.npz'},path.parent,region,Context())
+            self.assertTrue(all(m['surface_xyz_mm'][2]==0 for m in result['moves']))
+            self.assertTrue(np.all(result['relative_dose'][~coat]==0))
+            self.assertGreater(float(result['relative_dose'][coat].max()),0)
+            with np.load(path) as original:self.assertEqual(float(original['h'].max()),40.)
+            tilted=plan_surface(task,{'surface_file':'surface.npz','spray_tilt_deg':-10.},path.parent,region,Context())
+            move=next(m for m in tilted['moves'] if m['spray_on'])
+            axis=np.array(move['spray_axis_normal']);p=np.array(move['surface_xyz_mm']);tcp=np.array(move['nozzle_xyz_mm'])
+            self.assertAlmostEqual(float(np.linalg.norm(tcp-p)),200.)
+            self.assertTrue(np.allclose(tcp-p,200*axis))
+            self.assertEqual(move['surface_normal'],[0.,0.,1.])
+
 if __name__=='__main__':unittest.main()

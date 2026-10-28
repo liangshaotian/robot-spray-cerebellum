@@ -1,0 +1,22 @@
+{
+  "clean_source_import_verified": true,
+  "tests_run": 16,
+  "tests_passed": true,
+  "asset_id": "artec_e350_door_v2",
+  "policy_id": "sac_e350_door_v2",
+  "waypoints": 159,
+  "quality": {
+    "coverage_fraction": 0.9983731376763315,
+    "relative_dose_mean": 2.457054211658669,
+    "relative_dose_cv": 0.22616254660839574,
+    "estimated_spray_seconds": 12.019332019524878,
+    "evaluated_area_mm2": 583363.8514240033,
+    "model": "geometric_relative_gaussian",
+    "physical_thickness_um": null,
+    "scope": "Requested reliable observed heightfield cells only"
+  },
+  "mesh_exists": true,
+  "software_version": "0.2.0",
+  "contract_export_matches": true,
+  "scope": "Clean exported code/data snapshot, tests and real SAC inference. RoboDK execution is recorded separately in precise_demo_execution.json."
+}

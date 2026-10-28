@@ -1,0 +1,64 @@
+{
+  "asset_id": "artec_e350_door_v2",
+  "source_page": "https://www.artec3d.com/3d-models/car-body",
+  "attribution": "Car body by Artec 3D",
+  "license": "https://creativecommons.org/licenses/by/3.0/",
+  "source_kind": "Real full-size vehicle scan reconstructed mesh; planning samples are derived from this mesh, not raw sensor point records",
+  "source_to_workpiece_transform": [
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      642.3978271484375
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "units": "mm",
+  "unit_basis": "Source file extents are approximately 4880 x 1997 x 1285; no geometric rescaling applied",
+  "vertices": 1056181,
+  "triangles": 2110072,
+  "dimensions_length_height_width_mm": [
+    4880.5078125,
+    1284.80615234375,
+    1996.8944091796875
+  ],
+  "bounds_mm": [
+    [
+      -2440.2529296875,
+      0.0,
+      -998.4636840820312
+    ],
+    [
+      2440.2548828125,
+      1284.80615234375,
+      998.4307250976562
+    ]
+  ],
+  "selection": "Manually selected front-door body panel; windows, seams and handle excluded from coating evaluation",
+  "original_scan_unchanged": true,
+  "planning_normal_smoothing_mm": 25.0,
+  "license_basis": "license.txt included in the original Artec PLY archive",
+  "spray_tilt_deg": -10.0,
+  "modifications": [
+    "Rigid source-to-workpiece transform only; original vertex/triangle topology retained",
+    "Added smooth vertex normals for shading",
+    "Derived 5 mm panel surface, smoothed planning support and manual door/handle masks"
+  ]
+}

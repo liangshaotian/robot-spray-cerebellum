@@ -18,6 +18,13 @@ def atomic_json(path,value):
 
 def read_json(path):return json.loads(pathlib.Path(path).read_text(encoding="utf-8"))
 
+def filter_policy_action(action, previous, settings):
+    """Causal slew limit shared by SAC training and trajectory inference."""
+    if not settings:return [float(v) for v in action]
+    alpha=float(settings.get('alpha',.25));limit=float(settings.get('max_delta',.12))
+    return [max(-1.,min(1.,float(p)+max(-limit,min(limit,alpha*(float(a)-float(p))))))
+            for a,p in zip(action,previous)]
+
 def orientation(normal):
     z=[-float(v) for v in normal];length=math.sqrt(sum(v*v for v in z));z=[v/length for v in z]
     tangent=[1.,0.,0.] if abs(z[0])<.9 else [0.,1.,0.]
@@ -29,12 +36,13 @@ def orientation(normal):
 def make_moves(history,request):
     moves=[];spray=request.process.standoff_mm;transfer=spray+100
     def push(h,d,on,kind,motion="MoveL"):
-        p=h["surface_xyz_mm"];n=h["surface_normal"]
+        p=h["surface_xyz_mm"];n=h.get('spray_axis_normal',h["surface_normal"])
         moves.append({"id":len(moves),"source_policy_step":h["step"],"segment":h["segment"],
-            "spray_on":on,"motion":motion,"kind":kind,"surface_xyz_mm":p,"surface_normal":n,
+            "spray_on":on,"motion":motion,"kind":kind,"surface_xyz_mm":p,"surface_normal":h["surface_normal"],
             "nozzle_xyz_mm":[float(a+d*b) for a,b in zip(p,n)],"rotation_matrix":orientation(n),
             "speed_mm_s":float(h["speed_mm_s"] if on else 160),"standoff_mm":float(d),
             "coordinate_frame":"workpiece","rounding_mm":0.})
+        if 'spray_axis_normal' in h:moves[-1]['spray_axis_normal']=n
     last=None
     for h in history:
         if h["start"]:

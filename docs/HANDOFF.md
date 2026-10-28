@@ -1,5 +1,7 @@
 # 大脑—小脑接口接入指南
 
+首次接入可从 [接入入口](START_HERE.md) 开始。精细演示使用 `artec_e350_door_v2` 和 `sac_e350_door_v2`；运行 `python tools/setup_precise_demo.py` 注册仓库自带数据后，使用 `examples/task_precise_door.json`。旧资产与旧输入样例继续保留，HTTP 协议版本仍为 1.0。
+
 ## 1. 模块职责
 
 大脑负责把蒸馏出的 skill 转成结构化任务，包括“哪个工件、哪个区域、怎样喷”。小脑不解释任意自然语言，也不执行上传的脚本；它接收 `spray_surface.v1`，负责轨迹、运动验证和仿真反馈。

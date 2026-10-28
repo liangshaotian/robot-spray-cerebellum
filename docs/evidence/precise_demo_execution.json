@@ -1,0 +1,84 @@
+{
+  "planner": "sac",
+  "validation": {
+    "passed": true,
+    "reachable": true,
+    "collision_free": true,
+    "executable": true,
+    "sampling_mm": 5,
+    "sampling_deg": 1,
+    "scope": "Original 2110072-triangle full car scan mesh plus E12 self-collision, nozzle and floor",
+    "method": "Complete sampled MoveJ_Test/MoveL_Test validation"
+  },
+  "quality": {
+    "coverage_fraction": 0.9983731376763315,
+    "relative_dose_mean": 2.457054211658669,
+    "relative_dose_cv": 0.22616254660839574,
+    "estimated_spray_seconds": 12.019332019524878,
+    "evaluated_area_mm2": 583363.8514240033,
+    "model": "geometric_relative_gaussian",
+    "physical_thickness_um": null,
+    "scope": "Requested reliable observed heightfield cells only"
+  },
+  "execution": {
+    "requested": true,
+    "completed": true,
+    "executed_in_simulator": true,
+    "waypoints_executed": 159,
+    "maximum_tcp_position_error_mm": 1.465352233999902e-11,
+    "paint_layers": 133
+  },
+  "warnings": [
+    "Relative coating model is uncalibrated; pressure and true film thickness are not simulated",
+    "Registered asset uses a -10.0 degree tangential spray-axis tilt; standoff is measured along the spray axis"
+  ],
+  "waypoint_count": 159,
+  "simulator_version": "5.9.0.25042",
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2100.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "schema_version": "1.0",
+  "task_id": "scan-demo-6c4cdcb7ecb3",
+  "backend": "robodk",
+  "mode": "simulate",
+  "simulation_only": true,
+  "robot_id": "huayan_e12",
+  "asset_id": "artec_e350_door_v2",
+  "region_uv_mm": {
+    "u_min_mm": -900.0,
+    "u_max_mm": 120.0,
+    "v_min_mm": 125.0,
+    "v_max_mm": 720.0
+  },
+  "units": {
+    "position": "mm",
+    "speed": "mm/s",
+    "joints": "deg",
+    "rotation": "dimensionless 3x3"
+  },
+  "trajectory_url": "/v1/tasks/scan-demo-6c4cdcb7ecb3/trajectory",
+  "runtime_s": 51.859
+}

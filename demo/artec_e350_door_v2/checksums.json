@@ -1,0 +1,17 @@
+{
+  "files": {
+    "car_body_highres_smooth.ply.gz": "a3e8119b25a523793d578e347d397be36561e11c57ef15180503b29ca5102eaa",
+    "LICENSE.source.txt": "ed2bc82a792823ba8579dc9748839d0202c5544ff0b926d102b6dfa80c7b883e",
+    "manifest.json": "633a2d8e410996a32fd03341e4541e750a6a157d3ad279004213277a9da03184",
+    "sac_e350_door_v2.zip": "0dd9f80353ef4dd8a3b12b4470f2457136e208c0e2fb3ea581d721234328b5ee",
+    "source_metadata.json": "7b5da7d6ee96a4a78bc39019a83c6ec6789a73a13cf50c59fb5577c8b35f40d8",
+    "surface.npz": "f3edae8bda63b8e8c4c6f058c2a3772d6677c7e15bc0e35b1b73002b20536041",
+    "training_report.json": "ec80c65d6da4b562ebb4e09d6f93a391b738680393902ffd6035a8c06ebcb347",
+    "README.md": "ec118a107655dc9e49f2ea068746b70c34ab9bc6f4c6cf479b3b2610ecd00834"
+  },
+  "expanded_mesh": {
+    "filename": "car_body_highres_smooth.ply",
+    "sha256": "4edc5d0102f5ca8eebab969005fe243748a2a6f7a076cff80010eff362c1a6be",
+    "bytes": 52779557
+  }
+}

@@ -22,7 +22,7 @@
 | process.overlap_ratio | 0–0.9；行距 = 喷幅 × (1−搭接率)，至少 10 mm |
 | process.passes | 1–3，重复生成对应遍数的喷涂行，覆盖剂量累计 |
 | planning.method | `sac` 或 `raster`；新上传资产没有匹配 SAC 时必须先用 raster |
-| planning.policy_id | 当前 `sac_car_side_v1`；该策略只对 demo 资产注册 |
+| planning.policy_id | 资产注册的策略标识；内置资产为 `sac_car_side_v1`，其他资产仅接受各自匹配的策略 |
 | planning.sample_step_mm | 10–80，沿喷涂行离散间距；任务最多 3000 个表面采样点 |
 | execution.backend | `mock` 或 `robodk`；默认 mock |
 | execution.mode | `plan_only` 或 `simulate`；默认 plan_only |
@@ -31,7 +31,7 @@
 | execution.timeout_s | 5–900，从任务出队开始计时；阻塞 SDK 调用返回后检查超时 |
 | context | 至多 16 个字符串键值，记录 skill 版本/关联 ID；仅用于追踪 |
 
-气压、流量、真实膜厚、任意 Python 命令等字段不在协议中，提交时返回 `INVALID_REQUEST`。当前姿态按局部表面法向生成，TCP 的 +Z 指向工件，未开放任意喷射倾角字段。
+气压、流量、真实膜厚、任意 Python 命令等字段不在协议中，提交时返回 `INVALID_REQUEST`。姿态默认按局部表面法向生成，TCP 的 +Z 指向工件，未开放调用方任意设置喷射倾角的字段。可信资产可注册固定切向倾角来避开机器人奇异位置；结果 warnings 明确记录该倾角，喷距沿喷射轴计算。
 
 ## 坐标与输出轨迹
 
@@ -43,7 +43,8 @@
 |---|---|
 | nozzle_xyz_mm | 工件坐标系中的 TCP 出口位置 |
 | rotation_matrix | 工件坐标系中的 3×3 工具朝向，各列为 TCP 的 X/Y/Z 轴 |
-| surface_xyz_mm / surface_normal | 对应实测表面位置及朝外单位法向 |
+| surface_xyz_mm / surface_normal | 对应的规划支持曲面位置及朝外单位法向；资产可能使用经平滑的实测曲面，原始扫描网格仍用于碰撞检查 |
+| spray_axis_normal | 可选，采用固定倾角时从表面指向喷嘴的单位向量；工具 +Z 指向其反方向，不覆盖 surface_normal |
 | speed_mm_s | 该运动段实际下发的速度 |
 | spray_on | 到该端点的运动是否喷涂；接近、换行和撤离为 false |
 | motion | `MoveJ` 或 `MoveL` |
@@ -52,6 +53,8 @@
 | source_policy_step / segment | 对应上游规划步和连续喷涂行 |
 
 真实执行前，全部目标先求逆解、检查关节范围及线性段分支连续性，并对完整路径做 5 mm / 1° 采样运动及碰撞检查。碰撞范围见结果的 `validation.scope`；新上传资产只包含观测曲面，未知实体体积不被自动补全。
+
+静态场景完成全路径校验后，展示阶段关闭重复实时碰撞计算，逐段执行已校验轨迹并检查 TCP 跟随误差。可视化覆盖层不参与碰撞验证。
 
 ## 结果与状态
 

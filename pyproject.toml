@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "spray-cerebellum"
-version = "0.1.0"
+version = "0.2.0"
 description = "Versioned brain-to-cerebellum spray task API and RoboDK simulation adapter"
 requires-python = ">=3.10,<3.13"
 dependencies = ["fastapi==0.115.6", "pydantic==2.10.6", "uvicorn==0.34.0", "python-multipart==0.0.20"]
 
 [project.optional-dependencies]
 geometry = ["numpy==1.26.4", "scipy==1.13.1", "trimesh==4.6.1"]
+demo = ["matplotlib==3.9.4"]
 rl = ["stable-baselines3==2.4.1", "torch>=2.3,<2.6"]
 robodk = ["robodk==5.9.4", "numpy==1.26.4", "scipy==1.13.1", "trimesh==4.6.1"]
 test = ["httpx==0.28.1"]

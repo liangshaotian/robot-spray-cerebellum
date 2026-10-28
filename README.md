@@ -4,6 +4,25 @@
 
 本仓库提供 **v1 JSON/HTTP 接口、Python 客户端、OpenAPI/JSON Schema、点云导入、SAC/规则规划、RoboDK 适配和可复现测试**。默认是联调模式；真实仿真要显式选择 `backend: robodk`。目前不包含实体机械臂通信驱动。
 
+**接入入口：[大脑模块接入说明](docs/START_HERE.md)。** 软件版本为 0.2.0，HTTP/JSON 协议仍为 v1。
+
+## 精细车门演示
+
+仓库包含 Artec 3D 奔驰 E350 实车扫描的完整精细网格、5 mm 派生曲面、前车门选区及已短训的 SAC 策略。模型保留原始约 4.88 m 车长、1,056,181 个顶点和 2,110,072 个三角面。喷涂机器人为项目要求的华沿 E12。
+
+![E12 精细车门喷涂](docs/precise_demo_preview.png)
+
+在 Python 3.11 环境中，克隆仓库并运行：
+
+```bash
+python -m pip install -e ".[test,geometry,rl,robodk,demo]"
+python tools/setup_precise_demo.py
+python tools/fetch_robot.py
+python tools/replay_demo.py --asset-id artec_e350_door_v2
+```
+
+Windows 安装依赖后可双击 `Run_Precise_Demo.bat`。`Show_Demo.bat` 只切回已运行完成的场景。软件可通过 `ROBODK_EXE` 指定实际 RoboDK 路径；首次运行无需重新训练或访问模型网站。详细步骤、算法来源及边界见 [精细演示复现说明](docs/PRECISE_DEMO.md)。
+
 ## 快速开始
 
 使用 Python 3.11，在仓库根目录运行：
@@ -76,7 +95,9 @@ flowchart LR
 
 ## 演示资产与验证
 
-演示资产来自 Real3D-AD 实物扫描小车，映射到约 4500 × 1800 × 1500 mm 的演示尺寸，固定 E12 喷涂车门附近约 1000 × 500 mm。尺寸是演示设定，并非生产整车的实测数据。SAC 已实际短训 4,000 步，推理不再训练。蓝色是未标定的几何相对覆盖，不能换算为真实微米膜厚。
+精细演示 `artec_e350_door_v2` 使用原尺寸 Artec 实车扫描，手动选定约 0.58 m² 的前车门钣金区域；SAC 已短训 4,000 步，159 段运动通过 E12 采样运动及碰撞验证。蓝色是未标定的几何相对覆盖，不能换算为真实微米膜厚。
+
+旧演示 `demo_car_4500` 保留用于接口兼容性验证：它来自 Real3D-AD 实物扫描小车，映射到约 4500 × 1800 × 1500 mm，固定 E12 喷涂车门附近约 1000 × 500 mm。这组尺寸是演示设定，并非生产整车实测数据。旧资产默认保持可用；精细资产通过 `setup_precise_demo.py` 注册。
 
 ![实车比例场景](docs/demo_preview.png)
 
