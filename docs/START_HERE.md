@@ -52,7 +52,7 @@ python examples/brain_client.py --task examples/task_precise_door.json
 - [OpenAPI](../contracts/openapi.json) / [任务输入 Schema](../contracts/task_request.schema.json)：机器可读定义。
 - [精细任务样例](../examples/task_precise_door.json) / [大脑客户端](../examples/brain_client.py)。
 
-跨电脑调用需要使用运行小脑服务的电脑地址，并配置共享 token；GitHub 链接本身不是运行中的服务地址。仓库为私有项目，接收者需要 GitHub 仓库访问权限。
+跨电脑调用需要使用运行小脑服务的电脑地址，并配置共享 token；GitHub 链接本身不是运行中的服务地址。仓库已公开，接收者可直接阅读和克隆；直接写入仓库仍需要协作者权限。
 
 ## 验证范围
 
