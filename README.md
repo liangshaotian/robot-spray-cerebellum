@@ -1,10 +1,10 @@
-# 喷涂小脑接口：学长今天联调入口
+# 喷涂机器人小脑接口
 
-大脑由学长负责：喷漆工喷涂 skill 的蒸馏、任务组织和指令下发。小脑由梁少天负责：承接结构化指令，规划喷涂轨迹、验证 E12 可执行性、运行仿真并回传状态和结果。
+大脑模块负责喷涂 skill 蒸馏、任务组织和指令下发。小脑模块负责承接结构化指令、规划喷涂轨迹、验证 E12 可执行性、运行仿真并回传状态和结果。
 
 本仓库提供 **v1 JSON/HTTP 接口、Python 客户端、OpenAPI/JSON Schema、点云导入、SAC/规则规划、RoboDK 适配和可复现测试**。默认是联调模式；真实仿真要显式选择 `backend: robodk`。目前不包含实体机械臂通信驱动。
 
-## 今天先做这三步
+## 快速开始
 
 使用 Python 3.11，在仓库根目录运行：
 
@@ -27,7 +27,7 @@ python examples/brain_client.py --task examples/task_mock.json
 
 **大脑只需要做：生成任务 JSON → POST `/v1/tasks` → 轮询状态 → 获取轨迹／结果。** 新任务使用新的 `task_id`；同 ID 同内容是幂等重试，不会重复执行。
 
-学长直接看 [今天的联调步骤](docs/HANDOFF_TODAY.md)、[接口契约](docs/API_CONTRACT.md)、[输入样例](examples/task_mock.json) 和 [Python 客户端](src/spray_cerebellum/client.py)。
+接入方可参考 [接入指南](docs/HANDOFF.md)、[接口契约](docs/API_CONTRACT.md)、[输入样例](examples/task_mock.json) 和 [Python 客户端](src/spray_cerebellum/client.py)。
 
 ## 接真实 RoboDK 仿真
 
@@ -72,7 +72,7 @@ flowchart LR
 - 输出包含版本、任务状态、可执行性检查、每段 TCP 位姿/速度/开关、E12 关节角、坐标系及相对覆盖评价。
 - 机器人适配目前实现华沿 E12（官方旧品牌模型 Han's E12）。协议按 `model_id` 注册机器人，其他型号会明确拒绝。
 - 新点云可通过 `/v1/assets/upload` 导入，支持 PLY、ASCII/binary PCD、XYZ、数字 CSV；不支持 PCD binary_compressed。调用方必须明确指定点云到工件坐标系的变换。
-- 几何后端支持已对齐的可见单值高度曲面 `h(u,v)`，保留未知区域掩膜；不承诺任意整件分割、内腔、遮挡或多值曲面。新点云先用 `raster`；现有 SAC 只对演示资产注册，不伪装成跨零件已验证的策略。
+- 几何后端支持已对齐的可见单值高度曲面 `h(u,v)`，保留未知区域掩膜；任意整件分割、内腔、遮挡和多值曲面处理未包含在 v1 范围内。新点云使用 `raster`；SAC 模型仅对演示资产注册，跨零件泛化能力尚未验证。
 
 ## 演示资产与验证
 
