@@ -82,7 +82,9 @@ def main():
             show_completed_scene(asset,previous['task_id'])
             return
     task={'schema_version':'1.0','task_id':'scan-demo-'+uuid.uuid4().hex[:12],
-        'target':{'asset_id':args.asset_id,'units':'mm'},'planning':{'method':'sac','policy_id':asset['policy_id']},
+        'target':{'asset_id':args.asset_id,'units':'mm'},
+        'process':asset.get('recommended_process',{}),
+        'planning':{'method':'sac','policy_id':asset['policy_id'],'sample_step_mm':asset.get('recommended_sample_step_mm',40.)},
         'execution':{'backend':'robodk','mode':'simulate','show_window':True,'simulation_speed':5,'timeout_s':300},
         'context':{'source':asset.get('source','prepared scan asset')}}
     client.submit(task);previous_path.write_text(json.dumps({'task_id':task['task_id']}))

@@ -1,0 +1,98 @@
+{
+  "asset_id": "real3d_chicken",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -490.0,
+    "u_max_mm": 490.0,
+    "v_min_mm": 270.0,
+    "v_max_mm": 980.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2148.2436550363727
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+  "source_metadata": {
+    "category": "chicken",
+    "split": "train",
+    "archive_member": "Real3D-AD-PCD/chicken/train/1_template.pcd",
+    "file": "chicken_1_template.pcd",
+    "bytes": 2610786,
+    "sha256": "10098689ded2896c10d30572d7ed8b2e3b55923304ec2aef0d7d212f2330ecb2",
+    "dataset": "Real3D-AD",
+    "description": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+    "source_point_count": 217551,
+    "uniform_research_scale_factor": 41.17338529011003,
+    "source_center": [
+      108.2870864868164,
+      -4.204351902008057,
+      207.4230194091797
+    ],
+    "pca_axes": [
+      [
+        -0.8917188109505575,
+        -0.41868913708267724,
+        0.17186322668298448
+      ],
+      [
+        -0.45091400178173413,
+        0.7892233407174329,
+        -0.41689696744399285
+      ],
+      [
+        0.038911761642287816,
+        -0.44925040340079625,
+        -0.8925580932634668
+      ]
+    ],
+    "note": "Small physical objects uniformly enlarged for a geometric transfer test; not production-size automotive panels. Unknown cells remain excluded."
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | real3d_chicken",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

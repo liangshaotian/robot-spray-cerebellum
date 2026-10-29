@@ -21,6 +21,9 @@ def mock_plan(request,manifest,region,context):
       'planner':'mock_fixture','warnings':['MOCK: fixture path, no RL inference, robot motion, collision or coating validation']}
 
 def plan_surface(request,manifest,directory,region,context):
+    if request.planning.method=='sac' and manifest.get('policy_observation_version')=='spray_v2_70':
+        from .generalized import plan_generalized
+        return plan_generalized(request,manifest,directory,region,context)
     try:
         import numpy as np
         from scipy.ndimage import map_coordinates

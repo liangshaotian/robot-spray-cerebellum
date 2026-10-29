@@ -1,0 +1,98 @@
+{
+  "asset_id": "real3d_toffees",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -490.0,
+    "u_max_mm": 490.0,
+    "v_min_mm": 360.0,
+    "v_max_mm": 940.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2015.5421868343751
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+  "source_metadata": {
+    "category": "toffees",
+    "split": "test",
+    "archive_member": "Real3D-AD-PCD/toffees/train/216_template.pcd",
+    "file": "toffees_216_template.pcd",
+    "bytes": 4074570,
+    "sha256": "54a331fc21ed2e5172c89bda01f839792693176ea0185e9492b78d580670402e",
+    "dataset": "Real3D-AD",
+    "description": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+    "source_point_count": 339533,
+    "uniform_research_scale_factor": 30.652681676308877,
+    "source_center": [
+      106.48417663574219,
+      -2.5778205394744873,
+      222.86024475097656
+    ],
+    "pca_axes": [
+      [
+        -0.5052862206688846,
+        0.857388004484538,
+        0.09783478404011947
+      ],
+      [
+        0.7874757952342103,
+        0.504488199482672,
+        -0.3540812456244745
+      ],
+      [
+        -0.3529415066585436,
+        -0.10186985004776142,
+        -0.9300832363443842
+      ]
+    ],
+    "note": "Small physical objects uniformly enlarged for a geometric transfer test; not production-size automotive panels. Unknown cells remain excluded."
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | real3d_toffees",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

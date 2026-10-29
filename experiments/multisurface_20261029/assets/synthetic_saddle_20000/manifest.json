@@ -1,0 +1,71 @@
+{
+  "asset_id": "synthetic_saddle_20000",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -430.0,
+    "u_max_mm": 430.0,
+    "v_min_mm": 370.0,
+    "v_max_mm": 930.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      1950.7642313784913
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Procedural smooth panel: saddle",
+  "source_metadata": {
+    "description": "Procedural smooth panel: saddle",
+    "family": "saddle",
+    "seed": 20000,
+    "split": "test",
+    "synthetic": true,
+    "note": "Synthetic geometry and scan-like noise; not a measured point cloud"
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | synthetic_saddle_20000",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

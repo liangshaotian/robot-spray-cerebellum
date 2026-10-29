@@ -1,3 +1,4 @@
 # Bundled scientific assets are verified byte for byte on every platform.
 demo/artec_e350_door_v2/* -text
+experiments/multisurface_20261029/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 *.bat text eol=crlf

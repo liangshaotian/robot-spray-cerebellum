@@ -3,7 +3,7 @@
   "info": {
     "title": "Spray Cerebellum API",
     "description": "Versioned brain -> cerebellum tasks. Mock protocol integration or validated RoboDK simulation. No hardware execution.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "paths": {
     "/healthz": {

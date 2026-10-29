@@ -1,0 +1,98 @@
+{
+  "asset_id": "real3d_duck",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -420.0,
+    "u_max_mm": 440.0,
+    "v_min_mm": 270.0,
+    "v_max_mm": 1040.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2206.205916109379
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+  "source_metadata": {
+    "category": "duck",
+    "split": "train",
+    "archive_member": "Real3D-AD-PCD/duck/train/514_template.pcd",
+    "file": "duck_514_template.pcd",
+    "bytes": 6541986,
+    "sha256": "f0353752dfbe79e66aa53a080fba3158f1ca82e9bdc521107f5e55e6573ff425",
+    "dataset": "Real3D-AD",
+    "description": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+    "source_point_count": 545151,
+    "uniform_research_scale_factor": 33.03406468310532,
+    "source_center": [
+      100.8028793334961,
+      -15.571456909179688,
+      213.02456665039062
+    ],
+    "pca_axes": [
+      [
+        -0.9053578094620935,
+        -0.3607580784548748,
+        -0.22401081597893072
+      ],
+      [
+        -0.31598076137269104,
+        0.2198954519148525,
+        0.9229312805780814
+      ],
+      [
+        -0.28369595571374373,
+        0.9063661506569565,
+        -0.3130766769578283
+      ]
+    ],
+    "note": "Small physical objects uniformly enlarged for a geometric transfer test; not production-size automotive panels. Unknown cells remain excluded."
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | real3d_duck",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

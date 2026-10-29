@@ -3,11 +3,11 @@ setlocal
 cd /d "%~dp0"
 set "DEMO_PYTHON=python"
 if exist ".venv\Scripts\python.exe" set "DEMO_PYTHON=.venv\Scripts\python.exe"
-"%DEMO_PYTHON%" tools\setup_precise_demo.py
+"%DEMO_PYTHON%" tools\setup_multisurface_demo.py --cases e350
 if errorlevel 1 goto failed
 "%DEMO_PYTHON%" tools\fetch_robot.py
 if errorlevel 1 goto failed
-"%DEMO_PYTHON%" tools\replay_demo.py --asset-id artec_e350_door_v2
+"%DEMO_PYTHON%" tools\replay_demo.py --asset-id sacgen_e350_v2
 if errorlevel 1 goto failed
 exit /b 0
 :failed

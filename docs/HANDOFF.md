@@ -1,6 +1,6 @@
 # 大脑—小脑接口接入指南
 
-首次接入可从 [接入入口](START_HERE.md) 开始。精细演示使用 `artec_e350_door_v2` 和 `sac_e350_door_v2`；运行 `python tools/setup_precise_demo.py` 注册仓库自带数据后，使用 `examples/task_precise_door.json`。旧资产与旧输入样例继续保留，HTTP 协议版本仍为 1.0。
+首次接入从[接入入口](START_HERE.md)开始。当前模型`sac_multisurface_gpu_v2`通过`python tools/setup_multisurface_demo.py`注册；车门`sacgen_e350_v2`对应`examples/task_precise_door.json`，未见鞍形`sacgen_saddle_v2`对应`examples/task_unseen_saddle.json`。HTTP协议保持1.0，新权重通过70维观测版本分流；更新代码后应由使用者重启旧服务。
 
 ## 1. 模块职责
 
@@ -56,7 +56,7 @@ mock 的 `validation.executable` 为 false，碰撞/可达性为 null；只有�
 
 通过 GET `/v1/assets` 查看可用资产。内置演示使用 `demo_car_4500`。导入其他点云时，调用上传接口，明确单位、输入到工件坐标变换、工件到机器人底座变换及待喷区域，成功后获得新的 `asset_id`。样例见 `examples/upload_cloud.py`。
 
-新资产使用 `planning.method: raster`；演示 SAC 的验证范围限于演示资产。其他资产的 SAC 接入需要增加匹配策略与注册配置，任务提交、状态查询和结果获取沿用同一协议。
+任意新上传资产仍使用`planning.method: raster`；多曲面SAC已在明确划分的10种未见几何上测试，但没有获得任意工件执行保证。新资产接入SAC仍需显式绑定策略和70维观测配置、检查工况与坐标系，并通过E12预检。任务提交、查询与结果沿用同一协议。
 
 仓库还提供 `generated_curved_panel.xyz` 和 `generated_panel_metadata.json`，专门用于演示新点云导入；它是明确标注的解析曲面测试件，不是真实扫描数据。安装 geometry extra 后运行：
 

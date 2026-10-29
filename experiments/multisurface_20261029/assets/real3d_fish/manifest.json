@@ -1,0 +1,98 @@
+{
+  "asset_id": "real3d_fish",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -490.0,
+    "u_max_mm": 490.0,
+    "v_min_mm": 240.0,
+    "v_max_mm": 1060.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      1996.266743690918
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+  "source_metadata": {
+    "category": "fish",
+    "split": "validation",
+    "archive_member": "Real3D-AD-PCD/fish/train/176_template.pcd",
+    "file": "fish_176_template.pcd",
+    "bytes": 2761746,
+    "sha256": "8a7d665ac484afa979ef03db456277ebf1c146517c2fa44dcf043c1712d6fefc",
+    "dataset": "Real3D-AD",
+    "description": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+    "source_point_count": 230131,
+    "uniform_research_scale_factor": 35.50932775607381,
+    "source_center": [
+      106.6768569946289,
+      -5.495874881744385,
+      226.33631896972656
+    ],
+    "pca_axes": [
+      [
+        -0.7808152979152794,
+        0.6232275735087558,
+        0.043759138015523835
+      ],
+      [
+        0.5741871496008345,
+        0.7434517665828433,
+        -0.3429119245493195
+      ],
+      [
+        -0.24624497512587357,
+        -0.24262494179955557,
+        -0.9383477765956606
+      ]
+    ],
+    "note": "Small physical objects uniformly enlarged for a geometric transfer test; not production-size automotive panels. Unknown cells remain excluded."
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | real3d_fish",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

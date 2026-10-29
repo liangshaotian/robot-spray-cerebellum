@@ -1,0 +1,98 @@
+{
+  "asset_id": "real3d_car",
+  "kind": "observed_heightfield",
+  "units": "mm",
+  "surface_file": "surface.npz",
+  "mesh_file": "surface.stl",
+  "allowed_roi": {
+    "u_min_mm": -490.0,
+    "u_max_mm": 450.0,
+    "v_min_mm": 470.0,
+    "v_max_mm": 840.0
+  },
+  "policy_id": null,
+  "policy_file": null,
+  "policy_observation_version": "spray_v2_70",
+  "policy_action_filter": {
+    "alpha": 0.22,
+    "max_delta": 0.1
+  },
+  "spray_tilt_deg": -10.0,
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2079.7398278709816
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+  "source_metadata": {
+    "category": "car",
+    "split": "train",
+    "archive_member": "Real3D-AD-PCD/car/train/153_template.pcd",
+    "file": "car_153_template.pcd",
+    "bytes": 15555596,
+    "sha256": "242207171941cd8d16f08a67fc972d41905d4c7f3ea697c15de8ed2066011301",
+    "dataset": "Real3D-AD",
+    "description": "Public real optical scan; PCA-nominated visible upper-envelope patch",
+    "source_point_count": 1296285,
+    "uniform_research_scale_factor": 28.40675154157251,
+    "source_center": [
+      100.01770782470703,
+      -18.658077239990234,
+      280.3293762207031
+    ],
+    "pca_axes": [
+      [
+        -0.9596664709539146,
+        0.2691599091971713,
+        0.08119857023267063
+      ],
+      [
+        0.1834328757392451,
+        0.8183322761603029,
+        -0.5446876773824877
+      ],
+      [
+        -0.21305549658455192,
+        -0.5078240138820427,
+        -0.8346988237081933
+      ]
+    ],
+    "note": "Small physical objects uniformly enlarged for a geometric transfer test; not production-size automotive panels. Unknown cells remain excluded."
+  },
+  "collision_scope": "Only the nominated visible surface patch, E12 links/nozzle and floor; unknown volume is not modeled",
+  "station_title": "E12 | Generalized SAC | real3d_car",
+  "presentation": {
+    "paint_offset_mm": 1.5,
+    "camera_eye_mm": [
+      -3200.0,
+      -1800.0,
+      1800.0
+    ],
+    "camera_target_mm": [
+      1000.0,
+      0.0,
+      650.0
+    ]
+  }
+}

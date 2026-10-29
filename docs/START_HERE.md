@@ -1,6 +1,6 @@
 # 大脑模块接入入口
 
-本仓库是喷涂机器人的小脑模块。大脑负责喷涂 skill 蒸馏、任务选择和指令下发；小脑接收结构化任务，生成末端轨迹，进行华沿 E12 运动验证，并返回仿真结果。软件版本为 0.2.0，接口版本为 1.0。
+本仓库是喷涂机器人的小脑模块。大脑负责喷涂 skill 蒸馏、任务选择和指令下发；小脑接收结构化任务，生成末端轨迹，进行华沿 E12 运动验证，并返回仿真结果。软件版本为 0.3.0，接口版本为 1.0。
 
 ## 先完成接口联调
 
@@ -24,7 +24,7 @@ python examples/brain_client.py --task examples/task_mock.json
 | 输入 | 含义 |
 |---|---|
 | task_id | 唯一任务编号；网络重试沿用，重新执行或改参数时更换 |
-| target.asset_id | 已注册工件；精细演示为 artec_e350_door_v2 |
+| target.asset_id | 已注册工件；新车门为 sacgen_e350_v2；未见鞍形为 sacgen_saddle_v2 |
 | target.region_uv_mm | 可选，工件局部坐标系中的待喷区域，单位 mm |
 | process | 喷距、名义速度、喷幅、搭接率、遍数 |
 | planning | sac 或 raster；SAC 策略必须与工件匹配 |
@@ -37,13 +37,13 @@ python examples/brain_client.py --task examples/task_mock.json
 
 ## 运行精细演示
 
-完成 [精细演示复现说明](PRECISE_DEMO.md) 的依赖安装和资产注册，然后：
+完成[多曲面模型复现说明](MULTISURFACE_DEMO.md) 的依赖安装和资产注册，然后：
 
 ```bash
 python examples/brain_client.py --task examples/task_precise_door.json
 ```
 
-该样例经同一个 HTTP 接口调用真实 SAC、E12 逆解、碰撞检查和 RoboDK 动画。首次查看演示可直接运行仓库根目录的 `Run_Precise_Demo.bat`；模型和策略已包含在仓库中，不需要重新训练。
+该样例经同一个 HTTP 接口调用真实 SAC、E12 逆解、碰撞检查和 RoboDK 动画。首次查看演示可运行`Run_Precise_Demo.bat`；未见合成鞍形使用`Run_Unseen_Saddle_Demo.bat`或`examples/task_unseen_saddle.json`。新权重与几何已包含在仓库中，无需重训。
 
 ## 对接参考
 
@@ -56,4 +56,4 @@ python examples/brain_client.py --task examples/task_precise_door.json
 
 ## 验证范围
 
-已验证：结构化接口、点云导入、规则/SAC 规划、E12 采样运动与碰撞检查，以及 RoboDK 动画。当前演示是单车门局部区域；车门轮廓和把手遮罩由人工指定。SAC 是开源通用算法在自定义环境中的短训原型，未进行充分训练或跨零件泛化验证。实体机械臂通信、自动整车分割、真实膜厚、气压与雾化物理模型不在现有实现中。
+已验证：结构化接口、点云导入、规则/SAC 规划、E12 采样运动与碰撞检查，以及 RoboDK 动画。当前演示是单车门局部区域；车门轮廓和把手遮罩由人工指定。新SAC已完成240,000步多曲面GPU训练及10种未见几何测试，但尚未明显优于固定动作基线。车门159点和未见鞍形138点已播放；贝壳、海星扫描件被运动预检拦截，不能将数值覆盖当作任意工件可执行。完整结果见[实验报告](EXPERIMENT_20261029.md)。实体机械臂通信、自动整车分割、真实膜厚、气压与雾化物理模型不在现有实现中。

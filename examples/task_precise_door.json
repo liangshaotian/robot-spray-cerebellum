@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
-  "task_id": "e350-door-example-001",
+  "task_id": "multisurface-e350-v2-example-001",
   "skill_id": "spray_surface.v1",
-  "target": {"asset_id": "artec_e350_door_v2", "units": "mm"},
+  "target": {"asset_id": "sacgen_e350_v2", "units": "mm"},
   "robot": {"model_id": "huayan_e12", "tool_id": "spray_tcp_200"},
   "process": {
     "standoff_mm": 200,
@@ -11,7 +11,7 @@
     "overlap_ratio": 0.5833333333333333,
     "passes": 1
   },
-  "planning": {"method": "sac", "policy_id": "sac_e350_door_v2", "sample_step_mm": 40},
+  "planning": {"method": "sac", "policy_id": "sac_multisurface_gpu_v2", "sample_step_mm": 40},
   "execution": {"backend": "robodk", "mode": "simulate", "show_window": true, "simulation_speed": 5, "timeout_s": 300},
   "context": {"brain_skill_id": "sprayer_skill_v0.1"}
 }

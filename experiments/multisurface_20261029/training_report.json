@@ -1,0 +1,70 @@
+{
+  "algorithm": "SAC",
+  "library": "Stable-Baselines3 2.4.1",
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "device": "cuda:0",
+  "cuda_kernel_check": true,
+  "observation_version": "spray_v2_70",
+  "observation_dim": 70,
+  "action_dim": 2,
+  "net_arch": [
+    256,
+    256
+  ],
+  "training_profiles": 45,
+  "training_geometry_assets": 31,
+  "validation_profiles": 6,
+  "held_out_test_profiles": 10,
+  "seed": 20261029,
+  "max_timesteps": 240000,
+  "wall_budget_seconds": 5400,
+  "gpu_allocator_fraction": 0.35,
+  "num_envs": 4,
+  "batch_size": 256,
+  "buffer_size": 100000,
+  "learning_rate": 0.0002,
+  "learning_starts": 5000,
+  "gradient_steps": 4,
+  "gamma": 0.99,
+  "tau": 0.01,
+  "ent_coef": "auto_0.03",
+  "flow_gain_randomization": [
+    0.55,
+    1.25
+  ],
+  "validation_flow_gains": [
+    0.65,
+    1.15
+  ],
+  "validation_selects_checkpoint": true,
+  "test_used_for_selection": false,
+  "physical_model": "Uncalibrated relative Gaussian deposition; fixed reference emission rate; not CFD or physical thickness",
+  "source_code_sha256": {
+    "train_gpu.py": "8b3e4bbfeabb89171556c00da5189f51d0326d1dcdbdcdbbc76b7b14b9f14f24",
+    "evaluation_utils.py": "e87b6095ad04d2274598bdbe2ad57b7a24d75ed3ec4a6e843d4e3ea37d2d51ec",
+    "prepare_cases.py": "f4c020284c5711d14069aa75541276646f9485a430b1c381668a5b219d660e56",
+    "generalized.py": "5418f95b7c3803b88cd3e3fa89f9db9c486849df807979b8c489ae4e2ac860ac"
+  },
+  "dataset_sha256": "9bd1e4726e8848bcbcc771c3ebfcb007b1ea0387434750be712ec1fd52da3c85",
+  "timesteps": 240000,
+  "gradient_updates": 235000,
+  "training_seconds": 4020.75,
+  "stop_reason": "step_limit",
+  "best_validation_score": 0.4039589827685368,
+  "best_step": 180000,
+  "completed_training_episodes": 2016,
+  "actor_parameter_count": 84996,
+  "actor_device": "cuda:0",
+  "critic_device": "cuda:0",
+  "all_policy_parameter_count": 423944,
+  "actor_parameter_l2_change": 67.8222885131836,
+  "cuda_peak_allocated_mib": 23.6044921875,
+  "cuda_peak_reserved_mib": 28.0,
+  "observed_gpu_peaks": {
+    "memory_used_mib": 225.0,
+    "temperature_c": 59.0
+  },
+  "best_sha256": "fca5f8dadf88f0565a6518459d95e552ca2ea252fee0f39dea74bcecd268c225"
+}

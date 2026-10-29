@@ -1,0 +1,966 @@
+{
+  "train": [
+    {
+      "case_id": "real3d_airplane_p0",
+      "asset_dir": "assets/real3d_airplane",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 145.35,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 73,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_airplane_p1",
+      "asset_dir": "assets/real3d_airplane",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 171.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 67,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_airplane_p2",
+      "asset_dir": "assets/real3d_airplane",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 191.52,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 66,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_candybar_p0",
+      "asset_dir": "assets/real3d_candybar",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 122.39999999999999,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 127,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_candybar_p1",
+      "asset_dir": "assets/real3d_candybar",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 144.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 119,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_candybar_p2",
+      "asset_dir": "assets/real3d_candybar",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 161.28000000000003,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 113,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_car_p0",
+      "asset_dir": "assets/real3d_car",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 141.525,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 125,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_car_p1",
+      "asset_dir": "assets/real3d_car",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 166.5,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 107,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_car_p2",
+      "asset_dir": "assets/real3d_car",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 186.48000000000002,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 100,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_chicken_p0",
+      "asset_dir": "assets/real3d_chicken",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 204.0,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 124,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_chicken_p1",
+      "asset_dir": "assets/real3d_chicken",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 109,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_chicken_p2",
+      "asset_dir": "assets/real3d_chicken",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 102,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_diamond_p0",
+      "asset_dir": "assets/real3d_diamond",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 204.0,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 215,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_diamond_p1",
+      "asset_dir": "assets/real3d_diamond",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 190,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_diamond_p2",
+      "asset_dir": "assets/real3d_diamond",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 175,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_duck_p0",
+      "asset_dir": "assets/real3d_duck",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 204.0,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 113,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_duck_p1",
+      "asset_dir": "assets/real3d_duck",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 104,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_duck_p2",
+      "asset_dir": "assets/real3d_duck",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 95,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "e350_door_training_p0",
+      "asset_dir": "assets/e350_door_training",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 204.0,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 171,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "e350_door_training_p1",
+      "asset_dir": "assets/e350_door_training",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 149,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "e350_door_training_p2",
+      "asset_dir": "assets/e350_door_training",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 142,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1000_p0",
+      "asset_dir": "assets/synthetic_plane_1000",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 183.6,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 147,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1001_p1",
+      "asset_dir": "assets/synthetic_plane_1001",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 135.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 110,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1002_p2",
+      "asset_dir": "assets/synthetic_plane_1002",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 201.60000000000002,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 106,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1003_p0",
+      "asset_dir": "assets/synthetic_plane_1003",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 145.35,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 118,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1004_p1",
+      "asset_dir": "assets/synthetic_plane_1004",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 153.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 90,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_1005_p2",
+      "asset_dir": "assets/synthetic_plane_1005",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 89,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1100_p0",
+      "asset_dir": "assets/synthetic_cylinder_1100",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 137.7,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 100,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1101_p1",
+      "asset_dir": "assets/synthetic_cylinder_1101",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 144.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 149,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1102_p2",
+      "asset_dir": "assets/synthetic_cylinder_1102",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 161.28000000000003,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 114,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1103_p0",
+      "asset_dir": "assets/synthetic_cylinder_1103",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 198.9,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 124,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1104_p1",
+      "asset_dir": "assets/synthetic_cylinder_1104",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 135.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 80,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_1105_p2",
+      "asset_dir": "assets/synthetic_cylinder_1105",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 231.84000000000003,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 119,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1200_p0",
+      "asset_dir": "assets/synthetic_waist_1200",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 122.39999999999999,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 125,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1201_p1",
+      "asset_dir": "assets/synthetic_waist_1201",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 162.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 119,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1202_p2",
+      "asset_dir": "assets/synthetic_waist_1202",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 201.60000000000002,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 84,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1203_p0",
+      "asset_dir": "assets/synthetic_waist_1203",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 183.6,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 108,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1204_p1",
+      "asset_dir": "assets/synthetic_waist_1204",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 153.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 136,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_1205_p2",
+      "asset_dir": "assets/synthetic_waist_1205",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 171.36,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 131,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1300_p0",
+      "asset_dir": "assets/synthetic_bulge_1300",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 122.39999999999999,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 150,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1301_p1",
+      "asset_dir": "assets/synthetic_bulge_1301",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 96,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1302_p2",
+      "asset_dir": "assets/synthetic_bulge_1302",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 252.00000000000003,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 113,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1303_p0",
+      "asset_dir": "assets/synthetic_bulge_1303",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 360.0,
+        "spray_width_mm": 130.04999999999998,
+        "overlap_ratio": 0.52,
+        "passes": 1
+      },
+      "sample_step_mm": 35.0,
+      "anchors": 130,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1304_p1",
+      "asset_dir": "assets/synthetic_bulge_1304",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 108,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_1305_p2",
+      "asset_dir": "assets/synthetic_bulge_1305",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 440.0,
+        "spray_width_mm": 268.8,
+        "overlap_ratio": 0.66,
+        "passes": 1
+      },
+      "sample_step_mm": 45.0,
+      "anchors": 142,
+      "flow_gain": 1.0
+    }
+  ],
+  "validation": [
+    {
+      "case_id": "real3d_fish_p1",
+      "asset_dir": "assets/real3d_fish",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 137,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_gemstone_p1",
+      "asset_dir": "assets/real3d_gemstone",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 96,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_plane_9000_p1",
+      "asset_dir": "assets/synthetic_plane_9000",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 153.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 108,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_cylinder_9100_p1",
+      "asset_dir": "assets/synthetic_cylinder_9100",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 207.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 126,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_waist_9200_p1",
+      "asset_dir": "assets/synthetic_waist_9200",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 198.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 143,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_bulge_9300_p1",
+      "asset_dir": "assets/synthetic_bulge_9300",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 171.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 148,
+      "flow_gain": 1.0
+    }
+  ],
+  "test": [
+    {
+      "case_id": "real3d_seahorse_p1",
+      "asset_dir": "assets/real3d_seahorse",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 180.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 64,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_shell_p1",
+      "asset_dir": "assets/real3d_shell",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 162,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_starfish_p1",
+      "asset_dir": "assets/real3d_starfish",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 72,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "real3d_toffees_p1",
+      "asset_dir": "assets/real3d_toffees",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 144,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_saddle_20000_p1",
+      "asset_dir": "assets/synthetic_saddle_20000",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 126,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_saddle_20001_p1",
+      "asset_dir": "assets/synthetic_saddle_20001",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 96,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_double_bulge_20100_p1",
+      "asset_dir": "assets/synthetic_double_bulge_20100",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 207.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 114,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_double_bulge_20101_p1",
+      "asset_dir": "assets/synthetic_double_bulge_20101",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 171.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 114,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_tilted_ridge_20200_p1",
+      "asset_dir": "assets/synthetic_tilted_ridge_20200",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 198.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 108,
+      "flow_gain": 1.0
+    },
+    {
+      "case_id": "synthetic_tilted_ridge_20201_p1",
+      "asset_dir": "assets/synthetic_tilted_ridge_20201",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 153.0,
+        "overlap_ratio": 0.6,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "anchors": 130,
+      "flow_gain": 1.0
+    }
+  ],
+  "regression": [
+    {
+      "case_id": "e350_original_settings",
+      "asset_dir": "assets/e350_door_training",
+      "process": {
+        "standoff_mm": 200.0,
+        "speed_mm_s": 400.0,
+        "spray_width_mm": 240.0,
+        "overlap_ratio": 0.5833333333333333,
+        "passes": 1
+      },
+      "sample_step_mm": 40.0,
+      "flow_gain": 1.0
+    }
+  ],
+  "metadata": {
+    "source_assets": [
+      {
+        "asset_id": "real3d_airplane",
+        "split": "train",
+        "source_sha256": "483c39cc175b93a105a2dc74f80bb31260f04ebea708f5ae95d07de651090195"
+      },
+      {
+        "asset_id": "real3d_candybar",
+        "split": "train",
+        "source_sha256": "d816525baa61bb3db44d7d45af71f1fc1a0b521ebbdb7088e1a06bfc33bd6616"
+      },
+      {
+        "asset_id": "real3d_car",
+        "split": "train",
+        "source_sha256": "242207171941cd8d16f08a67fc972d41905d4c7f3ea697c15de8ed2066011301"
+      },
+      {
+        "asset_id": "real3d_chicken",
+        "split": "train",
+        "source_sha256": "10098689ded2896c10d30572d7ed8b2e3b55923304ec2aef0d7d212f2330ecb2"
+      },
+      {
+        "asset_id": "real3d_diamond",
+        "split": "train",
+        "source_sha256": "39d413e5883b7c458f6d6e89be8643d9f84c63dfc1a221877c12fbd1dd57a055"
+      },
+      {
+        "asset_id": "real3d_duck",
+        "split": "train",
+        "source_sha256": "f0353752dfbe79e66aa53a080fba3158f1ca82e9bdc521107f5e55e6573ff425"
+      },
+      {
+        "asset_id": "real3d_fish",
+        "split": "validation",
+        "source_sha256": "8a7d665ac484afa979ef03db456277ebf1c146517c2fa44dcf043c1712d6fefc"
+      },
+      {
+        "asset_id": "real3d_gemstone",
+        "split": "validation",
+        "source_sha256": "f2163cbaf549f34ecdc52e3fc11c8e9e07bf09aa8dafbd26aba4ee32eec67bec"
+      },
+      {
+        "asset_id": "real3d_seahorse",
+        "split": "test",
+        "source_sha256": "b798049c6096d69223bf1bd9665a6e69d6b3870520aa8c7bd6fda8f98e30e264"
+      },
+      {
+        "asset_id": "real3d_shell",
+        "split": "test",
+        "source_sha256": "5ac4ca44d1342fa8a18cf7feb6c626d662f57ec0df00fcbc6aa1ee816b0481ae"
+      },
+      {
+        "asset_id": "real3d_starfish",
+        "split": "test",
+        "source_sha256": "a835e4d73f749d04936e7d89affc9a8fd71bea02a781745821bdf5a018e23694"
+      },
+      {
+        "asset_id": "real3d_toffees",
+        "split": "test",
+        "source_sha256": "54a331fc21ed2e5172c89bda01f839792693176ea0185e9492b78d580670402e"
+      }
+    ],
+    "split_before_augmentation": true,
+    "training_source_categories": [
+      "airplane",
+      "candybar",
+      "car",
+      "chicken",
+      "diamond",
+      "duck"
+    ],
+    "validation_source_categories": [
+      "fish",
+      "gemstone"
+    ],
+    "test_source_categories": [
+      "seahorse",
+      "shell",
+      "starfish",
+      "toffees"
+    ],
+    "training_geometry_assets": 31,
+    "training_flow_gain_range": [
+      0.55,
+      1.25
+    ],
+    "deposition_model": "Uncalibrated relative geometric model"
+  }
+}

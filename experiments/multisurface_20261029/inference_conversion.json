@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "source_training_checkpoint_sha256": "fca5f8dadf88f0565a6518459d95e552ca2ea252fee0f39dea74bcecd268c225",
+  "inference_checkpoint_sha256": "d071da9dbc584293f55f9266d0624fcee6fed001554c51954ea7d5ed3f8455c6",
+  "max_cuda_vs_cpu_action_difference": 9.5367431640625e-07,
+  "probe_observations": 32,
+  "training_torch": "2.7.1+cu128",
+  "inference_torch": "2.5.1+cpu",
+  "format": "Same policy state_dict; fresh local runtime metadata and optimizer; inference only",
+  "preflight_only": false
+}
