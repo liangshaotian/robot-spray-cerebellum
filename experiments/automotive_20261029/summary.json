@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-29",
+  "scope": "E350 front-door patch; three uncalibrated simulation gains; not independent vehicles",
+  "vehicle_sources": 1,
+  "regions": 1,
+  "conditions": 3,
+  "rollouts": 9,
+  "policy_sha256": "d071da9dbc584293f55f9266d0624fcee6fed001554c51954ea7d5ed3f8455c6",
+  "gain1_results": {
+    "raster": {
+      "asset_id": "sacgen_e350_v2",
+      "method": "raster",
+      "flow_gain": 1.0,
+      "coverage_fraction": 0.9983731376763315,
+      "relative_dose_mean": 2.8798604026607877,
+      "relative_dose_cv": 0.23163606434527254,
+      "target_normalized_rmse": 0.4329423801278799,
+      "within_20pct_target_fraction": 0.14884608132728658,
+      "estimated_spray_seconds": 14.101029578830948,
+      "evaluated_area_mm2": 583363.8514240033,
+      "boundary_projection_fraction": 0.0,
+      "model": "geometric_relative_gaussian_v2",
+      "physical_thickness_um": null,
+      "scope": "Observed visible heightfield; uncalibrated relative deposition"
+    },
+    "fixed_speed": {
+      "asset_id": "sacgen_e350_v2",
+      "method": "fixed_speed",
+      "flow_gain": 1.0,
+      "coverage_fraction": 0.9976906164736796,
+      "relative_dose_mean": 2.316443734121209,
+      "relative_dose_cv": 0.23005778746655955,
+      "target_normalized_rmse": 0.24794965884924505,
+      "within_20pct_target_fraction": 0.680171658230493,
+      "estimated_spray_seconds": 11.35932045500282,
+      "evaluated_area_mm2": 583363.8514240033,
+      "boundary_projection_fraction": 0.0,
+      "model": "geometric_relative_gaussian_v2",
+      "physical_thickness_um": null,
+      "scope": "Observed visible heightfield; uncalibrated relative deposition"
+    },
+    "sac": {
+      "asset_id": "sacgen_e350_v2",
+      "method": "sac",
+      "flow_gain": 1.0,
+      "coverage_fraction": 0.9978342562815674,
+      "relative_dose_mean": 2.524504647078383,
+      "relative_dose_cv": 0.23885520574303182,
+      "target_normalized_rmse": 0.31125628699180863,
+      "within_20pct_target_fraction": 0.22191174691826224,
+      "estimated_spray_seconds": 12.419904586225872,
+      "evaluated_area_mm2": 583363.8514240033,
+      "boundary_projection_fraction": 0.0,
+      "model": "geometric_relative_gaussian_v2",
+      "physical_thickness_um": null,
+      "scope": "Observed visible heightfield; uncalibrated relative deposition"
+    }
+  },
+  "means_over_conditions": {
+    "raster": {
+      "target_normalized_rmse": 0.452345189763415,
+      "relative_dose_cv": 0.2316360643452725,
+      "coverage_fraction": 0.9980663411560465,
+      "within_20pct_target_fraction": 0.3246910520169835,
+      "estimated_spray_seconds": 14.101029578830948
+    },
+    "fixed_speed": {
+      "target_normalized_rmse": 0.3309962926306658,
+      "relative_dose_cv": 0.23005778746655958,
+      "coverage_fraction": 0.9971461296984305,
+      "within_20pct_target_fraction": 0.2843457572496797,
+      "estimated_spray_seconds": 11.359320455002822
+    },
+    "sac": {
+      "target_normalized_rmse": 0.3294927666110287,
+      "relative_dose_cv": 0.24143583070776184,
+      "coverage_fraction": 0.997644069848454,
+      "within_20pct_target_fraction": 0.375336448513602,
+      "estimated_spray_seconds": 13.170163373829505
+    }
+  },
+  "fixed_speed_action": [
+    0.0,
+    1.0
+  ],
+  "model_card": "../../demo/e350_sac_v2/model_card.json",
+  "limitations": [
+    "E350 selected region was seen during pretraining; not an independent generalization test",
+    "Gain is a simulated deposition multiplier, not measured paint pressure",
+    "Coverage is thresholded relative deposition, not coating acceptance or measured thickness"
+  ]
+}

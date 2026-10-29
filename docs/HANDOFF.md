@@ -1,6 +1,6 @@
 # 大脑—小脑接口接入指南
 
-首次接入从[接入入口](START_HERE.md)开始。当前模型`sac_multisurface_gpu_v2`通过`python tools/setup_multisurface_demo.py`注册；车门`sacgen_e350_v2`对应`examples/task_precise_door.json`，未见鞍形`sacgen_saddle_v2`对应`examples/task_unseen_saddle.json`。HTTP协议保持1.0，新权重通过70维观测版本分流；更新代码后应由使用者重启旧服务。
+首次接入从[汽车接入入口](START_HERE.md)开始。`python tools/setup_automotive_demo.py`注册E350新权重场景，工件`sacgen_e350_v2`、策略`sac_multisurface_gpu_v2`，任务样例`examples/task_precise_door.json`。HTTP协议保持1.0，更新后使用者需重启旧API进程。
 
 ## 1. 模块职责
 
@@ -56,7 +56,7 @@ mock 的 `validation.executable` 为 false，碰撞/可达性为 null；只有�
 
 通过 GET `/v1/assets` 查看可用资产。内置演示使用 `demo_car_4500`。导入其他点云时，调用上传接口，明确单位、输入到工件坐标变换、工件到机器人底座变换及待喷区域，成功后获得新的 `asset_id`。样例见 `examples/upload_cloud.py`。
 
-任意新上传资产仍使用`planning.method: raster`；多曲面SAC已在明确划分的10种未见几何上测试，但没有获得任意工件执行保证。新资产接入SAC仍需显式绑定策略和70维观测配置、检查工况与坐标系，并通过E12预检。任务提交、查询与结果沿用同一协议。
+新增汽车点云默认使用`planning.method: raster`。SAC接入需显式绑定策略和70维观测，检查工况、坐标系和E12可执行性。现有汽车结果只覆盖E350前车门，不能推断任意车型均可执行。任务提交、查询与结果沿用同一协议。
 
 仓库还提供 `generated_curved_panel.xyz` 和 `generated_panel_metadata.json`，专门用于演示新点云导入；它是明确标注的解析曲面测试件，不是真实扫描数据。安装 geometry extra 后运行：
 

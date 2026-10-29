@@ -3,7 +3,7 @@ setlocal
 cd /d "%~dp0"
 set "DEMO_PYTHON=python"
 if exist ".venv\Scripts\python.exe" set "DEMO_PYTHON=.venv\Scripts\python.exe"
-"%DEMO_PYTHON%" tools\setup_multisurface_demo.py --cases e350
+"%DEMO_PYTHON%" tools\setup_automotive_demo.py
 if errorlevel 1 goto failed
 "%DEMO_PYTHON%" tools\fetch_robot.py
 if errorlevel 1 goto failed

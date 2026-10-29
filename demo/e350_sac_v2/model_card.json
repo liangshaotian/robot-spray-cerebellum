@@ -1,0 +1,25 @@
+{
+  "algorithm": "SAC",
+  "library": "Stable-Baselines3 2.4.1",
+  "torch": "2.7.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+  "observation_version": "spray_v2_70",
+  "observation_dim": 70,
+  "action_dim": 2,
+  "net_arch": [
+    256,
+    256
+  ],
+  "timesteps": 240000,
+  "gradient_updates": 235000,
+  "training_seconds": 4020.75,
+  "best_step": 180000,
+  "completed_training_episodes": 2016,
+  "actor_parameter_count": 84996,
+  "best_sha256": "fca5f8dadf88f0565a6518459d95e552ca2ea252fee0f39dea74bcecd268c225",
+  "policy_sha256": "d071da9dbc584293f55f9266d0624fcee6fed001554c51954ea7d5ed3f8455c6",
+  "training_scope": "Generic surface pretraining, not a car-only training dataset. Counts must not be described as independent vehicles.",
+  "automotive_scope": "This E350 front-door patch was included in pretraining. Automotive results are in-domain regression, not held-out vehicle generalization.",
+  "physical_model": "Uncalibrated relative Gaussian deposition; not physical film thickness"
+}

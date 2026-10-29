@@ -1,0 +1,8 @@
+{
+  "kind": "Restored original automotive process video, not a recording of the latest pretrained policy",
+  "duration_seconds": 39.1,
+  "frame": "Full vehicle and E12 visible",
+  "sprayed_region": "Manually selected front-door body panel only",
+  "source_sha256": "29667384491f7c1c0fd16aadd027266b03155655dfd9bc8597969ac9a62ed703",
+  "physical_quality_claim": false
+}

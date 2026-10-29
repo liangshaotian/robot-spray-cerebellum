@@ -1,0 +1,63 @@
+{
+  "planner": "sac",
+  "validation": {
+    "passed": true,
+    "reachable": true,
+    "collision_free": true,
+    "executable": true,
+    "sampling_mm": 5,
+    "sampling_deg": 1,
+    "scope": "Original 2110072-triangle full car scan mesh plus E12 self-collision, nozzle and floor",
+    "method": "Complete sampled MoveJ_Test/MoveL_Test validation"
+  },
+  "quality": {
+    "coverage_fraction": 0.9978342562815674,
+    "relative_dose_mean": 2.524504647078383,
+    "relative_dose_cv": 0.23885520574303182,
+    "estimated_spray_seconds": 12.419904586225872,
+    "evaluated_area_mm2": 583363.8514240033,
+    "model": "geometric_relative_gaussian_v2",
+    "physical_thickness_um": null,
+    "scope": "Observed visible heightfield; uncalibrated relative deposition"
+  },
+  "execution": {
+    "requested": true,
+    "completed": true,
+    "executed_in_simulator": true,
+    "waypoints_executed": 159,
+    "maximum_tcp_position_error_mm": 1.833356681150982e-11,
+    "paint_layers": 135
+  },
+  "warnings": [
+    "Multi-surface research SAC; uncalibrated geometric deposition, not physical film thickness",
+    "The training environment does not perform E12 kinematics; all robot paths still require the existing RoboDK checks"
+  ],
+  "waypoint_count": 159,
+  "simulator_version": "5.9.0.25042",
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      2100.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "files": {
+    "manifest.json": "adf3d7be1cb549794aa60c61a0d49cbba3cf840dc0b33c9241255c460af2a55e",
+    "model_card.json": "317cf50357501f4047384c3441d08c5779445ea109e317c37d922ed9839cbfb5",
+    "sac_multisurface_gpu_v2.zip": "d071da9dbc584293f55f9266d0624fcee6fed001554c51954ea7d5ed3f8455c6",
+    "surface.npz": "f3edae8bda63b8e8c4c6f058c2a3772d6677c7e15bc0e35b1b73002b20536041"
+  }
+}

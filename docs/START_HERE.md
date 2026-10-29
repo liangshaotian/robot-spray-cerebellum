@@ -1,59 +1,30 @@
-# 大脑模块接入入口
+# 汽车喷漆大脑模块接入
 
-本仓库是喷涂机器人的小脑模块。大脑负责喷涂 skill 蒸馏、任务选择和指令下发；小脑接收结构化任务，生成末端轨迹，进行华沿 E12 运动验证，并返回仿真结果。软件版本为 0.3.0，接口版本为 1.0。
+大脑负责喷漆skill蒸馏与任务下达；小脑负责车身曲面轨迹、华沿E12运动检查和仿真反馈。软件0.3.1，HTTP/JSON v1。
 
-## 先完成接口联调
-
-使用 Python 3.11，克隆仓库后运行：
+## 协议联调
 
 ```bash
 python -m pip install -e ".[test]"
 python -m spray_cerebellum
-```
-
-在另一个终端运行：
-
-```bash
+# 另开终端：
 python examples/brain_client.py --task examples/task_mock.json
 ```
 
-这条路径不依赖 RoboDK、PyTorch 或机械臂，验证任务提交、状态查询、轨迹获取、错误处理和取消。mock 结果不代表完成了机器人可达性或喷涂质量验证。
+mock验证消息与状态，不代表机器人已执行。API为`http://127.0.0.1:8765`，文档`/docs`。
 
-## 大脑需要提供的内容
+## 汽车场景
 
-| 输入 | 含义 |
-|---|---|
-| task_id | 唯一任务编号；网络重试沿用，重新执行或改参数时更换 |
-| target.asset_id | 已注册工件；新车门为 sacgen_e350_v2；未见鞍形为 sacgen_saddle_v2 |
-| target.region_uv_mm | 可选，工件局部坐标系中的待喷区域，单位 mm |
-| process | 喷距、名义速度、喷幅、搭接率、遍数 |
-| planning | sac 或 raster；SAC 策略必须与工件匹配 |
-| execution | mock/robodk、plan_only/simulate，以及是否显示窗口 |
-| context | skill 版本、上游任务编号等追踪信息 |
+按[复现说明](PRECISE_DEMO.md)安装依赖、运行`python tools/setup_automotive_demo.py`并准备RoboDK和E12模型，然后用`examples/task_precise_door.json`调用同一HTTP接口。
 
-大脑调用 `POST /v1/tasks`，再轮询 `GET /v1/tasks/{id}`。任务完成后从 result 和 trajectory 接口读取结果。`succeeded` 表示任务流程成功；是否实际执行仿真，应检查 `execution.executed_in_simulator`，运动验证看 `validation`。
+- `target.asset_id`: `sacgen_e350_v2`，完整E350显示，实际前车门局部喷涂。
+- `planning.policy_id`: `sac_multisurface_gpu_v2`，保留既有策略标识与70维观测。
+- `process`: 喷距、名义速度、喷幅、搭接率、遍数，mm及mm/s。
+- `target.region_uv_mm`与坐标变换按工件坐标系；区域不得超出注册有效范围。
+- `execution`: mock/robodk，plan_only/simulate，是否显示窗口。
 
-输出包括：每段 TCP 位姿、速度、喷涂开关、E12 关节角、坐标系、运动检查结果和未标定的相对覆盖评价。任意自然语言指令需由大脑先转换成任务 JSON。
+POST `/v1/tasks`后轮询状态，终态后读取result和trajectory。同ID同参数是幂等重试，重新执行或改参数必须换task_id。`succeeded`只代表流程成功；看`validation`判断机器人检查，看`execution.executed_in_simulator`判断是否实际播放。
 
-## 运行精细演示
+输出包括TCP位姿、速度、喷涂开关、E12关节角、坐标系及相对覆盖。任意自然语言先由大脑转为任务JSON；气压等未建模字段会报错。新增车身点云需明确单位和变换，默认raster规划；绑定SAC前另做适配与运动检查。
 
-完成[多曲面模型复现说明](MULTISURFACE_DEMO.md) 的依赖安装和资产注册，然后：
-
-```bash
-python examples/brain_client.py --task examples/task_precise_door.json
-```
-
-该样例经同一个 HTTP 接口调用真实 SAC、E12 逆解、碰撞检查和 RoboDK 动画。首次查看演示可运行`Run_Precise_Demo.bat`；未见合成鞍形使用`Run_Unseen_Saddle_Demo.bat`或`examples/task_unseen_saddle.json`。新权重与几何已包含在仓库中，无需重训。
-
-## 对接参考
-
-- [完整接入指南](HANDOFF.md)：Python 调用、任务生命周期、跨电脑接入和验收步骤。
-- [接口契约](API_CONTRACT.md)：字段、单位、坐标系、错误码和边界。
-- [OpenAPI](../contracts/openapi.json) / [任务输入 Schema](../contracts/task_request.schema.json)：机器可读定义。
-- [精细任务样例](../examples/task_precise_door.json) / [大脑客户端](../examples/brain_client.py)。
-
-跨电脑调用需要使用运行小脑服务的电脑地址，并配置共享 token；GitHub 链接本身不是运行中的服务地址。仓库已公开，接收者可直接阅读和克隆；直接写入仓库仍需要协作者权限。
-
-## 验证范围
-
-已验证：结构化接口、点云导入、规则/SAC 规划、E12 采样运动与碰撞检查，以及 RoboDK 动画。当前演示是单车门局部区域；车门轮廓和把手遮罩由人工指定。新SAC已完成240,000步多曲面GPU训练及10种未见几何测试，但尚未明显优于固定动作基线。车门159点和未见鞍形138点已播放；贝壳、海星扫描件被运动预检拦截，不能将数值覆盖当作任意工件可执行。完整结果见[实验报告](EXPERIMENT_20261029.md)。实体机械臂通信、自动整车分割、真实膜厚、气压与雾化物理模型不在现有实现中。
+接口契约见[API_CONTRACT](API_CONTRACT.md)，跨电脑、token和生命周期见[HANDOFF](HANDOFF.md)。[汽车实验记录](EXPERIMENT_20261029.md)和[整车视野视频](media/E12_E350_WholeCar_View.mp4)供交接查看。GitHub是代码和材料，不是运行中的服务地址。

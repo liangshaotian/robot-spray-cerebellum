@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "spray-cerebellum"
-version = "0.3.0"
+version = "0.3.1"
 description = "Versioned brain-to-cerebellum spray task API and RoboDK simulation adapter"
 requires-python = ">=3.10,<3.13"
 dependencies = ["fastapi==0.115.6", "pydantic==2.10.6", "uvicorn==0.34.0", "python-multipart==0.0.20"]

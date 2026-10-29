@@ -1,8 +1,0 @@
-{
-  "original_dataset_sha256": "9bd1e4726e8848bcbcc771c3ebfcb007b1ea0387434750be712ec1fd52da3c85",
-  "portable_dataset_sha256": "cccf5dc72b8a68d642447bab78b685e953b2d434799a662074acbdebb32d8167",
-  "change": "Only absolute asset_dir values replaced with paths relative to this directory",
-  "surface_count": 47,
-  "surface_bytes_unchanged": true,
-  "raw_scans": "Original PCD files are not redistributed; source members and SHA256 are in sources.json"
-}
