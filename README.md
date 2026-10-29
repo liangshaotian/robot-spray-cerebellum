@@ -27,7 +27,7 @@ python tools/replay_demo.py --asset-id sacgen_e350_v2
 
 Windows可双击`Run_Precise_Demo.bat`，`Show_Demo.bat`只切回已完成的汽车场景。通过`ROBODK_EXE`和`ROBODK_PORT`设置实际安装路径及端口。更新代码后，使用者需重启API服务以加载新版代码。
 
-SAC经过24万步、67分钟通用曲面预训练，采用验证集选中的18万步检查点。汽车实验在E350前车门设置3种模拟工况和3种控制方法，共9次对照；跨车型泛化尚未验证。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
+SAC经过24万步、67分钟通用曲面预训练，采用验证集选中的18万步检查点。汽车数值对照在同一E350前车门比较固定蛇形路线400mm/s、同路线最高约500mm/s、SAC横向±10mm及速度300～500mm/s调整。三者分别在3个给定沉积倍率下计算，共9次；这是已知系数敏感性检查，跨车型泛化尚未验证。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
 
 ```bash
 # CPU核对当前汽车实验的全部平均指标，不调用RoboDK
