@@ -10,9 +10,9 @@
 
 ![整车、E12与轨迹](docs/media/E12_E350_WholeCar_View.png)
 
-视频恢复原汽车流程录屏，画面包含完整E350和机械臂；实际喷涂区域仍是前车门约0.58m²，未实现整车全覆盖。该视频不作为新权重的效果对照。
+视频时长39.1秒，展示E350车身、E12机械臂、TCP轨迹及前车门约0.58m²区域的喷涂过程。训练与定量评价见实验记录。
 
-车身为Artec 3D真实扫描重建网格，保留约4.88m车长、106万个顶点、211万个三角面。完整网格用于显示和碰撞，5mm派生曲面用于规划。车门轮廓和把手遮罩人工指定。
+车身采用Artec 3D扫描重建网格，车长约4.88m，包含106万个顶点、211万个三角面。完整网格用于显示和碰撞，5mm派生曲面用于规划。车门轮廓和把手遮罩人工指定。
 
 ## 运行当前汽车模型
 
@@ -25,16 +25,16 @@ python tools/fetch_robot.py
 python tools/replay_demo.py --asset-id sacgen_e350_v2
 ```
 
-Windows可双击`Run_Precise_Demo.bat`，`Show_Demo.bat`只切回已完成的汽车场景。通过`ROBODK_EXE`和`ROBODK_PORT`设置实际安装路径及端口。更新代码后，使用者需重启旧API进程以加载新版代码。
+Windows可双击`Run_Precise_Demo.bat`，`Show_Demo.bat`只切回已完成的汽车场景。通过`ROBODK_EXE`和`ROBODK_PORT`设置实际安装路径及端口。更新代码后，使用者需重启API服务以加载新版代码。
 
-新权重来自24万步、67分钟通用曲面预训练，验证集选中18万步；这些记录不是汽车专用训练规模。汽车专项结果只统计E350前车门的3种模拟工况和3种控制方法，共9次，不冒充独立车型泛化测试。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
+SAC经过24万步、67分钟通用曲面预训练，采用验证集选中的18万步检查点。汽车实验在E350前车门设置3种模拟工况和3种控制方法，共9次对照；跨车型泛化尚未验证。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
 
 ```bash
 # CPU核对当前汽车实验的全部平均指标，不调用RoboDK
 python tools/evaluate_automotive.py --verify-recorded
 ```
 
-新权重159段路径已通过E12按5mm/1°采样的可达性、运动和碰撞检查并完成播放。当前SAC未优于固定高速参考；相对覆盖和热力图均不能换算为实测膜厚。
+159段路径通过E12按5mm/1°采样的可达性、运动和碰撞检查，并完成仿真播放。名义工况下SAC未优于固定高速参考；相对覆盖与热力图不代表实测膜厚。
 
 ## 大小脑接口
 
@@ -49,7 +49,7 @@ python examples/brain_client.py --task examples/task_mock.json
 
 服务`http://127.0.0.1:8765`，交互文档`/docs`。大脑流程：任务JSON → POST `/v1/tasks` → 轮询状态 → 获取轨迹和结果。mock不代表已经通过机器人运动检查。
 
-实际汽车仿真使用`examples/task_precise_door.json`。输入工件ID、UV区域、4×4刚体变换，以及喷距、名义速度、喷幅、搭接率、遍数；输出TCP位姿/速度/开关、E12关节角、运动检查和相对覆盖。单位mm、mm/s，新模型显式绑定70维观测版本；任意上传车身点云默认用raster，不自动认定已获得SAC执行保证。
+实际汽车仿真使用`examples/task_precise_door.json`。输入工件ID、UV区域、4×4刚体变换，以及喷距、名义速度、喷幅、搭接率、遍数；输出TCP位姿/速度/开关、E12关节角、运动检查和相对覆盖。单位mm、mm/s，SAC模型显式绑定70维观测版本；任意上传车身点云默认用raster，不自动认定已获得SAC执行保证。
 
 ```powershell
 $env:ROBODK_EXE = 'D:\RoboDK5.9\bin\RoboDK.exe'  # 改为实际路径

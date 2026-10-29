@@ -1,6 +1,6 @@
 # 大脑—小脑接口接入指南
 
-首次接入从[汽车接入入口](START_HERE.md)开始。`python tools/setup_automotive_demo.py`注册E350新权重场景，工件`sacgen_e350_v2`、策略`sac_multisurface_gpu_v2`，任务样例`examples/task_precise_door.json`。HTTP协议保持1.0，更新后使用者需重启旧API进程。
+首次接入从[汽车接入入口](START_HERE.md)开始。`python tools/setup_automotive_demo.py`注册E350汽车喷涂场景，工件`sacgen_e350_v2`、策略`sac_multisurface_gpu_v2`，任务样例`examples/task_precise_door.json`。HTTP协议保持1.0，更新后使用者需重启API服务。
 
 ## 1. 模块职责
 

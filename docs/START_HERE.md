@@ -18,7 +18,7 @@ mock验证消息与状态，不代表机器人已执行。API为`http://127.0.0.
 按[复现说明](PRECISE_DEMO.md)安装依赖、运行`python tools/setup_automotive_demo.py`并准备RoboDK和E12模型，然后用`examples/task_precise_door.json`调用同一HTTP接口。
 
 - `target.asset_id`: `sacgen_e350_v2`，完整E350显示，实际前车门局部喷涂。
-- `planning.policy_id`: `sac_multisurface_gpu_v2`，保留既有策略标识与70维观测。
+- `planning.policy_id`: `sac_multisurface_gpu_v2`，采用70维观测。
 - `process`: 喷距、名义速度、喷幅、搭接率、遍数，mm及mm/s。
 - `target.region_uv_mm`与坐标变换按工件坐标系；区域不得超出注册有效范围。
 - `execution`: mock/robodk，plan_only/simulate，是否显示窗口。
