@@ -28,7 +28,7 @@
       "开枪秒/件": "18.05"
     },
     {
-      "方法": "全量SAC训练",
+      "方法": "SAC",
       "目标范围面积↑": "95.07%",
       "沉积CV↓": "0.0969",
       "边缘目标面积↑": "91.26%",
@@ -36,7 +36,7 @@
       "开枪秒/件": "17.95"
     },
     {
-      "方法": "搜索示范模仿学习",
+      "方法": "SAC＋模仿学习",
       "目标范围面积↑": "95.52%",
       "沉积CV↓": "0.0912",
       "边缘目标面积↑": "91.75%",
@@ -44,7 +44,7 @@
       "开枪秒/件": "17.98"
     },
     {
-      "方法": "模仿后示范约束SAC",
+      "方法": "SAC＋模仿学习＋SAC微调",
       "目标范围面积↑": "95.38%",
       "沉积CV↓": "0.0918",
       "边缘目标面积↑": "91.53%",
@@ -195,7 +195,7 @@
   ],
   "figures_sha256": {
     "best_search_paired_six_classes.png": "f228802f5975f772e924656c4f37eb0a093715208da4c5713afbded6ce954ed0",
-    "best_methods_hard_cases.png": "c2c358c2551c3c97ee2b04e1a7257c034783403daa43926f852311686b325142"
+    "best_methods_hard_cases.png": "29c518e7507051e3371d52533c205f0465ffc8abdfa285b34888d656dd400557"
   },
   "source_run": "search_distilled_sac_20261108",
   "source_dataset_doi": "10.7910/DVN/CAWRXI",
@@ -319,6 +319,13 @@
         }
       }
     ],
+    "stage_names": {
+      "baseline": "几何基准",
+      "sac": "SAC",
+      "bc": "SAC＋模仿学习",
+      "guided": "SAC＋模仿学习＋SAC微调",
+      "search": "两轮搜索"
+    },
     "same_target_masks_and_coordinates": true,
     "layout": "portrait_5_rows_2_columns",
     "source_sha256": {
@@ -331,6 +338,11 @@
       "guided__n_s_ww_wm_424_body_front_fascia.npz": "67108c3a5bffd7827beac36f40a1b35df81ae32f3020fe8613a2a06b81feb5b1",
       "search__n_s_ww_wm_424_body_front_fascia.npz": "9486e86c108819d995a5db65af084d74238373a9c1175ce7d1bdedb8ce8a31c3"
     },
-    "figure_sha256": "c2c358c2551c3c97ee2b04e1a7257c034783403daa43926f852311686b325142"
-  }
+    "figure_sha256": "29c518e7507051e3371d52533c205f0465ffc8abdfa285b34888d656dd400557"
+  },
+  "training_stages": [
+    "SAC",
+    "SAC＋模仿学习",
+    "SAC＋模仿学习＋SAC微调"
+  ]
 }
