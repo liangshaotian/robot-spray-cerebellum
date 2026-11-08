@@ -195,7 +195,7 @@
   ],
   "figures_sha256": {
     "best_search_paired_six_classes.png": "f228802f5975f772e924656c4f37eb0a093715208da4c5713afbded6ce954ed0",
-    "best_methods_hard_cases.png": "f5e556db346f422b7e7ac5ea372be0d722e27df5a68df79e17078f712ef572d9"
+    "best_methods_hard_cases.png": "c2c358c2551c3c97ee2b04e1a7257c034783403daa43926f852311686b325142"
   },
   "source_run": "search_distilled_sac_20261108",
   "source_dataset_doi": "10.7910/DVN/CAWRXI",
@@ -320,6 +320,7 @@
       }
     ],
     "same_target_masks_and_coordinates": true,
+    "layout": "portrait_5_rows_2_columns",
     "source_sha256": {
       "baseline__f_s_wwc_wm_673_body_fender.npz": "17e531dc4b5ec7be92e49456548519027c7eb0e9b2f88238d9f897ac61de049d",
       "bc__f_s_wwc_wm_673_body_fender.npz": "382716d4bb195123dcac4c2d3714bc87448da4de8a0ad4d94c1391f03cf060cf",
@@ -330,6 +331,6 @@
       "guided__n_s_ww_wm_424_body_front_fascia.npz": "67108c3a5bffd7827beac36f40a1b35df81ae32f3020fe8613a2a06b81feb5b1",
       "search__n_s_ww_wm_424_body_front_fascia.npz": "9486e86c108819d995a5db65af084d74238373a9c1175ce7d1bdedb8ce8a31c3"
     },
-    "figure_sha256": "f5e556db346f422b7e7ac5ea372be0d722e27df5a68df79e17078f712ef572d9"
+    "figure_sha256": "c2c358c2551c3c97ee2b04e1a7257c034783403daa43926f852311686b325142"
   }
 }
