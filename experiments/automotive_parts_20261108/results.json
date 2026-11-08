@@ -1,7 +1,6 @@
 {
   "report": "11.9 组会汇报",
   "experiment_cutoff": "2026-11-08",
-  "cohort": "Reused frozen 72 automotive parts; 6 classes x 12; design groups isolated from TRAIN",
   "metric_scope": "Surface-area-weighted uncalibrated relative deposition; target=1, tolerance=0.8..1.2",
   "comparison": [
     {
@@ -13,7 +12,7 @@
       "开枪秒/件": "17.75"
     },
     {
-      "方法": "同权限搜索一轮",
+      "方法": "数值搜索（一轮）",
       "目标范围面积↑": "97.80%",
       "沉积CV↓": "0.0858",
       "边缘目标面积↑": "95.77%",
@@ -21,7 +20,7 @@
       "开枪秒/件": "17.97"
     },
     {
-      "方法": "同权限搜索两轮",
+      "方法": "数值搜索（两轮）",
       "目标范围面积↑": "98.40%",
       "沉积CV↓": "0.0780",
       "边缘目标面积↑": "96.90%",
@@ -29,7 +28,7 @@
       "开枪秒/件": "18.05"
     },
     {
-      "方法": "全量扩权SAC",
+      "方法": "全量SAC训练",
       "目标范围面积↑": "95.07%",
       "沉积CV↓": "0.0969",
       "边缘目标面积↑": "91.26%",
@@ -200,5 +199,6 @@
   },
   "source_run": "search_distilled_sac_20261108",
   "source_dataset_doi": "10.7910/DVN/CAWRXI",
-  "runtime_or_demo_weights_updated": false
+  "runtime_or_demo_weights_updated": false,
+  "test_set": "72 automotive parts; 6 classes x 12; design groups isolated from this training set; used for multiple method comparisons"
 }
