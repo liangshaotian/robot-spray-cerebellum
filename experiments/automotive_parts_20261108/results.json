@@ -195,10 +195,141 @@
   ],
   "figures_sha256": {
     "best_search_paired_six_classes.png": "f228802f5975f772e924656c4f37eb0a093715208da4c5713afbded6ce954ed0",
-    "best_methods_hard_cases.png": "e4e74c919eace048d13f3417b964418e33f5fff8f5c4cf7f17553771c6dd897c"
+    "best_methods_hard_cases.png": "f5e556db346f422b7e7ac5ea372be0d722e27df5a68df79e17078f712ef572d9"
   },
   "source_run": "search_distilled_sac_20261108",
   "source_dataset_doi": "10.7910/DVN/CAWRXI",
   "runtime_or_demo_weights_updated": false,
-  "test_set": "72 automotive parts; 6 classes x 12; design groups isolated from this training set; used for multiple method comparisons"
+  "test_set": "72 automotive parts; 6 classes x 12; design groups isolated from this training set; used for multiple method comparisons",
+  "five_method_comparison": {
+    "methods": [
+      "baseline",
+      "sac",
+      "bc",
+      "guided",
+      "search"
+    ],
+    "selected": [
+      {
+        "asset_id": "f_s_wwc_wm_673_body_fender",
+        "part_name": "Body_Fender",
+        "baseline": {
+          "within_20_percent_fraction": 0.8396281561704287,
+          "relative_dose_cv": 0.1456927853167793,
+          "relative_target_rmse": 0.1460611487789125,
+          "threshold_coverage_fraction": 1.0,
+          "edge_threshold_coverage_fraction": 1.0,
+          "edge_within_20_percent_fraction": 0.8190793015128692,
+          "relative_dose_mean": 0.956035895621277,
+          "spray_on_seconds": 15.238422436951558
+        },
+        "sac": {
+          "within_20_percent_fraction": 0.8863742378518285,
+          "relative_dose_cv": 0.1303605427364412,
+          "relative_target_rmse": 0.13126286445147836,
+          "threshold_coverage_fraction": 1.0,
+          "edge_threshold_coverage_fraction": 1.0,
+          "edge_within_20_percent_fraction": 0.8234087923238207,
+          "relative_dose_mean": 0.9606771620905987,
+          "spray_on_seconds": 15.350317228384606
+        },
+        "bc": {
+          "within_20_percent_fraction": 0.8944885338965035,
+          "relative_dose_cv": 0.12751276516826582,
+          "relative_target_rmse": 0.1301397576929668,
+          "threshold_coverage_fraction": 1.0,
+          "edge_threshold_coverage_fraction": 1.0,
+          "edge_within_20_percent_fraction": 0.8316145903035156,
+          "relative_dose_mean": 0.953636155624343,
+          "spray_on_seconds": 15.244723802874896
+        },
+        "guided": {
+          "within_20_percent_fraction": 0.886337196385069,
+          "relative_dose_cv": 0.12772188686688146,
+          "relative_target_rmse": 0.13257134841266666,
+          "threshold_coverage_fraction": 1.0,
+          "edge_threshold_coverage_fraction": 1.0,
+          "edge_within_20_percent_fraction": 0.8407921906156088,
+          "relative_dose_mean": 0.9452235528264651,
+          "spray_on_seconds": 15.13027347028669
+        },
+        "search": {
+          "within_20_percent_fraction": 0.950628988682149,
+          "relative_dose_cv": 0.10676838042448364,
+          "relative_target_rmse": 0.11015771681045966,
+          "threshold_coverage_fraction": 1.0,
+          "edge_threshold_coverage_fraction": 1.0,
+          "edge_within_20_percent_fraction": 0.9099239888324517,
+          "relative_dose_mean": 0.9595059887094488,
+          "spray_on_seconds": 15.389322526407998
+        }
+      },
+      {
+        "asset_id": "n_s_ww_wm_424_body_front_fascia",
+        "part_name": "Body_front_fascia",
+        "baseline": {
+          "within_20_percent_fraction": 0.778655739046573,
+          "relative_dose_cv": 0.20540256890722577,
+          "relative_target_rmse": 0.2023075720542189,
+          "threshold_coverage_fraction": 0.9854200071340204,
+          "edge_threshold_coverage_fraction": 0.9791589734357036,
+          "edge_within_20_percent_fraction": 0.7818826072154806,
+          "relative_dose_mean": 0.9388287384126928,
+          "spray_on_seconds": 13.666890739960115
+        },
+        "sac": {
+          "within_20_percent_fraction": 0.8251758246090298,
+          "relative_dose_cv": 0.19396152046854126,
+          "relative_target_rmse": 0.19114405741200802,
+          "threshold_coverage_fraction": 0.9854200071340204,
+          "edge_threshold_coverage_fraction": 0.9791589734357036,
+          "edge_within_20_percent_fraction": 0.7880684996792895,
+          "relative_dose_mean": 0.9473450292960256,
+          "spray_on_seconds": 13.770860964451149
+        },
+        "bc": {
+          "within_20_percent_fraction": 0.8425663208360061,
+          "relative_dose_cv": 0.18852303857511524,
+          "relative_target_rmse": 0.1858316397552968,
+          "threshold_coverage_fraction": 0.9864372715044974,
+          "edge_threshold_coverage_fraction": 0.9806130779721668,
+          "edge_within_20_percent_fraction": 0.8212890670740716,
+          "relative_dose_mean": 0.9513616722165511,
+          "spray_on_seconds": 13.865604025786135
+        },
+        "guided": {
+          "within_20_percent_fraction": 0.8512498068655696,
+          "relative_dose_cv": 0.18132408242276138,
+          "relative_target_rmse": 0.18054401063823097,
+          "threshold_coverage_fraction": 0.9864372715044974,
+          "edge_threshold_coverage_fraction": 0.9806130779721668,
+          "edge_within_20_percent_fraction": 0.8199216672688767,
+          "relative_dose_mean": 0.9409657926861628,
+          "spray_on_seconds": 13.679402326022384
+        },
+        "search": {
+          "within_20_percent_fraction": 0.9240190966797913,
+          "relative_dose_cv": 0.16656547819817066,
+          "relative_target_rmse": 0.16582359743664526,
+          "threshold_coverage_fraction": 0.9874573856115563,
+          "edge_threshold_coverage_fraction": 0.9820712559973039,
+          "edge_within_20_percent_fraction": 0.8927263209526806,
+          "relative_dose_mean": 0.9508960864515451,
+          "spray_on_seconds": 13.862813349161756
+        }
+      }
+    ],
+    "same_target_masks_and_coordinates": true,
+    "source_sha256": {
+      "baseline__f_s_wwc_wm_673_body_fender.npz": "17e531dc4b5ec7be92e49456548519027c7eb0e9b2f88238d9f897ac61de049d",
+      "bc__f_s_wwc_wm_673_body_fender.npz": "382716d4bb195123dcac4c2d3714bc87448da4de8a0ad4d94c1391f03cf060cf",
+      "guided__f_s_wwc_wm_673_body_fender.npz": "cf6556824bb804754c45951133217e7bed8840712970429755fcb0f503f4d50c",
+      "search__f_s_wwc_wm_673_body_fender.npz": "4cf86724f9863052daa640b10bd681159cfdbbb348977df1d3f4035dafc8c1cd",
+      "baseline__n_s_ww_wm_424_body_front_fascia.npz": "6a20e708941194bba0e05db6c6b776cb49241d18b4016a28e717e22d5514dac0",
+      "bc__n_s_ww_wm_424_body_front_fascia.npz": "bf3e0037abe4655566abc7d2af0e4b8f4a7b3b690477f91b2df7a2b53e5b8f02",
+      "guided__n_s_ww_wm_424_body_front_fascia.npz": "67108c3a5bffd7827beac36f40a1b35df81ae32f3020fe8613a2a06b81feb5b1",
+      "search__n_s_ww_wm_424_body_front_fascia.npz": "9486e86c108819d995a5db65af084d74238373a9c1175ce7d1bdedb8ce8a31c3"
+    },
+    "figure_sha256": "f5e556db346f422b7e7ac5ea372be0d722e27df5a68df79e17078f712ef572d9"
+  }
 }
