@@ -28,3 +28,7 @@ POST `/v1/tasks`后轮询状态，终态后读取result和trajectory。同ID同�
 输出包括TCP位姿、速度、喷涂开关、E12关节角、坐标系及相对覆盖。任意自然语言先由大脑转为任务JSON；气压等未建模字段会报错。新增车身点云需明确单位和变换，默认raster规划；绑定SAC前另做适配与运动检查。
 
 接口契约见[API_CONTRACT](API_CONTRACT.md)，跨电脑、token和生命周期见[HANDOFF](HANDOFF.md)。[汽车实验记录](EXPERIMENT_20261029.md)和[整车视野视频](media/E12_E350_WholeCar_View.mp4)供交接查看。GitHub是代码和材料，不是运行中的服务地址。
+
+## 最新汽车零件实验
+
+[11.9方法对比、训练配置与最优效果图](EXPERIMENT_20261109.md)。本次更新为实验材料同步；上述API与整车演示仍按各自配置运行。

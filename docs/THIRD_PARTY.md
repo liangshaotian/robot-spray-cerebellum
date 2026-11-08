@@ -31,3 +31,7 @@ RoboDK 应用本体及许可由使用者另行准备。本仓库不包含应用 
 ## 当前汽车策略
 
 当前E350策略模型卡见`demo/e350_sac_v2/model_card.json`。它来自通用曲面预训练，不能称为汽车专用数据训练或独立车型泛化结果；本仓库当前展示、数据核验和演示均围绕汽车。训练环境、奖励、几何沉积和接口为项目实现，SAC调用Stable-Baselines3；不宣称复现某篇汽车喷涂论文的完整实验。
+
+## DrivAerNet++汽车零件实验
+
+署名：Mohamed Elrefaie, 2025, [DrivAerNet++: Annotations](https://doi.org/10.7910/DVN/CAWRXI)，Harvard Dataverse，V1，CC BY-NC 4.0。11.9实验记录中的汽车零件轮廓来自该CAD衍生几何；热力图为项目相对沉积计算结果，不是实测膜厚。此次提交包含汇总指标与可视化，不包含原始标注压缩包。

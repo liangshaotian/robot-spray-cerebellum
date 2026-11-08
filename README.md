@@ -2,7 +2,17 @@
 
 本项目面向汽车车身喷漆。大脑负责喷漆skill蒸馏和任务下发；小脑接收结构化指令，生成车身曲面的末端轨迹，完成华沿E12运动检查、RoboDK仿真和结果回传。
 
-软件版本0.3.1，HTTP/JSON协议保持v1。[接入入口](docs/START_HERE.md) · [汽车实验记录](docs/EXPERIMENT_20261029.md) · [演示复现](docs/PRECISE_DEMO.md)
+软件版本0.3.1，HTTP/JSON协议保持v1。[接入入口](docs/START_HERE.md) · [最新汽车零件实验](docs/EXPERIMENT_20261109.md) · [演示复现](docs/PRECISE_DEMO.md)
+
+## 最新实验：汽车零部件喷涂
+
+[11.9组会汇报：方法对比、训练配置与效果图](docs/EXPERIMENT_20261109.md)
+
+完成六类汽车零件数据准备、12,388件全量扩权SAC训练、搜索示范模仿学习及SAC微调。相同72件冻结比较集上，当前质量最好的是两轮搜索：目标±20%范围面积98.40%、CV 0.0780、边缘范围面积96.90%；最佳学习策略为模仿学习阶段：95.52%、CV 0.0912，后续SAC微调没有额外提升。
+
+![两轮搜索与原基准：六类同件对比](experiments/automotive_parts_20261108/best_search_paired_six_classes.png)
+
+指标来自未实测标定的相对沉积模型；这72件已用于方法比较。最新实验与下方整车演示分别保留，本次结果同步没有替换演示权重或接口实现。
 
 ## 汽车演示：完整车身视野
 
@@ -27,7 +37,7 @@ python tools/replay_demo.py --asset-id sacgen_e350_v2
 
 Windows可双击`Run_Precise_Demo.bat`，`Show_Demo.bat`只切回已完成的汽车场景。通过`ROBODK_EXE`和`ROBODK_PORT`设置实际安装路径及端口。更新代码后，使用者需重启API服务以加载新版代码。
 
-SAC经过24万步、67分钟通用曲面预训练，采用验证集选中的18万步检查点。汽车数值对照在同一E350前车门比较固定蛇形路线400mm/s、同路线最高约500mm/s、SAC横向±10mm及速度300～500mm/s调整。三者分别在3个给定沉积倍率下计算，共9次；这是已知系数敏感性检查，跨车型泛化尚未验证。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
+以下整车演示采用的SAC经过24万步、67分钟通用曲面预训练，采用验证集选中的18万步检查点。汽车数值对照在同一E350前车门比较固定蛇形路线400mm/s、同路线最高约500mm/s、SAC横向±10mm及速度300～500mm/s调整。三者分别在3个给定沉积倍率下计算，共9次；这是已知系数敏感性检查，跨车型泛化尚未验证。完整结果、适用范围和模型卡见[汽车实验记录](docs/EXPERIMENT_20261029.md)及[model_card.json](demo/e350_sac_v2/model_card.json)。
 
 ```bash
 # CPU核对当前汽车实验的全部平均指标，不调用RoboDK

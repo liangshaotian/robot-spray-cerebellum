@@ -1,0 +1,204 @@
+{
+  "report": "11.9 组会汇报",
+  "experiment_cutoff": "2026-11-08",
+  "cohort": "Reused frozen 72 automotive parts; 6 classes x 12; design groups isolated from TRAIN",
+  "metric_scope": "Surface-area-weighted uncalibrated relative deposition; target=1, tolerance=0.8..1.2",
+  "comparison": [
+    {
+      "方法": "几何规划基准",
+      "目标范围面积↑": "92.95%",
+      "沉积CV↓": "0.1056",
+      "边缘目标面积↑": "88.20%",
+      "阈值覆盖率↑": "99.944%",
+      "开枪秒/件": "17.75"
+    },
+    {
+      "方法": "同权限搜索一轮",
+      "目标范围面积↑": "97.80%",
+      "沉积CV↓": "0.0858",
+      "边缘目标面积↑": "95.77%",
+      "阈值覆盖率↑": "99.959%",
+      "开枪秒/件": "17.97"
+    },
+    {
+      "方法": "同权限搜索两轮",
+      "目标范围面积↑": "98.40%",
+      "沉积CV↓": "0.0780",
+      "边缘目标面积↑": "96.90%",
+      "阈值覆盖率↑": "99.961%",
+      "开枪秒/件": "18.05"
+    },
+    {
+      "方法": "全量扩权SAC",
+      "目标范围面积↑": "95.07%",
+      "沉积CV↓": "0.0969",
+      "边缘目标面积↑": "91.26%",
+      "阈值覆盖率↑": "99.947%",
+      "开枪秒/件": "17.95"
+    },
+    {
+      "方法": "搜索示范模仿学习",
+      "目标范围面积↑": "95.52%",
+      "沉积CV↓": "0.0912",
+      "边缘目标面积↑": "91.75%",
+      "阈值覆盖率↑": "99.956%",
+      "开枪秒/件": "17.98"
+    },
+    {
+      "方法": "模仿后示范约束SAC",
+      "目标范围面积↑": "95.38%",
+      "沉积CV↓": "0.0918",
+      "边缘目标面积↑": "91.53%",
+      "阈值覆盖率↑": "99.958%",
+      "开枪秒/件": "17.95"
+    }
+  ],
+  "representative_selection": "Lowest baseline target-range area in each class; paired identical masks and coordinates",
+  "examples": [
+    {
+      "asset_id": "f_s_wwc_wm_673_body_fender",
+      "baseline": {
+        "within_20_percent_fraction": 0.8396281561704287,
+        "relative_dose_cv": 0.1456927853167793,
+        "relative_target_rmse": 0.1460611487789125,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8190793015128692,
+        "relative_dose_mean": 0.956035895621277,
+        "spray_on_seconds": 15.238422436951558
+      },
+      "search": {
+        "within_20_percent_fraction": 0.950628988682149,
+        "relative_dose_cv": 0.10676838042448364,
+        "relative_target_rmse": 0.11015771681045966,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9099239888324517,
+        "relative_dose_mean": 0.9595059887094488,
+        "spray_on_seconds": 15.389322526407998
+      }
+    },
+    {
+      "asset_id": "n_s_wwc_wm_349_body_hood",
+      "baseline": {
+        "within_20_percent_fraction": 0.918195456189764,
+        "relative_dose_cv": 0.10860684532459197,
+        "relative_target_rmse": 0.10809081879631971,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.7941452268018256,
+        "relative_dose_mean": 0.9833032795527678,
+        "spray_on_seconds": 22.71244268619829
+      },
+      "search": {
+        "within_20_percent_fraction": 0.9825506694445343,
+        "relative_dose_cv": 0.08119242526178472,
+        "relative_target_rmse": 0.08093969338361823,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9417640645616324,
+        "relative_dose_mean": 0.9919737059122147,
+        "spray_on_seconds": 23.163160046748494
+      }
+    },
+    {
+      "asset_id": "n_s_wws_wm_099_body_rear_fascia",
+      "baseline": {
+        "within_20_percent_fraction": 0.9067588635427473,
+        "relative_dose_cv": 0.11754764025916509,
+        "relative_target_rmse": 0.11755407735512259,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8996090391527601,
+        "relative_dose_mean": 0.9726870905555414,
+        "spray_on_seconds": 14.957710564450045
+      },
+      "search": {
+        "within_20_percent_fraction": 0.9746694728124029,
+        "relative_dose_cv": 0.08934068083116913,
+        "relative_target_rmse": 0.08905355024680262,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9524361299602728,
+        "relative_dose_mean": 0.9955291494133466,
+        "spray_on_seconds": 15.364525863969247
+      }
+    },
+    {
+      "asset_id": "e_s_wwc_wm_531_body_roof",
+      "baseline": {
+        "within_20_percent_fraction": 0.9235464438375681,
+        "relative_dose_cv": 0.09799317920484789,
+        "relative_target_rmse": 0.09769516159747246,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.7721547010650258,
+        "relative_dose_mean": 0.98477014865381,
+        "spray_on_seconds": 24.664176504312103
+      },
+      "search": {
+        "within_20_percent_fraction": 0.9963790646812708,
+        "relative_dose_cv": 0.0758680723636739,
+        "relative_target_rmse": 0.07619903400172158,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9885311934524581,
+        "relative_dose_mean": 1.00337606163346,
+        "spray_on_seconds": 25.520126170953816
+      }
+    },
+    {
+      "asset_id": "e_s_wwc_wm_566_body_tail",
+      "baseline": {
+        "within_20_percent_fraction": 0.9362914047555283,
+        "relative_dose_cv": 0.09735183642558466,
+        "relative_target_rmse": 0.099921881512326,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9404673869524229,
+        "relative_dose_mean": 0.9663137680636212,
+        "spray_on_seconds": 7.971765758178378
+      },
+      "search": {
+        "within_20_percent_fraction": 0.9897465384586746,
+        "relative_dose_cv": 0.06393395339116077,
+        "relative_target_rmse": 0.0647632589332707,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9790805772387927,
+        "relative_dose_mean": 0.9848445446929989,
+        "spray_on_seconds": 8.057071095477419
+      }
+    },
+    {
+      "asset_id": "n_s_ww_wm_424_body_front_fascia",
+      "baseline": {
+        "within_20_percent_fraction": 0.778655739046573,
+        "relative_dose_cv": 0.20540256890722577,
+        "relative_target_rmse": 0.2023075720542189,
+        "threshold_coverage_fraction": 0.9854200071340204,
+        "edge_threshold_coverage_fraction": 0.9791589734357036,
+        "edge_within_20_percent_fraction": 0.7818826072154806,
+        "relative_dose_mean": 0.9388287384126928,
+        "spray_on_seconds": 13.666890739960115
+      },
+      "search": {
+        "within_20_percent_fraction": 0.9240190966797913,
+        "relative_dose_cv": 0.16656547819817066,
+        "relative_target_rmse": 0.16582359743664526,
+        "threshold_coverage_fraction": 0.9874573856115563,
+        "edge_threshold_coverage_fraction": 0.9820712559973039,
+        "edge_within_20_percent_fraction": 0.8927263209526806,
+        "relative_dose_mean": 0.9508960864515451,
+        "spray_on_seconds": 13.862813349161756
+      }
+    }
+  ],
+  "figures_sha256": {
+    "best_search_paired_six_classes.png": "f228802f5975f772e924656c4f37eb0a093715208da4c5713afbded6ce954ed0",
+    "best_methods_hard_cases.png": "e4e74c919eace048d13f3417b964418e33f5fff8f5c4cf7f17553771c6dd897c"
+  },
+  "source_run": "search_distilled_sac_20261108",
+  "source_dataset_doi": "10.7910/DVN/CAWRXI",
+  "runtime_or_demo_weights_updated": false
+}
