@@ -1,0 +1,30 @@
+{
+  "archive_files": 14,
+  "readable_scans": 11,
+  "distinct_confirmed_physical_workpieces": 1,
+  "repeated_scans_are_not_independent_training_samples": true,
+  "distinct_pose_groups": 7,
+  "unparsed_files": [
+    {
+      "file": "pt点云\\1013\\2026-10-13-14-39-43_0_4_0.ply",
+      "error": "ValueError: the number of columns changed from 6 to 9 at row 1943254; use `usecols` to select a subset and avoid this error",
+      "corruption_confirmed": false
+    },
+    {
+      "file": "pt点云\\1013\\2026-10-13-14-47-26_0_4_0.ply",
+      "error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0x84 in position 1: ordinal not in range(128)",
+      "corruption_confirmed": false
+    },
+    {
+      "file": "pt点云\\1013\\2026-10-13-14-54-53_0_4_0.ply",
+      "error": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xa9 in position 0: ordinal not in range(128)",
+      "corruption_confirmed": false
+    }
+  ],
+  "actual_triangular_aperture_confirmed_in_rgb_views": true,
+  "full_true_aperture_boundary_recovered": false,
+  "smooth_boundary_is_estimate": true,
+  "dimensional_accuracy_validated": false,
+  "fully_automatic_arbitrary_workpiece_pipeline": false,
+  "raw_data_published": false
+}

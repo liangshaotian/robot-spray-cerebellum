@@ -1,0 +1,95 @@
+{
+  "status": "complete",
+  "primary_evaluation": "Fixed source 3D trajectory, target grid 10 native units, integration step 2.5 native units",
+  "baseline": {
+    "within_20_percent_fraction": 0.9367130804375878,
+    "relative_dose_cv": 0.1035110584286738,
+    "relative_target_rmse": 0.10301178446095645,
+    "threshold_coverage_fraction": 1.0,
+    "edge_threshold_coverage_fraction": 1.0,
+    "edge_within_20_percent_fraction": 0.9003042006419621,
+    "relative_dose_mean": 0.9861800631311956,
+    "spray_on_seconds": 10.35226881787081
+  },
+  "search_two": {
+    "within_20_percent_fraction": 0.9798832563424756,
+    "relative_dose_cv": 0.08023893534627123,
+    "relative_target_rmse": 0.08417631852079147,
+    "threshold_coverage_fraction": 1.0,
+    "edge_threshold_coverage_fraction": 1.0,
+    "edge_within_20_percent_fraction": 0.9672875844605759,
+    "relative_dose_mean": 1.0197591127093157,
+    "spray_on_seconds": 10.817117227992917
+  },
+  "search_seconds": 14.821181124076247,
+  "search_evaluations": 3647,
+  "improvements": {
+    "target_band_percentage_points": 4.317017590488781,
+    "cv_relative_reduction_percent": 22.482740912594036,
+    "edge_band_percentage_points": 6.6983383818613795,
+    "spray_on_time_change_percent": 4.490304669442646
+  },
+  "continuous_domain_path_checks": {
+    "baseline": {
+      "original_20_grid_dose_parity_error": 1.7763568394002505e-15,
+      "source_trajectory_modified": false,
+      "actual_domain_crossing_segments": 0,
+      "outside_segments": [],
+      "quadrature_step_native": 2.5
+    },
+    "search": {
+      "original_20_grid_dose_parity_error": 2.4424906541753444e-15,
+      "source_trajectory_modified": false,
+      "actual_domain_crossing_segments": 0,
+      "outside_segments": [],
+      "quadrature_step_native": 2.5
+    }
+  },
+  "source_trajectory_unchanged": true,
+  "planning_grid20_result": {
+    "within_20_percent_fraction": 0.995899988760942,
+    "relative_dose_cv": 0.07597735843812041,
+    "relative_target_rmse": 0.08091508728116391,
+    "threshold_coverage_fraction": 1.0,
+    "edge_threshold_coverage_fraction": 1.0,
+    "edge_within_20_percent_fraction": 0.9930343373913878,
+    "relative_dose_mean": 1.0226011278522416,
+    "spray_on_seconds": 10.81711722799292
+  },
+  "planning_grid20_note": "Internal search-grid metrics; not the primary reported effect",
+  "earlier_cross_grid_diagnostic_status": "Not a same-path comparison because it re-fitted normals and changed OFF topology; retained for audit only",
+  "actual_scanned_workpieces": 1,
+  "physical_film_calibrated": false,
+  "robot_model": "huayan_e12",
+  "robot_ik_collision_validated": false,
+  "algorithm_source_unchanged": true,
+  "model_training": false,
+  "gpu_used": false,
+  "report_date": "2026-11-16",
+  "work_cutoff": "2026-11-09",
+  "scope": "One actual scanned fender-like workpiece, reconstructed main front surface only; return folds and backside not validated.",
+  "coordinate_units": "native coordinates; numerical recipe temporarily assumes 1 native unit = 1 mm; physical scale not confirmed",
+  "spray_strokes": 63,
+  "trajectory_anchors": 345,
+  "spray_time_includes_off_transfers": false,
+  "raw_pointcloud_published": false,
+  "robodk_path_overlay_completed": false,
+  "recipe": {
+    "standoff_assumed_mm": 200,
+    "spray_width_assumed_mm": 240,
+    "nominal_speed_assumed_mm_s": 400,
+    "speed_interval_assumed_mm_s": [
+      350,
+      450
+    ],
+    "overlap_ratio": 0.5833333333333334,
+    "passes": 1,
+    "position_adjustment_assumed_mm": 40,
+    "fan_yaw_adjustment_deg": 90
+  },
+  "figures_sha256": {
+    "search_heatmap_comparison.png": "8d677f1874a585b41a9b0694f9ba6bc66ad1a532ebb7c00541d0253a2bb4288a",
+    "searched_surface_path.png": "79b523c9ee0be1d9e5bce75e4aa4e89d9c6896be44d89497eaae3779dc9a3a63",
+    "boundary_before_after.png": "80e87089bba95e2d4b29556c618d474302eb6e1133433de67492612b148b0721"
+  }
+}

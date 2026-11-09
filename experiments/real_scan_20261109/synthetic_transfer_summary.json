@@ -1,0 +1,452 @@
+{
+  "synthetic_families": 18,
+  "synthetic_cases": 54,
+  "source_type": "Synthetic analytic, single-valued one-sided surfaces; not 54 real scanned parts",
+  "macro": {
+    "baseline": {
+      "within_20_percent_fraction": 0.9355845779899601,
+      "relative_dose_cv": 0.10177405357619423,
+      "relative_target_rmse": 0.10363932598296491,
+      "threshold_coverage_fraction": 1.0,
+      "edge_threshold_coverage_fraction": 1.0,
+      "edge_within_20_percent_fraction": 0.8940850207523263,
+      "relative_dose_mean": 0.9868377055273564,
+      "spray_on_seconds": 14.677545666363747
+    },
+    "search_two": {
+      "within_20_percent_fraction": 0.9884195702496137,
+      "relative_dose_cv": 0.07363593626999476,
+      "relative_target_rmse": 0.0770691329426214,
+      "threshold_coverage_fraction": 1.0,
+      "edge_threshold_coverage_fraction": 1.0,
+      "edge_within_20_percent_fraction": 0.9741981556072816,
+      "relative_dose_mean": 0.9886494063123736,
+      "spray_on_seconds": 14.764479533015166
+    }
+  },
+  "target_area_improved_cases": 54,
+  "cv_improved_cases": 54,
+  "search_seconds": {
+    "mean": 24.727008210952153,
+    "median": 16.94483944599051,
+    "max": 105.39874328603037
+  },
+  "family_results": {
+    "annular_channel": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9488597355273933,
+        "relative_dose_cv": 0.09517350643321938,
+        "relative_target_rmse": 0.0958517219968391,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9093329654977453,
+        "relative_dose_mean": 0.9771372009371712,
+        "spray_on_seconds": 13.704875395877039
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9914353768607587,
+        "relative_dose_cv": 0.07120764883132914,
+        "relative_target_rmse": 0.07124928486981964,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9746486395431798,
+        "relative_dose_mean": 0.992768333788808,
+        "spray_on_seconds": 13.921296761581928
+      }
+    },
+    "conical_shell": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9396431898687779,
+        "relative_dose_cv": 0.10102747533594307,
+        "relative_target_rmse": 0.10494942185836091,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8639399293183447,
+        "relative_dose_mean": 1.0055928562428558,
+        "spray_on_seconds": 14.369813504258309
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9839960784778018,
+        "relative_dose_cv": 0.07884543409856772,
+        "relative_target_rmse": 0.080570734761688,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9573605180781505,
+        "relative_dose_mean": 1.0071089218145481,
+        "spray_on_seconds": 14.470690780073028
+      }
+    },
+    "corrugated_panel": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9177303454372888,
+        "relative_dose_cv": 0.10902246224658992,
+        "relative_target_rmse": 0.10888570383004599,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8334008499900128,
+        "relative_dose_mean": 0.9867729213576508,
+        "spray_on_seconds": 18.37763673159068
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9848729568251658,
+        "relative_dose_cv": 0.081628791402984,
+        "relative_target_rmse": 0.0817668488717632,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9693920332530808,
+        "relative_dose_mean": 0.9899995655114294,
+        "spray_on_seconds": 18.4612459328272
+      }
+    },
+    "crescent_shell": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.8799024907343895,
+        "relative_dose_cv": 0.13293112022435447,
+        "relative_target_rmse": 0.13280053789240234,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8589266026577566,
+        "relative_dose_mean": 0.9845137285015225,
+        "spray_on_seconds": 6.780178594862818
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9673793004820164,
+        "relative_dose_cv": 0.09813891940743548,
+        "relative_target_rmse": 0.09819369031246324,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9560706146936938,
+        "relative_dose_mean": 0.9972220136780514,
+        "spray_on_seconds": 6.976610964824277
+      }
+    },
+    "cross_rib_panel": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9781677824310128,
+        "relative_dose_cv": 0.08584568958164353,
+        "relative_target_rmse": 0.09077277068977774,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9763562999493726,
+        "relative_dose_mean": 0.9624538075003982,
+        "spray_on_seconds": 19.137920489003488
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9983319820291309,
+        "relative_dose_cv": 0.048483388185753956,
+        "relative_target_rmse": 0.06880310817863762,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9941325247118081,
+        "relative_dose_mean": 0.9489700921219028,
+        "spray_on_seconds": 18.9395325296423
+      }
+    },
+    "domed_cover": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9407773820828935,
+        "relative_dose_cv": 0.10572966086137418,
+        "relative_target_rmse": 0.12290934303325275,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8428007372043892,
+        "relative_dose_mean": 1.037101850803673,
+        "spray_on_seconds": 14.719854112429323
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9800560791567734,
+        "relative_dose_cv": 0.07911279100831521,
+        "relative_target_rmse": 0.09461926043334164,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9347584880210619,
+        "relative_dose_mean": 1.03811527811099,
+        "spray_on_seconds": 14.83841832448934
+      }
+    },
+    "elliptic_trough": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9251818640466265,
+        "relative_dose_cv": 0.11199068307831088,
+        "relative_target_rmse": 0.11233359818796756,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8259829509473874,
+        "relative_dose_mean": 0.9754698476324535,
+        "spray_on_seconds": 15.588830141512974
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9708499226634316,
+        "relative_dose_cv": 0.10194119645251047,
+        "relative_target_rmse": 0.10365140856638251,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9060049156388906,
+        "relative_dose_mean": 0.9689006980217644,
+        "spray_on_seconds": 15.509769996655008
+      }
+    },
+    "multi_dome_shell": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9890894474401489,
+        "relative_dose_cv": 0.0674988522072024,
+        "relative_target_rmse": 0.06859449083840191,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9784450815523046,
+        "relative_dose_mean": 0.982411982586077,
+        "spray_on_seconds": 22.68704267438066
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9991262457080822,
+        "relative_dose_cv": 0.03998920105534457,
+        "relative_target_rmse": 0.04368212329400798,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9969403933798345,
+        "relative_dose_mean": 0.9823707465099393,
+        "spray_on_seconds": 22.69184835081191
+      }
+    },
+    "notched_bent_panel": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9295556091267315,
+        "relative_dose_cv": 0.10162260617105838,
+        "relative_target_rmse": 0.10154484450072886,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8350727222458284,
+        "relative_dose_mean": 0.9986369026481166,
+        "spray_on_seconds": 17.25570641124709
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9885032902533154,
+        "relative_dose_cv": 0.0815412802252471,
+        "relative_target_rmse": 0.08163520642081976,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9706447734455025,
+        "relative_dose_mean": 0.9890715008837687,
+        "spray_on_seconds": 17.35028924791116
+      }
+    },
+    "perforated_panel": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.929176242944561,
+        "relative_dose_cv": 0.10799808663686478,
+        "relative_target_rmse": 0.10998736190967295,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8924620053395053,
+        "relative_dose_mean": 1.0113491343144663,
+        "spray_on_seconds": 23.975940961167435
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9802939340574239,
+        "relative_dose_cv": 0.08989318944379754,
+        "relative_target_rmse": 0.09149011419088321,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9660408740592882,
+        "relative_dose_mean": 1.006715526390454,
+        "spray_on_seconds": 24.25989704507256
+      }
+    },
+    "ring_flange": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9680404522662944,
+        "relative_dose_cv": 0.08791480664703565,
+        "relative_target_rmse": 0.0882840872321539,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9586486425749822,
+        "relative_dose_mean": 0.981240857287633,
+        "spray_on_seconds": 12.567000856145315
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9960246435209718,
+        "relative_dose_cv": 0.06784369739219696,
+        "relative_target_rmse": 0.0704356029547486,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9941306925598212,
+        "relative_dose_mean": 0.9785376354087255,
+        "spray_on_seconds": 12.615143496229827
+      }
+    },
+    "saddle_shell": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9213094271779436,
+        "relative_dose_cv": 0.10611678184411431,
+        "relative_target_rmse": 0.10729887598274646,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8602494275007588,
+        "relative_dose_mean": 0.9713237980433297,
+        "spray_on_seconds": 23.509407182047728
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9926769844842044,
+        "relative_dose_cv": 0.06862923648236074,
+        "relative_target_rmse": 0.07309822180958653,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9760420881060813,
+        "relative_dose_mean": 0.9711383241699988,
+        "spray_on_seconds": 23.58185875661772
+      }
+    },
+    "spiral_ribbon": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.8960823175367959,
+        "relative_dose_cv": 0.11777602015192835,
+        "relative_target_rmse": 0.11697247789284908,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8854546817323857,
+        "relative_dose_mean": 0.9869663264621789,
+        "spray_on_seconds": 7.655687747453965
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9898544176142668,
+        "relative_dose_cv": 0.08155712453609269,
+        "relative_target_rmse": 0.08183801420981984,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9891206938320499,
+        "relative_dose_mean": 0.9952946799904452,
+        "spray_on_seconds": 7.81105085775295
+      }
+    },
+    "star_cover": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9379137420683028,
+        "relative_dose_cv": 0.10187951744115058,
+        "relative_target_rmse": 0.1018092632945194,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9032454626587986,
+        "relative_dose_mean": 0.9855776906986295,
+        "spray_on_seconds": 10.231282254446791
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9929011966767889,
+        "relative_dose_cv": 0.06854201852150792,
+        "relative_target_rmse": 0.06895766610430322,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9874320308828274,
+        "relative_dose_mean": 0.9926108903788254,
+        "spray_on_seconds": 10.409784457526015
+      }
+    },
+    "stepped_tray": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9732739446997604,
+        "relative_dose_cv": 0.07272095471644885,
+        "relative_target_rmse": 0.07340292940607158,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9669085952729799,
+        "relative_dose_mean": 0.9836183464549423,
+        "spray_on_seconds": 21.398190443065015
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9994760940091728,
+        "relative_dose_cv": 0.0466568744033716,
+        "relative_target_rmse": 0.051081601038073854,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9978803585833397,
+        "relative_dose_mean": 0.9777083588364421,
+        "spray_on_seconds": 21.24853151860452
+      }
+    },
+    "twisted_blade": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.8899148643524432,
+        "relative_dose_cv": 0.1173995754879424,
+        "relative_target_rmse": 0.11978756237280502,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8536412865546296,
+        "relative_dose_mean": 0.9640628188253864,
+        "spray_on_seconds": 7.711993970793624
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9855047350285414,
+        "relative_dose_cv": 0.0856944120383986,
+        "relative_target_rmse": 0.08908161504662908,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9782908168396132,
+        "relative_dose_mean": 0.9702172915944423,
+        "spray_on_seconds": 7.8599951954662695
+      }
+    },
+    "wavy_ribbon": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9633627580463097,
+        "relative_dose_cv": 0.09643389266698706,
+        "relative_target_rmse": 0.09678223359668407,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9536104191997293,
+        "relative_dose_mean": 0.983674576923104,
+        "spray_on_seconds": 8.26627002455878
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9966920550680913,
+        "relative_dose_cv": 0.06208974754537288,
+        "relative_target_rmse": 0.06275858109507433,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9954688194184413,
+        "relative_dose_mean": 1.0052454360113856,
+        "spray_on_seconds": 8.441917765189766
+      }
+    },
+    "y_branch_shell": {
+      "n": 3,
+      "baseline": {
+        "within_20_percent_fraction": 0.9125408080316041,
+        "relative_dose_cv": 0.11285127263932777,
+        "relative_target_rmse": 0.11254064317808883,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8950517133449615,
+        "relative_dose_mean": 0.9851740522728273,
+        "spray_on_seconds": 6.2581904997064335
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9935769715771087,
+        "relative_dose_cv": 0.07365190182931923,
+        "relative_target_rmse": 0.07433131080914283,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9912075258844005,
+        "relative_dose_mean": 0.9836940204008052,
+        "spray_on_seconds": 6.372749612997178
+      }
+    }
+  },
+  "robot_motion_validated": false,
+  "physical_film_calibrated": false
+}
