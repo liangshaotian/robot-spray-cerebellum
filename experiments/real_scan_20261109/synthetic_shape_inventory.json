@@ -1,0 +1,1081 @@
+{
+  "families": 18,
+  "cases": 54,
+  "inventory": [
+    {
+      "family": "saddle_shell",
+      "name_zh": "双曲鞍形壳",
+      "geometric_feature": "两个方向反向弯曲；曲率幅值参数",
+      "three_variant_parameters": "65/130/200mm",
+      "three_variant_xy_dimensions": "800×600 / 1000×700 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "saddle_shell_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 600.0,
+            "amplitude": 65.0
+          }
+        },
+        {
+          "asset_id": "saddle_shell_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 700.0,
+            "amplitude": 130.0
+          }
+        },
+        {
+          "asset_id": "saddle_shell_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "amplitude": 200.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9213094271779436,
+        "relative_dose_cv": 0.10611678184411431,
+        "relative_target_rmse": 0.10729887598274646,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8602494275007588,
+        "relative_dose_mean": 0.9713237980433297,
+        "spray_on_seconds": 23.509407182047728
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9926769844842044,
+        "relative_dose_cv": 0.06862923648236074,
+        "relative_target_rmse": 0.07309822180958653,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9760420881060813,
+        "relative_dose_mean": 0.9711383241699988,
+        "spray_on_seconds": 23.58185875661772
+      }
+    },
+    {
+      "family": "corrugated_panel",
+      "name_zh": "波纹板",
+      "geometric_feature": "连续凹凸波纹；波高参数/波长",
+      "three_variant_parameters": "25/35/45mm；300/220/160mm",
+      "three_variant_xy_dimensions": "800×600 / 1000×650 / 1200×700mm",
+      "cases": [
+        {
+          "asset_id": "corrugated_panel_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 600.0,
+            "amplitude": 25.0,
+            "period": 300.0
+          }
+        },
+        {
+          "asset_id": "corrugated_panel_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 650.0,
+            "amplitude": 35.0,
+            "period": 220.0
+          }
+        },
+        {
+          "asset_id": "corrugated_panel_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 700.0,
+            "amplitude": 45.0,
+            "period": 160.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9177303454372888,
+        "relative_dose_cv": 0.10902246224658992,
+        "relative_target_rmse": 0.10888570383004599,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8334008499900128,
+        "relative_dose_mean": 0.9867729213576508,
+        "spray_on_seconds": 18.37763673159068
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9848729568251658,
+        "relative_dose_cv": 0.081628791402984,
+        "relative_target_rmse": 0.0817668488717632,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9693920332530808,
+        "relative_dose_mean": 0.9899995655114294,
+        "spray_on_seconds": 18.4612459328272
+      }
+    },
+    {
+      "family": "twisted_blade",
+      "name_zh": "扭转叶片单面",
+      "geometric_feature": "窄叶片扭转；扭转高度参数/拱高参数",
+      "three_variant_parameters": "50/100/150mm；25/35/45mm",
+      "three_variant_xy_dimensions": "800×240 / 1000×300 / 1200×360mm",
+      "cases": [
+        {
+          "asset_id": "twisted_blade_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 240.0,
+            "twist": 50.0,
+            "camber": 25.0
+          }
+        },
+        {
+          "asset_id": "twisted_blade_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 300.0,
+            "twist": 100.0,
+            "camber": 35.0
+          }
+        },
+        {
+          "asset_id": "twisted_blade_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 360.0,
+            "twist": 150.0,
+            "camber": 45.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.8899148643524432,
+        "relative_dose_cv": 0.1173995754879424,
+        "relative_target_rmse": 0.11978756237280502,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8536412865546296,
+        "relative_dose_mean": 0.9640628188253864,
+        "spray_on_seconds": 7.711993970793624
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9855047350285414,
+        "relative_dose_cv": 0.0856944120383986,
+        "relative_target_rmse": 0.08908161504662908,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9782908168396132,
+        "relative_dose_mean": 0.9702172915944423,
+        "spray_on_seconds": 7.8599951954662695
+      }
+    },
+    {
+      "family": "domed_cover",
+      "name_zh": "圆顶罩",
+      "geometric_feature": "向外鼓起的圆顶；拱高参数",
+      "three_variant_parameters": "60/110/170mm",
+      "three_variant_xy_dimensions": "600×600 / 760×760 / 920×920mm",
+      "cases": [
+        {
+          "asset_id": "domed_cover_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 600.0,
+            "width": 600.0,
+            "radius": 300.0,
+            "height": 60.0
+          }
+        },
+        {
+          "asset_id": "domed_cover_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 760.0,
+            "width": 760.0,
+            "radius": 380.0,
+            "height": 110.0
+          }
+        },
+        {
+          "asset_id": "domed_cover_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 920.0,
+            "width": 920.0,
+            "radius": 460.0,
+            "height": 170.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9407773820828935,
+        "relative_dose_cv": 0.10572966086137418,
+        "relative_target_rmse": 0.12290934303325275,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8428007372043892,
+        "relative_dose_mean": 1.037101850803673,
+        "spray_on_seconds": 14.719854112429323
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9800560791567734,
+        "relative_dose_cv": 0.07911279100831521,
+        "relative_target_rmse": 0.09461926043334164,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9347584880210619,
+        "relative_dose_mean": 1.03811527811099,
+        "spray_on_seconds": 14.83841832448934
+      }
+    },
+    {
+      "family": "ring_flange",
+      "name_zh": "带螺栓孔环形法兰",
+      "geometric_feature": "中心大孔＋4个螺栓孔；中心孔半径/螺栓孔半径",
+      "three_variant_parameters": "120/190/270mm；25/35/45mm",
+      "three_variant_xy_dimensions": "640×640 / 800×800 / 960×960mm",
+      "cases": [
+        {
+          "asset_id": "ring_flange_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 640.0,
+            "width": 640.0,
+            "radius": 320.0,
+            "inner_radius": 120.0,
+            "height": 12.0,
+            "hole_radius": 25.0
+          }
+        },
+        {
+          "asset_id": "ring_flange_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 800.0,
+            "width": 800.0,
+            "radius": 400.0,
+            "inner_radius": 190.0,
+            "height": 24.0,
+            "hole_radius": 35.0
+          }
+        },
+        {
+          "asset_id": "ring_flange_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 960.0,
+            "width": 960.0,
+            "radius": 480.0,
+            "inner_radius": 270.0,
+            "height": 36.0,
+            "hole_radius": 45.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9680404522662944,
+        "relative_dose_cv": 0.08791480664703565,
+        "relative_target_rmse": 0.0882840872321539,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9586486425749822,
+        "relative_dose_mean": 0.981240857287633,
+        "spray_on_seconds": 12.567000856145315
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9960246435209718,
+        "relative_dose_cv": 0.06784369739219696,
+        "relative_target_rmse": 0.0704356029547486,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9941306925598212,
+        "relative_dose_mean": 0.9785376354087255,
+        "spray_on_seconds": 12.615143496229827
+      }
+    },
+    {
+      "family": "notched_bent_panel",
+      "name_zh": "带孔缺口折弯面板",
+      "geometric_feature": "外边缺口、内孔与折弯并存；折弯高度参数/孔半径",
+      "three_variant_parameters": "60/110/170mm；45/65/85mm",
+      "three_variant_xy_dimensions": "800×600 / 1000×700 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "notched_bent_panel_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 600.0,
+            "bend": 60.0,
+            "ripple": 15.0,
+            "hole_radius": 45.0
+          }
+        },
+        {
+          "asset_id": "notched_bent_panel_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 700.0,
+            "bend": 110.0,
+            "ripple": 25.0,
+            "hole_radius": 65.0
+          }
+        },
+        {
+          "asset_id": "notched_bent_panel_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "bend": 170.0,
+            "ripple": 35.0,
+            "hole_radius": 85.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9295556091267315,
+        "relative_dose_cv": 0.10162260617105838,
+        "relative_target_rmse": 0.10154484450072886,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8350727222458284,
+        "relative_dose_mean": 0.9986369026481166,
+        "spray_on_seconds": 17.25570641124709
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9885032902533154,
+        "relative_dose_cv": 0.0815412802252471,
+        "relative_target_rmse": 0.08163520642081976,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9706447734455025,
+        "relative_dose_mean": 0.9890715008837687,
+        "spray_on_seconds": 17.35028924791116
+      }
+    },
+    {
+      "family": "conical_shell",
+      "name_zh": "截锥形壳",
+      "geometric_feature": "带中心孔的斜面壳；斜率/中心孔半径",
+      "three_variant_parameters": "0.25/0.45/0.65（无量纲）；60/90/120mm",
+      "three_variant_xy_dimensions": "600×600 / 760×760 / 920×920mm",
+      "cases": [
+        {
+          "asset_id": "conical_shell_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 600.0,
+            "width": 600.0,
+            "radius": 300.0,
+            "slope": 0.25,
+            "inner_radius": 60.0
+          }
+        },
+        {
+          "asset_id": "conical_shell_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 760.0,
+            "width": 760.0,
+            "radius": 380.0,
+            "slope": 0.45,
+            "inner_radius": 90.0
+          }
+        },
+        {
+          "asset_id": "conical_shell_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 920.0,
+            "width": 920.0,
+            "radius": 460.0,
+            "slope": 0.65,
+            "inner_radius": 120.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9396431898687779,
+        "relative_dose_cv": 0.10102747533594307,
+        "relative_target_rmse": 0.10494942185836091,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8639399293183447,
+        "relative_dose_mean": 1.0055928562428558,
+        "spray_on_seconds": 14.369813504258309
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9839960784778018,
+        "relative_dose_cv": 0.07884543409856772,
+        "relative_target_rmse": 0.080570734761688,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9573605180781505,
+        "relative_dose_mean": 1.0071089218145481,
+        "spray_on_seconds": 14.470690780073028
+      }
+    },
+    {
+      "family": "elliptic_trough",
+      "name_zh": "椭圆凹槽",
+      "geometric_feature": "椭圆外形、向内凹陷；凹槽深度参数",
+      "three_variant_parameters": "60/100/150mm",
+      "three_variant_xy_dimensions": "800×500 / 1000×650 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "elliptic_trough_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 500.0,
+            "depth": 60.0
+          }
+        },
+        {
+          "asset_id": "elliptic_trough_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 650.0,
+            "depth": 100.0
+          }
+        },
+        {
+          "asset_id": "elliptic_trough_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "depth": 150.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9251818640466265,
+        "relative_dose_cv": 0.11199068307831088,
+        "relative_target_rmse": 0.11233359818796756,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8259829509473874,
+        "relative_dose_mean": 0.9754698476324535,
+        "spray_on_seconds": 15.588830141512974
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9708499226634316,
+        "relative_dose_cv": 0.10194119645251047,
+        "relative_target_rmse": 0.10365140856638251,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9060049156388906,
+        "relative_dose_mean": 0.9689006980217644,
+        "spray_on_seconds": 15.509769996655008
+      }
+    },
+    {
+      "family": "cross_rib_panel",
+      "name_zh": "交叉筋曲面板",
+      "geometric_feature": "两条交叉凸筋；筋高参数/筋宽参数",
+      "three_variant_parameters": "45/75/100mm；90/110/120mm",
+      "three_variant_xy_dimensions": "700×600 / 900×700 / 1100×800mm",
+      "cases": [
+        {
+          "asset_id": "cross_rib_panel_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 700.0,
+            "width": 600.0,
+            "height": 45.0,
+            "rib_width": 90.0
+          }
+        },
+        {
+          "asset_id": "cross_rib_panel_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 900.0,
+            "width": 700.0,
+            "height": 75.0,
+            "rib_width": 110.0
+          }
+        },
+        {
+          "asset_id": "cross_rib_panel_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1100.0,
+            "width": 800.0,
+            "height": 100.0,
+            "rib_width": 120.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9781677824310128,
+        "relative_dose_cv": 0.08584568958164353,
+        "relative_target_rmse": 0.09077277068977774,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9763562999493726,
+        "relative_dose_mean": 0.9624538075003982,
+        "spray_on_seconds": 19.137920489003488
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9983319820291309,
+        "relative_dose_cv": 0.048483388185753956,
+        "relative_target_rmse": 0.06880310817863762,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9941325247118081,
+        "relative_dose_mean": 0.9489700921219028,
+        "spray_on_seconds": 18.9395325296423
+      }
+    },
+    {
+      "family": "multi_dome_shell",
+      "name_zh": "多凸包曲面壳",
+      "geometric_feature": "多个凸包和凹区相邻；起伏高度参数",
+      "three_variant_parameters": "60/110/160mm",
+      "three_variant_xy_dimensions": "800×600 / 1000×700 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "multi_dome_shell_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 600.0,
+            "height": 60.0
+          }
+        },
+        {
+          "asset_id": "multi_dome_shell_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 700.0,
+            "height": 110.0
+          }
+        },
+        {
+          "asset_id": "multi_dome_shell_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 160.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9890894474401489,
+        "relative_dose_cv": 0.0674988522072024,
+        "relative_target_rmse": 0.06859449083840191,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9784450815523046,
+        "relative_dose_mean": 0.982411982586077,
+        "spray_on_seconds": 22.68704267438066
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9991262457080822,
+        "relative_dose_cv": 0.03998920105534457,
+        "relative_target_rmse": 0.04368212329400798,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9969403933798345,
+        "relative_dose_mean": 0.9823707465099393,
+        "spray_on_seconds": 22.69184835081191
+      }
+    },
+    {
+      "family": "stepped_tray",
+      "name_zh": "圆角台阶托盘",
+      "geometric_feature": "圆角外边和台阶过渡；台阶高度参数/过渡宽参数",
+      "three_variant_parameters": "40/70/100mm；50/65/80mm",
+      "three_variant_xy_dimensions": "800×600 / 1000×700 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "stepped_tray_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 600.0,
+            "height": 40.0,
+            "transition": 50.0
+          }
+        },
+        {
+          "asset_id": "stepped_tray_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 700.0,
+            "height": 70.0,
+            "transition": 65.0
+          }
+        },
+        {
+          "asset_id": "stepped_tray_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 100.0,
+            "transition": 80.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9732739446997604,
+        "relative_dose_cv": 0.07272095471644885,
+        "relative_target_rmse": 0.07340292940607158,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9669085952729799,
+        "relative_dose_mean": 0.9836183464549423,
+        "spray_on_seconds": 21.398190443065015
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9994760940091728,
+        "relative_dose_cv": 0.0466568744033716,
+        "relative_target_rmse": 0.051081601038073854,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9978803585833397,
+        "relative_dose_mean": 0.9777083588364421,
+        "spray_on_seconds": 21.24853151860452
+      }
+    },
+    {
+      "family": "annular_channel",
+      "name_zh": "环形凹槽",
+      "geometric_feature": "圆盘上的环形凹槽；槽深参数/槽宽参数",
+      "three_variant_parameters": "40/65/95mm；70/90/110mm",
+      "three_variant_xy_dimensions": "600×600 / 760×760 / 920×920mm",
+      "cases": [
+        {
+          "asset_id": "annular_channel_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 600.0,
+            "width": 600.0,
+            "radius": 300.0,
+            "depth": 40.0,
+            "channel_width": 70.0
+          }
+        },
+        {
+          "asset_id": "annular_channel_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 760.0,
+            "width": 760.0,
+            "radius": 380.0,
+            "depth": 65.0,
+            "channel_width": 90.0
+          }
+        },
+        {
+          "asset_id": "annular_channel_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 920.0,
+            "width": 920.0,
+            "radius": 460.0,
+            "depth": 95.0,
+            "channel_width": 110.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9488597355273933,
+        "relative_dose_cv": 0.09517350643321938,
+        "relative_target_rmse": 0.0958517219968391,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9093329654977453,
+        "relative_dose_mean": 0.9771372009371712,
+        "spray_on_seconds": 13.704875395877039
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9914353768607587,
+        "relative_dose_cv": 0.07120764883132914,
+        "relative_target_rmse": 0.07124928486981964,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9746486395431798,
+        "relative_dose_mean": 0.992768333788808,
+        "spray_on_seconds": 13.921296761581928
+      }
+    },
+    {
+      "family": "star_cover",
+      "name_zh": "五角星曲面罩",
+      "geometric_feature": "五角星凹凸边界；起伏高度参数",
+      "three_variant_parameters": "45/80/120mm",
+      "three_variant_xy_dimensions": "640×640 / 800×800 / 960×960mm",
+      "cases": [
+        {
+          "asset_id": "star_cover_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 640.0,
+            "width": 640.0,
+            "radius": 320.0,
+            "height": 45.0
+          }
+        },
+        {
+          "asset_id": "star_cover_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 800.0,
+            "width": 800.0,
+            "radius": 400.0,
+            "height": 80.0
+          }
+        },
+        {
+          "asset_id": "star_cover_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 960.0,
+            "width": 960.0,
+            "radius": 480.0,
+            "height": 120.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9379137420683028,
+        "relative_dose_cv": 0.10187951744115058,
+        "relative_target_rmse": 0.1018092632945194,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9032454626587986,
+        "relative_dose_mean": 0.9855776906986295,
+        "spray_on_seconds": 10.231282254446791
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9929011966767889,
+        "relative_dose_cv": 0.06854201852150792,
+        "relative_target_rmse": 0.06895766610430322,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9874320308828274,
+        "relative_dose_mean": 0.9926108903788254,
+        "spray_on_seconds": 10.409784457526015
+      }
+    },
+    {
+      "family": "perforated_panel",
+      "name_zh": "九孔起伏面板",
+      "geometric_feature": "九个内孔和起伏曲面；高度参数/孔半径",
+      "three_variant_parameters": "25/50/80mm；35/50/65mm",
+      "three_variant_xy_dimensions": "800×650 / 1000×800 / 1200×950mm",
+      "cases": [
+        {
+          "asset_id": "perforated_panel_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 650.0,
+            "height": 25.0,
+            "hole_radius": 35.0
+          }
+        },
+        {
+          "asset_id": "perforated_panel_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 800.0,
+            "height": 50.0,
+            "hole_radius": 50.0
+          }
+        },
+        {
+          "asset_id": "perforated_panel_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 950.0,
+            "height": 80.0,
+            "hole_radius": 65.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.929176242944561,
+        "relative_dose_cv": 0.10799808663686478,
+        "relative_target_rmse": 0.10998736190967295,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8924620053395053,
+        "relative_dose_mean": 1.0113491343144663,
+        "spray_on_seconds": 23.975940961167435
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9802939340574239,
+        "relative_dose_cv": 0.08989318944379754,
+        "relative_target_rmse": 0.09149011419088321,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9660408740592882,
+        "relative_dose_mean": 1.006715526390454,
+        "spray_on_seconds": 24.25989704507256
+      }
+    },
+    {
+      "family": "y_branch_shell",
+      "name_zh": "Y形分叉曲面",
+      "geometric_feature": "三条分支交汇；分支宽/高度参数",
+      "three_variant_parameters": "130/160/190mm；40/80/120mm",
+      "three_variant_xy_dimensions": "640×640 / 800×800 / 960×960mm",
+      "cases": [
+        {
+          "asset_id": "y_branch_shell_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 640.0,
+            "width": 640.0,
+            "radius": 320.0,
+            "arm_width": 130.0,
+            "height": 40.0
+          }
+        },
+        {
+          "asset_id": "y_branch_shell_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 800.0,
+            "width": 800.0,
+            "radius": 400.0,
+            "arm_width": 160.0,
+            "height": 80.0
+          }
+        },
+        {
+          "asset_id": "y_branch_shell_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 960.0,
+            "width": 960.0,
+            "radius": 480.0,
+            "arm_width": 190.0,
+            "height": 120.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9125408080316041,
+        "relative_dose_cv": 0.11285127263932777,
+        "relative_target_rmse": 0.11254064317808883,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8950517133449615,
+        "relative_dose_mean": 0.9851740522728273,
+        "spray_on_seconds": 6.2581904997064335
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9935769715771087,
+        "relative_dose_cv": 0.07365190182931923,
+        "relative_target_rmse": 0.07433131080914283,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9912075258844005,
+        "relative_dose_mean": 0.9836940204008052,
+        "spray_on_seconds": 6.372749612997178
+      }
+    },
+    {
+      "family": "crescent_shell",
+      "name_zh": "月牙形曲面壳",
+      "geometric_feature": "大凹边与窄端部；切口半径比/高度参数",
+      "three_variant_parameters": "0.82/0.9/0.98（无量纲）；50/85/125mm",
+      "three_variant_xy_dimensions": "640×640 / 800×800 / 960×960mm",
+      "cases": [
+        {
+          "asset_id": "crescent_shell_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 640.0,
+            "width": 640.0,
+            "radius": 320.0,
+            "height": 50.0,
+            "cut_ratio": 0.82
+          }
+        },
+        {
+          "asset_id": "crescent_shell_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 800.0,
+            "width": 800.0,
+            "radius": 400.0,
+            "height": 85.0,
+            "cut_ratio": 0.9
+          }
+        },
+        {
+          "asset_id": "crescent_shell_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 960.0,
+            "width": 960.0,
+            "radius": 480.0,
+            "height": 125.0,
+            "cut_ratio": 0.98
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.8799024907343895,
+        "relative_dose_cv": 0.13293112022435447,
+        "relative_target_rmse": 0.13280053789240234,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8589266026577566,
+        "relative_dose_mean": 0.9845137285015225,
+        "spray_on_seconds": 6.780178594862818
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9673793004820164,
+        "relative_dose_cv": 0.09813891940743548,
+        "relative_target_rmse": 0.09819369031246324,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9560706146936938,
+        "relative_dose_mean": 0.9972220136780514,
+        "spray_on_seconds": 6.976610964824277
+      }
+    },
+    {
+      "family": "spiral_ribbon",
+      "name_zh": "螺旋曲面带",
+      "geometric_feature": "弯曲螺旋窄带；带宽/高度参数",
+      "three_variant_parameters": "125/145/165mm；50/90/130mm",
+      "three_variant_xy_dimensions": "660×660 / 820×820 / 980×980mm",
+      "cases": [
+        {
+          "asset_id": "spiral_ribbon_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 660.0,
+            "width": 660.0,
+            "radius": 330.0,
+            "height": 50.0,
+            "band_width": 125.0
+          }
+        },
+        {
+          "asset_id": "spiral_ribbon_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 820.0,
+            "width": 820.0,
+            "radius": 410.0,
+            "height": 90.0,
+            "band_width": 145.0
+          }
+        },
+        {
+          "asset_id": "spiral_ribbon_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 980.0,
+            "width": 980.0,
+            "radius": 490.0,
+            "height": 130.0,
+            "band_width": 165.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.8960823175367959,
+        "relative_dose_cv": 0.11777602015192835,
+        "relative_target_rmse": 0.11697247789284908,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.8854546817323857,
+        "relative_dose_mean": 0.9869663264621789,
+        "spray_on_seconds": 7.655687747453965
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9898544176142668,
+        "relative_dose_cv": 0.08155712453609269,
+        "relative_target_rmse": 0.08183801420981984,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9891206938320499,
+        "relative_dose_mean": 0.9952946799904452,
+        "spray_on_seconds": 7.81105085775295
+      }
+    },
+    {
+      "family": "wavy_ribbon",
+      "name_zh": "S形弯曲带面",
+      "geometric_feature": "S形窄带和弯曲边界；高度参数",
+      "three_variant_parameters": "50/90/140mm",
+      "three_variant_xy_dimensions": "800×500 / 1000×650 / 1200×800mm",
+      "cases": [
+        {
+          "asset_id": "wavy_ribbon_v1",
+          "variant": 1,
+          "parameters": {
+            "length": 800.0,
+            "width": 500.0,
+            "height": 50.0
+          }
+        },
+        {
+          "asset_id": "wavy_ribbon_v2",
+          "variant": 2,
+          "parameters": {
+            "length": 1000.0,
+            "width": 650.0,
+            "height": 90.0
+          }
+        },
+        {
+          "asset_id": "wavy_ribbon_v3",
+          "variant": 3,
+          "parameters": {
+            "length": 1200.0,
+            "width": 800.0,
+            "height": 140.0
+          }
+        }
+      ],
+      "baseline": {
+        "within_20_percent_fraction": 0.9633627580463097,
+        "relative_dose_cv": 0.09643389266698706,
+        "relative_target_rmse": 0.09678223359668407,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9536104191997293,
+        "relative_dose_mean": 0.983674576923104,
+        "spray_on_seconds": 8.26627002455878
+      },
+      "search_two": {
+        "within_20_percent_fraction": 0.9966920550680913,
+        "relative_dose_cv": 0.06208974754537288,
+        "relative_target_rmse": 0.06275858109507433,
+        "threshold_coverage_fraction": 1.0,
+        "edge_threshold_coverage_fraction": 1.0,
+        "edge_within_20_percent_fraction": 0.9954688194184413,
+        "relative_dose_mean": 1.0052454360113856,
+        "spray_on_seconds": 8.441917765189766
+      }
+    }
+  ],
+  "overview_sha256": "adf951a5fc4cf9672c48f7699beea0363f56a4a601eb9bd009818f40343b9329"
+}

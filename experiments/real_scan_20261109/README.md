@@ -14,3 +14,5 @@ python tools/verify_real_scan_search.py
 ```
 
 该命令仅复核保存结果。原始企业点云未上传；完整三维重建与搜索重跑需要原始数据、环境及相应研究代码，当前仓库不宣称已有任意新工件的全自动流水线。
+
+具体18类形状、每类3档参数与分类型结果见汇报新增表格；`synthetic_shape_inventory.json` 保存完整分类说明，`synthetic_cases.csv` 保存全部54个样例的尺寸、参数和逐件指标。

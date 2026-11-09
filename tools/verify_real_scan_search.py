@@ -54,8 +54,27 @@ def verify(directory: Path):
     assert quality['readable_scans']==11 and quality['distinct_confirmed_physical_workpieces']==1
     assert not record['physical_film_calibrated'] and not record['robot_ik_collision_validated']
     assert not record['robodk_path_overlay_completed']
+    inventory=json.loads((directory/'synthetic_shape_inventory.json').read_text(encoding='utf-8'))
+    transfer=json.loads((directory/'synthetic_transfer_summary.json').read_text(encoding='utf-8'))
+    with (directory/'synthetic_cases.csv').open(encoding='utf-8-sig',newline='') as f:cases=list(csv.DictReader(f))
+    assert inventory['families']==18 and inventory['cases']==len(cases)==54
+    assert len({r['asset_id'] for r in cases})==54
+    assert {r['family'] for r in cases}=={r['family'] for r in inventory['inventory']}
+    for family in inventory['inventory']:
+        group=[r for r in cases if r['family']==family['family']]
+        assert len(group)==3 and {int(r['variant']) for r in group}=={1,2,3}
+        for expected in family['cases']:
+            actual=next(r for r in group if r['asset_id']==expected['asset_id'])
+            assert json.loads(actual['all_generator_parameters_json'])==expected['parameters']
+            assert float(actual['xy_length_mm'])==expected['parameters']['length']
+            assert float(actual['xy_width_mm'])==expected['parameters']['width']
+        for name,key,field in [('baseline','baseline_target_band','within_20_percent_fraction'),
+                               ('search_two','search_target_band','within_20_percent_fraction'),
+                               ('baseline','baseline_cv','relative_dose_cv'),('search_two','search_cv','relative_dose_cv')]:
+            assert abs(np.mean([float(r[key]) for r in group])-family[name][field])<1e-10
+    assert hashlib.sha256((directory/'synthetic_shapes_overview.png').read_bytes()).hexdigest()==inventory['overview_sha256']
     return dict(passed=True,metric_max_error=errors,target_cells=int(target.sum()),edge_cells=int(edge.sum()),
-        trajectory_anchors=len(rows),spray_strokes=starts,source_scale_confirmed=False,
+        trajectory_anchors=len(rows),spray_strokes=starts,source_scale_confirmed=False,synthetic_shape_families=18,synthetic_cases=54,
         scope='Saved arrays/metrics, figure hashes, exported nozzle offsets and speed constraints only; not a search rerun or robot validation')
 
 
