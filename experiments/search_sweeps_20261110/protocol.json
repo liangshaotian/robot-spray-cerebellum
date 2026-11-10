@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-10",
+  "rounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "cases": {
+    "automotive": 72,
+    "synthetic": 54,
+    "real_scan": 1
+  },
+  "same_inputs_baseline_candidates_objective_and_constraints": true,
+  "only_search_change": "range(2) -> range(8)",
+  "action_bounds": {
+    "surface_displacement_mm": 40,
+    "fan_yaw_degrees": 90,
+    "speed_min_mm_s": 350,
+    "speed_max_mm_s": 450
+  },
+  "cpu_workers": 12,
+  "cpu_threads_per_case": 1,
+  "gpu_used": false,
+  "training": false,
+  "primary_real_scan_evaluation": "Unchanged source path per method, 10 native-unit target grid, 2.5 native-unit path quadrature",
+  "automotive_test_reused": true,
+  "physical_calibration": false,
+  "new_paths_robot_validated": false,
+  "algorithm_sha256": {
+    "frozen_search.py": "daacdd1e2186380e38f956193d59150feba2d2d89a7fad8e9b9aa8b32203e166",
+    "fullenv.py": "fcab8dca4d6f79a2503d8c30ae66910480e306de7362b430e3e4aa0502a25a3e",
+    "spray_cerebellum/expanded_stroke.py": "78fbe9a25410eb3dd6b09abfdfbcc38f750a21376ace7dbe14e1a70f4d005c57",
+    "spray_cerebellum/multi_surface_v2.py": "7b1b55047e648014d00d69ab2685b424afff8451d8983990198f0dca0a3ca7b2",
+    "spray_cerebellum/dose_reference.py": "5b197fd7becef9472f37de97873f14e62a3f4486c74dccb3c4c47b4fce685c39"
+  },
+  "files_sha256": {
+    "convergence.png": "0a919470ff9f71baf02644e3629022b755f945a03e0cc40a34c8186dd539bd12",
+    "metrics.csv": "e77d1c705d5bb5716951d06eb3334d41c5ffa89ad144789877d6b7b8d06371da",
+    "per_case_metrics.csv": "542a9df91d914d1539c50413e65298517399fc35b379cc8901fd7fed584360bb",
+    "README.md": "e49b725a8b5329e50f4dacfb8c1ccf2a9d4bcd2b1b3065247c73b6b78b949bab",
+    "real_scan_rounds.png": "0b72719e504794c875a885eb7f19ee51c542941b0ac5bf89ea811fb4c2d06b2c",
+    "results.json": "751fd019be13f420479189598185bd255b722b163b6c1cf9c3b4667fee1bd5ee"
+  }
+}
