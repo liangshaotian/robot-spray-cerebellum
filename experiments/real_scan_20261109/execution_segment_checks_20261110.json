@@ -1,0 +1,3770 @@
+[
+  {
+    "index": 0,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 1,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 2,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 3,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 4,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 5,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 6,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 7,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 8,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 9,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 10,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 11,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 12,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 13,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 124
+  },
+  {
+    "index": 14,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 15,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 16,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 17,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 18,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 8
+  },
+  {
+    "index": 19,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 20,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 21,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 60
+  },
+  {
+    "index": 22,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 23,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 12
+  },
+  {
+    "index": 24,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 25,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 26,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 27,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 28,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 29,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 30,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 31,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 32,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 33,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 34,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 17
+  },
+  {
+    "index": 35,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 36,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 37,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 38,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 39,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 40,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 41,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 42,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 43,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 44,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 45,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 48
+  },
+  {
+    "index": 46,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 47,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 48,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 49,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 50,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 51,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 52,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 53,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 54,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 59
+  },
+  {
+    "index": 55,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 56,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 57,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 58,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 59,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 64
+  },
+  {
+    "index": 60,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 61,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 62,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 63,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 64,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 65,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 130
+  },
+  {
+    "index": 66,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 67,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 68,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 69,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 70,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 71,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 72,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 73,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 74,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 75,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 76,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 77,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 78,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 79,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 80,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 81,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 82,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 24
+  },
+  {
+    "index": 83,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 84,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 85,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 86,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 87,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 88,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 89,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 90,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 91,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 92,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 93,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 94,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 95,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 96,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 97,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 98,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 99,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 100,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 40
+  },
+  {
+    "index": 101,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 102,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 103,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 104,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 105,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 106,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 107,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 108,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 109,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 110,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 111,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 29
+  },
+  {
+    "index": 112,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 113,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 114,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 115,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 116,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 117,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 118,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 119,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 120,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 31
+  },
+  {
+    "index": 121,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 122,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 123,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 124,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 125,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 40
+  },
+  {
+    "index": 126,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 127,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 128,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 129,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 130,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 8
+  },
+  {
+    "index": 131,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 132,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 29
+  },
+  {
+    "index": 133,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 134,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 135,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 136,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 137,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 138,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 139,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 140,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 141,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 142,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 143,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 17
+  },
+  {
+    "index": 144,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 145,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 146,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 147,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 148,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 149,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 150,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 76
+  },
+  {
+    "index": 151,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 152,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 153,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 154,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 155,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 54
+  },
+  {
+    "index": 156,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 157,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 158,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 159,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 160,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 17
+  },
+  {
+    "index": 161,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 162,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 163,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 164,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 165,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 34
+  },
+  {
+    "index": 166,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 167,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 168,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 169,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 170,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 171,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 13
+  },
+  {
+    "index": 172,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 173,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 174,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 175,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 176,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 177,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 178,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 179,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 180,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 181,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 12
+  },
+  {
+    "index": 182,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 183,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 184,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 185,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 186,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 187,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 188,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 189,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 23
+  },
+  {
+    "index": 190,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 191,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 192,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 193,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 194,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 195,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 40
+  },
+  {
+    "index": 196,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 197,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 198,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 199,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 200,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 70
+  },
+  {
+    "index": 201,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 202,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 203,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 204,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 205,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 206,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 207,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 208,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 209,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 210,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 211,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 212,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 213,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 214,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 215,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 216,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 15
+  },
+  {
+    "index": 217,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 218,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 219,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 220,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 221,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 222,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 54
+  },
+  {
+    "index": 223,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 224,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 225,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 226,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 227,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 228,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 229,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 230,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 231,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 232,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 233,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 234,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 30
+  },
+  {
+    "index": 235,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 236,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 237,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 238,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 239,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 25
+  },
+  {
+    "index": 240,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 241,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 242,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 243,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 244,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 71
+  },
+  {
+    "index": 245,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 246,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 247,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 248,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 249,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 39
+  },
+  {
+    "index": 250,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 251,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 252,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 253,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 254,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 12
+  },
+  {
+    "index": 255,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 256,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 257,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 258,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 259,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 37
+  },
+  {
+    "index": 260,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 261,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 262,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 263,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 264,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 88
+  },
+  {
+    "index": 265,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 266,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 267,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 268,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 269,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 10
+  },
+  {
+    "index": 270,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 271,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 272,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 273,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 274,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 37
+  },
+  {
+    "index": 275,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 276,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 277,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 278,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 279,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 23
+  },
+  {
+    "index": 280,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 281,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 282,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 283,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 284,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 13
+  },
+  {
+    "index": 285,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 286,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 287,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 288,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 289,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 13
+  },
+  {
+    "index": 290,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 291,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 292,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 293,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 294,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 295,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 296,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 33
+  },
+  {
+    "index": 297,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 298,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 299,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 300,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 301,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 302,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 303,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 304,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 305,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 306,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 307,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 308,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 309,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 310,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 311,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 312,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 313,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 314,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 315,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 316,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 317,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 318,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 319,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 43
+  },
+  {
+    "index": 320,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 321,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 322,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 323,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 324,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 14
+  },
+  {
+    "index": 325,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 326,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 327,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 328,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 329,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 47
+  },
+  {
+    "index": 330,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 331,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 332,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 333,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 334,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 335,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 54
+  },
+  {
+    "index": 336,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 337,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 338,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 339,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 340,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 341,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 103
+  },
+  {
+    "index": 342,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 343,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 344,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 345,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 346,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 32
+  },
+  {
+    "index": 347,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 348,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 349,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 350,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 351,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 352,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 353,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 354,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 355,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 356,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 357,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 358,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 94
+  },
+  {
+    "index": 359,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 360,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 361,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 362,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 363,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 364,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 365,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 16
+  },
+  {
+    "index": 366,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 367,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 368,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 369,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 370,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 371,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 372,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 373,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 374,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 375,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 376,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 377,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 17
+  },
+  {
+    "index": 378,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 379,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 380,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 381,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 382,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 1
+  },
+  {
+    "index": 383,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 384,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 6
+  },
+  {
+    "index": 385,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 7
+  },
+  {
+    "index": 386,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 387,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 388,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 389,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 390,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 391,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 112
+  },
+  {
+    "index": 392,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 393,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 394,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 395,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 396,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 397,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 398,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 399,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 400,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 401,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 402,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 403,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 404,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 405,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 91
+  },
+  {
+    "index": 406,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 407,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 408,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 409,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 410,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 411,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 412,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 413,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 414,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 415,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 416,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 142
+  },
+  {
+    "index": 417,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 418,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 419,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 420,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 421,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 422,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 423,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 424,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 425,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 110
+  },
+  {
+    "index": 426,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 427,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 428,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 429,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 430,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 431,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 432,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 433,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 434,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 435,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 436,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 437,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 438,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 439,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 440,
+    "original_motion": "MoveJ",
+    "motion": "MoveL",
+    "kind": "approach",
+    "result": 0,
+    "samples": 172
+  },
+  {
+    "index": 441,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 442,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 443,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 444,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 445,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 446,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 447,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 448,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 449,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 108
+  },
+  {
+    "index": 450,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 20
+  },
+  {
+    "index": 451,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 452,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 453,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 454,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 4
+  },
+  {
+    "index": 455,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 456,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 83
+  },
+  {
+    "index": 457,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 458,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 459,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 5
+  },
+  {
+    "index": 460,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 461,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 462,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 463,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "retract",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 464,
+    "original_motion": "MoveJ",
+    "motion": "MoveJ",
+    "kind": "approach",
+    "result": 0,
+    "samples": 145
+  },
+  {
+    "index": 465,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "entry",
+    "result": 0,
+    "samples": 21
+  },
+  {
+    "index": 466,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 2
+  },
+  {
+    "index": 467,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 468,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 469,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "spray",
+    "result": 0,
+    "samples": 3
+  },
+  {
+    "index": 470,
+    "original_motion": "MoveL",
+    "motion": "MoveL",
+    "kind": "final_retract",
+    "result": 0,
+    "samples": 21
+  }
+]

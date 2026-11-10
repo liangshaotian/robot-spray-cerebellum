@@ -1,0 +1,98 @@
+{
+  "status": "passed",
+  "simulator_version": "6.0.6.26902",
+  "license": "Educational (Shanghai Jiaotong University)",
+  "robot": "Huayan E12 - project model",
+  "robot_sha256": "3940ae4987a56c9791238064b5b68423f3d3a3f024a44c82f52092f4afabcd56",
+  "trajectory_sha256": "59e8477186eb547b242f921b46aeca2afa06ed4677ca3d0a5bbb5984badbaf59",
+  "source_spray_trajectory_modified": false,
+  "scale_confirmed": false,
+  "native_to_mm_assumption": 1.0,
+  "physical_base_registration": false,
+  "scope": "Virtual cell only: reconstructed main and observed fold meshes, virtual floor, robot nonadjacent self pairs and nozzle; unknown real fixtures/backside not certified",
+  "waypoint_count": 471,
+  "spray_anchor_count": 345,
+  "spray_strokes": 63,
+  "sampling_mm": 5,
+  "sampling_deg": 1,
+  "attempts": 1,
+  "ik_collision_passed": true,
+  "real_robot_executed": false,
+  "off_transfer_corrections": [
+    {
+      "index": 440,
+      "original_motion": "MoveJ",
+      "corrected_motion": "MoveL",
+      "original_failure": {
+        "reason": "sample_collision",
+        "sample": 49,
+        "pairs": 1,
+        "items": [
+          "Reconstructed measured main surface",
+          "Spray nozzle TCP 200 mm"
+        ]
+      }
+    }
+  ],
+  "source_trajectory_modified": true,
+  "collision_samples": 6775,
+  "collision_method": "Explicit full-segment joint/Cartesian interpolation, IK, joint limits and mapped collision checks at every sample; not inferred from a test endpoint",
+  "T_robot_base_workpiece": [
+    [
+      0.0,
+      0.0,
+      -1.0,
+      955.559932747885
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      -72.5
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      855.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "checked_segments": 471,
+  "native_program_instructions": 820,
+  "simulation_endpoint_error_mm": 3.3636525752583067e-13,
+  "native_simulation_completed": true,
+  "station_bytes": 3144967,
+  "record_date": "2026-11-10",
+  "virtual_cell_only": true,
+  "accepted_path_collision_samples": 6725,
+  "independent_checks": {
+    "passed": true,
+    "loaded_station_rechecked": true,
+    "fk_checked_waypoints": 471,
+    "all_joint_limits_satisfied": true,
+    "maximum_fk_position_error_mm": 2.1080019952010683e-12,
+    "maximum_fk_orientation_error_deg": 1.7075472925031877e-06,
+    "collision_positive_control": [
+      {
+        "floor_shift_mm": 100,
+        "colliding_pairs": 2
+      }
+    ],
+    "collision_pairs_before": 0,
+    "collision_pairs_after_restore": 0,
+    "accepted_path_collision_samples": 6725,
+    "fixture_restored": true,
+    "license": "Educational (Shanghai Jiaotong University)"
+  },
+  "original_numerical_run_record": "results.json",
+  "scene_published": false,
+  "raw_scan_published": false,
+  "figure": "e12_execution_20261110.png",
+  "figure_sha256": "e7efac6077c0c58c367c8accbddffd6ad5872be1acd42899267ff4e3f9e3c717"
+}

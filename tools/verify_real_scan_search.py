@@ -73,9 +73,39 @@ def verify(directory: Path):
                                ('baseline','baseline_cv','relative_dose_cv'),('search_two','search_cv','relative_dose_cv')]:
             assert abs(np.mean([float(r[key]) for r in group])-family[name][field])<1e-10
     assert hashlib.sha256((directory/'synthetic_shapes_overview.png').read_bytes()).hexdigest()==inventory['overview_sha256']
+    execution=None
+    if (directory/'execution_validation_20261110.json').exists():
+        execution=json.loads((directory/'execution_validation_20261110.json').read_text(encoding='utf-8'))
+        moves=json.loads((directory/'execution_trajectory_20261110.json').read_text(encoding='utf-8'))['moves']
+        checks=json.loads((directory/'execution_segment_checks_20261110.json').read_text(encoding='utf-8'))
+        assert execution['virtual_cell_only'] and not execution['real_robot_executed']
+        assert not execution['scale_confirmed'] and not execution['physical_base_registration']
+        assert execution['ik_collision_passed'] and execution['native_simulation_completed']
+        assert len(moves)==len(checks)==execution['waypoint_count']==execution['checked_segments']==471
+        assert [c['index'] for c in checks]==list(range(471)) and all(c['result']==0 for c in checks)
+        assert sum(c['samples'] for c in checks)==execution['accepted_path_collision_samples']==6725
+        anchors=[m for m in moves if m['kind']=='entry' or m['spray_on']]
+        assert len(anchors)==len(rows)==345
+        assert np.max(np.abs(np.array([m['nozzle_xyz_mm'] for m in anchors])-tcp))<1e-8
+        for m in moves:
+            assert len(m['joints_deg'])==6 and np.isfinite(m['joints_deg']).all()
+            rotation=np.array(m['rotation_matrix'])
+            assert np.max(np.abs(rotation.T@rotation-np.eye(3)))<1e-8
+            if m['spray_on']:assert 350-1e-8<=m['speed_mm_s']<=450+1e-8
+        assert len(execution['off_transfer_corrections'])==1
+        for correction in execution['off_transfer_corrections']:
+            move=moves[correction['index']]
+            assert not move['spray_on'] and move['motion']==correction['corrected_motion']=='MoveL'
+        independent=execution['independent_checks']
+        assert independent['passed'] and independent['all_joint_limits_satisfied']
+        assert independent['collision_positive_control'][-1]['colliding_pairs']>0
+        assert independent['collision_pairs_before']==independent['collision_pairs_after_restore']==0
+        assert independent['maximum_fk_position_error_mm']<.01 and independent['maximum_fk_orientation_error_deg']<.01
+        assert hashlib.sha256((directory/execution['figure']).read_bytes()).hexdigest()==execution['figure_sha256']
     return dict(passed=True,metric_max_error=errors,target_cells=int(target.sum()),edge_cells=int(edge.sum()),
         trajectory_anchors=len(rows),spray_strokes=starts,source_scale_confirmed=False,synthetic_shape_families=18,synthetic_cases=54,
-        scope='Saved arrays/metrics, figure hashes, exported nozzle offsets and speed constraints only; not a search rerun or robot validation')
+        virtual_e12_execution_record_verified=execution is not None,
+        scope='Offline verification of saved metrics, geometry constraints and follow-up E12 records; does not rerun search, IK or collisions and is not physical robot validation')
 
 
 def main():
